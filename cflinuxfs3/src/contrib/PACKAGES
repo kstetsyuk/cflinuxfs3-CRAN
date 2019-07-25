@@ -223,6 +223,13 @@ NeedsCompilation: yes
 Imports: Rcpp (>= 0.11.0)
 LinkingTo: Rcpp
 
+Package: polynom
+Version: 1.4-0
+Suggests: knitr, rmarkdown
+License: GPL-2
+NeedsCompilation: no
+Imports: stats, graphics
+
 Package: promises
 Version: 1.0.1
 Suggests: testthat, future, knitr, rmarkdown
