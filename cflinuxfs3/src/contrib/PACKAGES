@@ -1,0 +1,171 @@
+Package: assertthat
+Version: 0.2.1
+Suggests: testthat, covr
+License: GPL-3
+NeedsCompilation: no
+Imports: tools
+
+Package: backports
+Version: 1.1.4
+Depends: R (>= 3.0.0)
+License: GPL-2
+NeedsCompilation: yes
+Imports: utils
+
+Package: BH
+Version: 1.69.0-1
+License: BSL-1.0
+NeedsCompilation: no
+
+Package: cli
+Version: 1.1.0
+Depends: R (>= 2.10)
+Suggests: covr, fansi, mockery, testthat, webshot, withr
+License: MIT + file LICENSE
+NeedsCompilation: no
+Imports: assertthat, crayon (>= 1.3.4), methods, utils
+
+Package: crayon
+Version: 1.3.4
+Suggests: mockery, rstudioapi, testthat, withr
+License: MIT + file LICENSE
+NeedsCompilation: no
+Imports: grDevices, methods, utils
+
+Package: digest
+Version: 0.6.20
+Depends: R (>= 3.1.0)
+Suggests: tinytest, knitr, rmarkdown
+License: GPL (>= 2)
+NeedsCompilation: yes
+
+Package: dplyr
+Version: 0.8.3
+Depends: R (>= 3.2.0)
+Suggests: bit64, callr, covr, crayon (>= 1.3.4), DBI, dbplyr, dtplyr,
+        ggplot2, hms, knitr, Lahman, lubridate, MASS, mgcv,
+        microbenchmark, nycflights13, rmarkdown, RMySQL, RPostgreSQL,
+        RSQLite, testthat, withr, broom, purrr, readr
+License: MIT + file LICENSE
+NeedsCompilation: yes
+Imports: assertthat (>= 0.2.0), glue (>= 1.3.0), magrittr (>= 1.5),
+        methods, pkgconfig, R6, Rcpp (>= 1.0.1), rlang (>= 0.4.0),
+        tibble (>= 2.0.0), tidyselect (>= 0.2.5), utils
+LinkingTo: BH, plogr (>= 0.2.0), Rcpp (>= 1.0.1)
+
+Package: ellipsis
+Version: 0.2.0.1
+Depends: R (>= 3.1)
+Suggests: covr, testthat
+License: GPL-3
+NeedsCompilation: yes
+Imports: rlang (>= 0.3.0)
+
+Package: fansi
+Version: 0.4.0
+Depends: R (>= 3.1.0)
+Suggests: unitizer, knitr, rmarkdown
+License: GPL (>= 2)
+NeedsCompilation: yes
+
+Package: magrittr
+Version: 1.5
+Suggests: testthat, knitr
+License: MIT + file LICENSE
+NeedsCompilation: no
+
+Package: pillar
+Version: 1.4.2
+Suggests: knitr, lubridate, testthat, withr
+License: GPL-3
+NeedsCompilation: no
+Imports: cli, crayon (>= 1.3.4), fansi, rlang (>= 0.3.0), utf8 (>=
+        1.1.0), vctrs
+
+Package: pkgconfig
+Version: 2.0.2
+Suggests: covr, testthat, disposables (>= 1.0.3)
+License: MIT + file LICENSE
+NeedsCompilation: no
+Imports: utils
+
+Package: plogr
+Version: 0.2.0
+Suggests: Rcpp
+License: MIT + file LICENSE
+NeedsCompilation: no
+
+Package: purrr
+Version: 0.3.2
+Depends: R (>= 3.1)
+Suggests: covr, crayon, dplyr (>= 0.7.8), knitr, rmarkdown, testthat,
+        tibble, tidyselect
+License: GPL-3 | file LICENSE
+NeedsCompilation: yes
+Imports: magrittr (>= 1.5), rlang (>= 0.3.1)
+
+Package: R6
+Version: 2.4.0
+Depends: R (>= 3.0)
+Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
+License: MIT + file LICENSE
+NeedsCompilation: no
+
+Package: Rcpp
+Version: 1.0.2
+Depends: R (>= 3.0.0)
+Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten
+        (>= 0.1.2)
+License: GPL (>= 2)
+NeedsCompilation: yes
+Imports: methods, utils
+
+Package: rlang
+Version: 0.4.0
+Depends: R (>= 3.2.0)
+Suggests: covr, crayon, magrittr, methods, pillar, rmarkdown, testthat
+        (>= 2.0.0)
+License: GPL-3
+NeedsCompilation: yes
+
+Package: tibble
+Version: 2.1.3
+Depends: R (>= 3.1.0)
+Suggests: bench, covr, dplyr, htmltools, import, knitr, mockr,
+        nycflights13, rmarkdown, testthat, withr
+License: MIT + file LICENSE
+NeedsCompilation: yes
+Imports: cli, crayon (>= 1.3.4), fansi (>= 0.4.0), methods, pillar (>=
+        1.3.1), pkgconfig, rlang (>= 0.3.0), utils
+
+Package: tidyselect
+Version: 0.2.5
+Depends: R (>= 3.1)
+Suggests: covr, dplyr, testthat
+License: GPL-3
+NeedsCompilation: yes
+Imports: glue (>= 1.3.0), purrr, rlang (>= 0.2.2), Rcpp (>= 0.12.0)
+LinkingTo: Rcpp (>= 0.12.0),
+
+Package: utf8
+Version: 1.1.4
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat
+License: Apache License (== 2.0) | file LICENSE
+NeedsCompilation: yes
+
+Package: vctrs
+Version: 0.2.0
+Depends: R (>= 3.2)
+Suggests: bit64, covr, crayon, generics, knitr, pillar (>= 1.4.1),
+        pkgdown, rmarkdown, testthat, tibble
+License: GPL-3
+NeedsCompilation: yes
+Imports: backports, ellipsis (>= 0.2.0), digest, glue, rlang (>=
+        0.4.0), zeallot
+
+Package: zeallot
+Version: 0.1.0
+Suggests: testthat, knitr, rmarkdown, purrr, magrittr
+License: MIT + file LICENSE
+NeedsCompilation: no
