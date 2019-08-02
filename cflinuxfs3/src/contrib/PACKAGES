@@ -138,6 +138,14 @@ Imports: assertthat (>= 0.2.0), DBI (>= 1.0.0), dplyr (>= 0.8.0), glue
         (>= 1.2.0), methods, purrr (>= 0.2.5), R6 (>= 2.2.2), rlang (>=
         0.2.0), tibble (>= 1.4.2), tidyselect (>= 0.2.4), utils
 
+Package: deSolve
+Version: 1.24
+Depends: R (>= 2.15.0)
+Suggests: scatterplot3d, FME
+License: GPL (>= 2)
+NeedsCompilation: yes
+Imports: methods, graphics, grDevices, stats
+
 Package: digest
 Version: 0.6.20
 Depends: R (>= 3.1.0)
