@@ -1,39 +1,101 @@
-Package: askpass
-Version: 1.1
-Suggests: testthat
-License: MIT + file LICENSE
-NeedsCompilation: yes
-Imports: sys (>= 2.1)
-
-Package: assertthat
-Version: 0.2.1
-Suggests: testthat, covr
-License: GPL-3
-NeedsCompilation: no
-Imports: tools
-
-Package: backports
-Version: 1.1.4
-Depends: R (>= 3.0.0)
-License: GPL-2
-NeedsCompilation: yes
-Imports: utils
-
-Package: base64enc
-Version: 0.1-3
-Depends: R (>= 2.9.0)
-License: GPL-2 | GPL-3
-NeedsCompilation: yes
-Enhances: png
-
 Package: BH
+LibPath: /usr/local/lib/R/site-library
 Version: 1.69.0-1
 License: BSL-1.0
 NeedsCompilation: no
+Built: 3.6.1
+
+Package: DBI
+LibPath: /usr/local/lib/R/site-library
+Version: 1.0.0
+Depends: R (>= 3.0.0), methods
+Suggests: blob, covr, hms, knitr, magrittr, rprojroot, rmarkdown,
+        RSQLite (>= 1.1-2), testthat, xml2
+License: LGPL (>= 2)
+NeedsCompilation: no
+Built: 3.6.1
+
+Package: DT
+LibPath: /usr/local/lib/R/site-library
+Version: 0.7
+Imports: htmltools (>= 0.3.6), htmlwidgets (>= 1.3), magrittr,
+        crosstalk, promises
+Suggests: jsonlite (>= 0.9.16), knitr (>= 1.8), rmarkdown, shiny (>=
+        1.1.0)
+License: GPL-3 | file LICENSE
+NeedsCompilation: no
+Built: 3.6.1
+
+Package: R6
+LibPath: /usr/local/lib/R/site-library
+Version: 2.4.0
+Depends: R (>= 3.0)
+Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
+License: MIT + file LICENSE
+NeedsCompilation: no
+Built: 3.6.1
+
+Package: RColorBrewer
+LibPath: /usr/local/lib/R/site-library
+Version: 1.1-2
+Depends: R (>= 2.0.0)
+License: Apache License 2.0
+NeedsCompilation: no
+Built: 3.6.1
+
+Package: Rcpp
+LibPath: /usr/local/lib/R/site-library
+Version: 1.0.2
+Depends: R (>= 3.0.0)
+Imports: methods, utils
+Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten
+        (>= 0.1.2)
+License: GPL (>= 2)
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: askpass
+LibPath: /usr/local/lib/R/site-library
+Version: 1.1
+Imports: sys (>= 2.1)
+Suggests: testthat
+License: MIT + file LICENSE
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: assertthat
+LibPath: /usr/local/lib/R/site-library
+Version: 0.2.1
+Imports: tools
+Suggests: testthat, covr
+License: GPL-3
+NeedsCompilation: no
+Built: 3.6.1
+
+Package: backports
+LibPath: /usr/local/lib/R/site-library
+Version: 1.1.4
+Depends: R (>= 3.0.0)
+Imports: utils
+License: GPL-2
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: base64enc
+LibPath: /usr/local/lib/R/site-library
+Version: 0.1-3
+Depends: R (>= 2.9.0)
+Enhances: png
+License: GPL-2 | GPL-3
+NeedsCompilation: yes
+Built: 3.6.1
 
 Package: broom
+LibPath: /usr/local/lib/R/site-library
 Version: 0.5.2
 Depends: R (>= 3.1)
+Imports: backports, dplyr, generics (>= 0.0.2), methods, nlme, purrr,
+        reshape2, stringr, tibble, tidyr
 Suggests: AER, akima, AUC, bbmle, betareg, biglm, binGroup, boot, brms,
         btergm, car, caret, coda, covr, e1071, emmeans, ergm, gam (>=
         1.15), gamlss, gamlss.data, gamlss.dist, geepack, ggplot2,
@@ -46,295 +108,340 @@ Suggests: AER, akima, AUC, bbmle, betareg, biglm, binGroup, boot, brms,
         tseries, xergm, zoo
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: backports, dplyr, generics (>= 0.0.2), methods, nlme, purrr,
-        reshape2, stringr, tibble, tidyr
+Built: 3.6.1
 
 Package: callr
+LibPath: /usr/local/lib/R/site-library
 Version: 3.3.1
+Imports: processx (>= 3.4.0), R6, utils
 Suggests: cliapp, covr, crayon, knitr, pingr, ps, rmarkdown, rprojroot,
         spelling, testthat, tibble, withr
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: processx (>= 3.4.0), R6, utils
+Built: 3.6.1
 
 Package: cellranger
+LibPath: /usr/local/lib/R/site-library
 Version: 1.1.0
 Depends: R (>= 3.0.0)
+Imports: rematch, tibble
 Suggests: covr, testthat (>= 1.0.0), knitr, rmarkdown
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: rematch, tibble
+Built: 3.6.1
 
 Package: cli
+LibPath: /usr/local/lib/R/site-library
 Version: 1.1.0
 Depends: R (>= 2.10)
+Imports: assertthat, crayon (>= 1.3.4), methods, utils
 Suggests: covr, fansi, mockery, testthat, webshot, withr
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: assertthat, crayon (>= 1.3.4), methods, utils
+Built: 3.6.1
 
 Package: clipr
+LibPath: /usr/local/lib/R/site-library
 Version: 0.7.0
+Imports: utils
 Suggests: covr, knitr, rmarkdown, rstudioapi (>= 0.5), testthat (>=
         2.0.0)
 License: GPL-3
 NeedsCompilation: no
-Imports: utils
+Built: 3.6.1
 
 Package: colorspace
+LibPath: /usr/local/lib/R/site-library
 Version: 1.4-1
 Depends: R (>= 3.0.0), methods
+Imports: graphics, grDevices, stats
 Suggests: datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
         tcltk, shiny, shinyjs, ggplot2, dplyr, scales, grid, png, jpeg,
         knitr, rmarkdown, RColorBrewer, rcartocolor, scico, viridis,
         wesanderson
 License: BSD_3_clause + file LICENSE
 NeedsCompilation: yes
-Imports: graphics, grDevices, stats
+Built: 3.6.1
 
 Package: cowplot
+LibPath: /usr/local/lib/R/site-library
 Version: 1.0.0
 Depends: R (>= 3.5.0)
+Imports: ggplot2 (> 2.2.1), grid, gtable, grDevices, methods, rlang,
+        scales, utils
 Suggests: Cairo, covr, dplyr, forcats, gridGraphics (>= 0.4-0), knitr,
         lattice, magick, maps, PASWR, rmarkdown, testthat (>= 1.0.0),
         tidyr, vdiffr (>= 0.3.0), VennDiagram
 License: GPL-2
 NeedsCompilation: no
-Imports: ggplot2 (> 2.2.1), grid, gtable, grDevices, methods, rlang,
-        scales, utils
+Built: 3.6.1
 
 Package: crayon
+LibPath: /usr/local/lib/R/site-library
 Version: 1.3.4
+Imports: grDevices, methods, utils
 Suggests: mockery, rstudioapi, testthat, withr
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: grDevices, methods, utils
+Built: 3.6.1
 
 Package: crosstalk
+LibPath: /usr/local/lib/R/site-library
 Version: 1.0.0
-License: MIT + file LICENSE
-NeedsCompilation: no
 Imports: htmltools (>= 0.3.5), jsonlite, lazyeval, R6, shiny (>= 0.11),
         ggplot2
+License: MIT + file LICENSE
+NeedsCompilation: no
+Built: 3.6.1
 
 Package: curl
+LibPath: /usr/local/lib/R/site-library
 Version: 4.0
 Depends: R (>= 3.0.0)
 Suggests: askpass, spelling, testthat (>= 1.0.0), knitr, jsonlite,
         rmarkdown, magrittr, httpuv (>= 1.4.4), webutils
 License: MIT + file LICENSE
 NeedsCompilation: yes
-
-Package: DBI
-Version: 1.0.0
-Depends: R (>= 3.0.0), methods
-Suggests: blob, covr, hms, knitr, magrittr, rprojroot, rmarkdown,
-        RSQLite (>= 1.1-2), testthat, xml2
-License: LGPL (>= 2)
-NeedsCompilation: no
+Built: 3.6.1
 
 Package: dbplyr
+LibPath: /usr/local/lib/R/site-library
 Version: 1.4.2
 Depends: R (>= 3.1)
+Imports: assertthat (>= 0.2.0), DBI (>= 1.0.0), dplyr (>= 0.8.0), glue
+        (>= 1.2.0), methods, purrr (>= 0.2.5), R6 (>= 2.2.2), rlang (>=
+        0.2.0), tibble (>= 1.4.2), tidyselect (>= 0.2.4), utils
 Suggests: bit64, covr, knitr, Lahman, nycflights13, RMariaDB (>=
         1.0.2), rmarkdown, RMySQL (>= 0.10.11), RPostgreSQL (>= 0.4.1),
         RSQLite (>= 2.1.0), testthat (>= 2.0.0), withr (>= 2.1.2)
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: assertthat (>= 0.2.0), DBI (>= 1.0.0), dplyr (>= 0.8.0), glue
-        (>= 1.2.0), methods, purrr (>= 0.2.5), R6 (>= 2.2.2), rlang (>=
-        0.2.0), tibble (>= 1.4.2), tidyselect (>= 0.2.4), utils
+Built: 3.6.1
 
 Package: deSolve
+LibPath: /usr/local/lib/R/site-library
 Version: 1.24
 Depends: R (>= 2.15.0)
+Imports: methods, graphics, grDevices, stats
 Suggests: scatterplot3d, FME
 License: GPL (>= 2)
 NeedsCompilation: yes
-Imports: methods, graphics, grDevices, stats
+Built: 3.6.1
 
 Package: digest
+LibPath: /usr/local/lib/R/site-library
 Version: 0.6.20
 Depends: R (>= 3.1.0)
 Suggests: tinytest, knitr, rmarkdown
 License: GPL (>= 2)
 NeedsCompilation: yes
+Built: 3.6.1
 
 Package: dplyr
+LibPath: /usr/local/lib/R/site-library
 Version: 0.8.3
 Depends: R (>= 3.2.0)
+Imports: assertthat (>= 0.2.0), glue (>= 1.3.0), magrittr (>= 1.5),
+        methods, pkgconfig, R6, Rcpp (>= 1.0.1), rlang (>= 0.4.0),
+        tibble (>= 2.0.0), tidyselect (>= 0.2.5), utils
+LinkingTo: BH, plogr (>= 0.2.0), Rcpp (>= 1.0.1)
 Suggests: bit64, callr, covr, crayon (>= 1.3.4), DBI, dbplyr, dtplyr,
         ggplot2, hms, knitr, Lahman, lubridate, MASS, mgcv,
         microbenchmark, nycflights13, rmarkdown, RMySQL, RPostgreSQL,
         RSQLite, testthat, withr, broom, purrr, readr
 License: MIT + file LICENSE
 NeedsCompilation: yes
-Imports: assertthat (>= 0.2.0), glue (>= 1.3.0), magrittr (>= 1.5),
-        methods, pkgconfig, R6, Rcpp (>= 1.0.1), rlang (>= 0.4.0),
-        tibble (>= 2.0.0), tidyselect (>= 0.2.5), utils
-LinkingTo: BH, plogr (>= 0.2.0), Rcpp (>= 1.0.1)
-
-Package: DT
-Version: 0.7
-Suggests: jsonlite (>= 0.9.16), knitr (>= 1.8), rmarkdown, shiny (>=
-        1.1.0)
-License: GPL-3 | file LICENSE
-NeedsCompilation: no
-Imports: htmltools (>= 0.3.6), htmlwidgets (>= 1.3), magrittr,
-        crosstalk, promises
+Built: 3.6.1
 
 Package: ellipsis
+LibPath: /usr/local/lib/R/site-library
 Version: 0.2.0.1
 Depends: R (>= 3.1)
+Imports: rlang (>= 0.3.0)
 Suggests: covr, testthat
 License: GPL-3
 NeedsCompilation: yes
-Imports: rlang (>= 0.3.0)
+Built: 3.6.1
 
 Package: evaluate
+LibPath: /usr/local/lib/R/site-library
 Version: 0.14
 Depends: R (>= 3.0.2)
+Imports: methods
 Suggests: testthat, lattice, ggplot2
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: methods
+Built: 3.6.1
 
 Package: fansi
+LibPath: /usr/local/lib/R/site-library
 Version: 0.4.0
 Depends: R (>= 3.1.0)
 Suggests: unitizer, knitr, rmarkdown
 License: GPL (>= 2)
 NeedsCompilation: yes
+Built: 3.6.1
 
 Package: forcats
+LibPath: /usr/local/lib/R/site-library
 Version: 0.4.0
 Depends: R (>= 3.1)
+Imports: ellipsis, magrittr, rlang, tibble
 Suggests: covr, ggplot2, testthat, readr, knitr, rmarkdown, dplyr
 License: GPL-3
 NeedsCompilation: no
-Imports: ellipsis, magrittr, rlang, tibble
+Built: 3.6.1
 
 Package: fs
+LibPath: /usr/local/lib/R/site-library
 Version: 1.3.1
 Depends: R (>= 3.1)
+Imports: methods, Rcpp
+LinkingTo: Rcpp
 Suggests: testthat, covr, pillar (>= 1.0.0), crayon, rmarkdown, knitr,
         withr, spelling
 License: GPL-3
 NeedsCompilation: yes
-Imports: methods, Rcpp
-LinkingTo: Rcpp
+Built: 3.6.1
 
 Package: generics
+LibPath: /usr/local/lib/R/site-library
 Version: 0.0.2
 Depends: R (>= 3.1)
+Imports: methods
 Suggests: covr, pkgload, testthat, tibble
 License: GPL-2
 NeedsCompilation: no
-Imports: methods
+Built: 3.6.1
 
 Package: ggplot2
+LibPath: /usr/local/lib/R/site-library
 Version: 3.2.0
 Depends: R (>= 3.2)
+Imports: digest, grDevices, grid, gtable (>= 0.1.1), lazyeval, MASS,
+        mgcv, reshape2, rlang (>= 0.3.0), scales (>= 0.5.0), stats,
+        tibble, viridisLite, withr (>= 2.0.0)
 Suggests: covr, dplyr, ggplot2movies, hexbin, Hmisc, knitr, lattice,
         mapproj, maps, maptools, multcomp, munsell, nlme, profvis,
         quantreg, rgeos, rmarkdown, rpart, sf (>= 0.7-3), svglite (>=
         1.2.0.9001), testthat (>= 0.11.0), vdiffr (>= 0.3.0)
+Enhances: sp
 License: GPL-2 | file LICENSE
 NeedsCompilation: no
-Imports: digest, grDevices, grid, gtable (>= 0.1.1), lazyeval, MASS,
-        mgcv, reshape2, rlang (>= 0.3.0), scales (>= 0.5.0), stats,
-        tibble, viridisLite, withr (>= 2.0.0)
-Enhances: sp
+Built: 3.6.1
 
 Package: glue
+LibPath: /usr/local/lib/R/site-library
 Version: 1.3.1
 Depends: R (>= 3.1)
+Imports: methods
 Suggests: testthat, covr, magrittr, crayon, knitr, rmarkdown, DBI,
         RSQLite, R.utils, forcats, microbenchmark, rprintf, stringr,
         ggplot2, dplyr, withr
 License: MIT + file LICENSE
 NeedsCompilation: yes
-Imports: methods
+Built: 3.6.1
 
 Package: gtable
+LibPath: /usr/local/lib/R/site-library
 Version: 0.3.0
 Depends: R (>= 3.0)
+Imports: grid
 Suggests: covr, testthat, knitr, rmarkdown, ggplot2, profvis
 License: GPL-2
 NeedsCompilation: no
-Imports: grid
+Built: 3.6.1
 
 Package: haven
+LibPath: /usr/local/lib/R/site-library
 Version: 2.1.1
 Depends: R (>= 3.2)
+Imports: forcats (>= 0.2.0), hms, Rcpp (>= 0.11.4), readr (>= 0.1.0),
+        tibble
+LinkingTo: Rcpp
 Suggests: covr, fs, knitr, rmarkdown, testthat, pillar (>= 1.1.1), cli,
         crayon
 License: MIT + file LICENSE
 NeedsCompilation: yes
-Imports: forcats (>= 0.2.0), hms, Rcpp (>= 0.11.4), readr (>= 0.1.0),
-        tibble
-LinkingTo: Rcpp
+Built: 3.6.1
 
 Package: highr
+LibPath: /usr/local/lib/R/site-library
 Version: 0.8
 Depends: R (>= 3.2.3)
 Suggests: knitr, testit
 License: GPL
 NeedsCompilation: no
+Built: 3.6.1
 
 Package: hms
+LibPath: /usr/local/lib/R/site-library
 Version: 0.5.0
+Imports: methods, pkgconfig, rlang, vctrs (>= 0.2.0)
 Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
 NeedsCompilation: no
-Imports: methods, pkgconfig, rlang, vctrs (>= 0.2.0)
+Built: 3.6.1
 
 Package: htmltools
+LibPath: /usr/local/lib/R/site-library
 Version: 0.3.6
 Depends: R (>= 2.14.1)
-Suggests: markdown, testthat
-License: GPL (>= 2)
-NeedsCompilation: yes
 Imports: utils, digest, Rcpp
 LinkingTo: Rcpp
+Suggests: markdown, testthat
 Enhances: knitr
+License: GPL (>= 2)
+NeedsCompilation: yes
+Built: 3.6.1
 
 Package: htmlwidgets
+LibPath: /usr/local/lib/R/site-library
 Version: 1.3
+Imports: grDevices, htmltools (>= 0.3), jsonlite (>= 0.9.16), yaml
 Suggests: knitr (>= 1.8)
+Enhances: shiny (>= 1.1)
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: grDevices, htmltools (>= 0.3), jsonlite (>= 0.9.16), yaml
-Enhances: shiny (>= 1.1)
+Built: 3.6.1
 
 Package: httpuv
+LibPath: /usr/local/lib/R/site-library
 Version: 1.5.1
 Depends: R (>= 2.15.1)
+Imports: Rcpp (>= 0.11.0), utils, R6, promises, later (>= 0.8.0)
+LinkingTo: Rcpp, BH, later
 Suggests: testthat, callr, curl
 License: GPL (>= 2) | file LICENSE
 NeedsCompilation: yes
-Imports: Rcpp (>= 0.11.0), utils, R6, promises, later (>= 0.8.0)
-LinkingTo: Rcpp, BH, later
+Built: 3.6.1
 
 Package: httr
+LibPath: /usr/local/lib/R/site-library
 Version: 1.4.0
 Depends: R (>= 3.1)
+Imports: curl (>= 0.9.1), jsonlite, mime, openssl (>= 0.8), R6
 Suggests: covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
         (>= 0.8.0), xml2
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: curl (>= 0.9.1), jsonlite, mime, openssl (>= 0.8), R6
+Built: 3.6.1
 
 Package: jsonlite
+LibPath: /usr/local/lib/R/site-library
 Version: 1.6
 Depends: methods
 Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sp
 License: MIT + file LICENSE
 NeedsCompilation: yes
+Built: 3.6.1
 
 Package: knitr
+LibPath: /usr/local/lib/R/site-library
 Version: 1.23
 Depends: R (>= 3.2.3)
+Imports: evaluate (>= 0.10), highr, markdown, stringr (>= 0.6), yaml
+        (>= 2.1.19), methods, xfun, tools
 Suggests: formatR, testit, digest, rgl (>= 0.95.1201), codetools,
         rmarkdown, htmlwidgets (>= 0.7), webshot, tikzDevice (>= 0.10),
         tinytex, reticulate (>= 1.4), JuliaCall (>= 0.11.1), magick,
@@ -342,378 +449,461 @@ Suggests: formatR, testit, digest, rgl (>= 0.95.1201), codetools,
         showtext, tibble, styler
 License: GPL
 NeedsCompilation: no
-Imports: evaluate (>= 0.10), highr, markdown, stringr (>= 0.6), yaml
-        (>= 2.1.19), methods, xfun, tools
+Built: 3.6.1
 
 Package: labeling
+LibPath: /usr/local/lib/R/site-library
 Version: 0.3
 License: MIT + file LICENSE | Unlimited
 NeedsCompilation: no
+Built: 3.6.1
 
 Package: later
+LibPath: /usr/local/lib/R/site-library
 Version: 0.8.0
+Imports: Rcpp (>= 0.12.9), rlang
+LinkingTo: Rcpp, BH
 Suggests: knitr, rmarkdown, testthat
 License: GPL (>= 2)
 NeedsCompilation: yes
-Imports: Rcpp (>= 0.12.9), rlang
-LinkingTo: Rcpp, BH
+Built: 3.6.1
 
 Package: lazyeval
+LibPath: /usr/local/lib/R/site-library
 Version: 0.2.2
 Depends: R (>= 3.1.0)
 Suggests: knitr, rmarkdown (>= 0.2.65), testthat, covr
 License: GPL-3
 NeedsCompilation: yes
+Built: 3.6.1
 
 Package: lubridate
+LibPath: /usr/local/lib/R/site-library
 Version: 1.7.4
 Depends: methods, R (>= 3.0.0)
-Suggests: testthat, knitr, covr
-License: GPL (>= 2)
-NeedsCompilation: yes
 Imports: stringr, Rcpp (>= 0.12.13),
 LinkingTo: Rcpp,
+Suggests: testthat, knitr, covr
 Enhances: chron, fts, timeSeries, timeDate, tis, tseries, xts, zoo
+License: GPL (>= 2)
+NeedsCompilation: yes
+Built: 3.6.1
 
 Package: magrittr
+LibPath: /usr/local/lib/R/site-library
 Version: 1.5
 Suggests: testthat, knitr
 License: MIT + file LICENSE
 NeedsCompilation: no
+Built: 3.6.1
 
 Package: markdown
+LibPath: /usr/local/lib/R/site-library
 Version: 1.0
 Depends: R (>= 2.11.1)
+Imports: utils, mime (>= 0.3)
 Suggests: knitr, RCurl
 License: GPL-2
 NeedsCompilation: yes
-Imports: utils, mime (>= 0.3)
+Built: 3.6.1
 
 Package: mime
+LibPath: /usr/local/lib/R/site-library
 Version: 0.7
+Imports: tools
 License: GPL
 NeedsCompilation: yes
-Imports: tools
+Built: 3.6.1
 
 Package: modelr
+LibPath: /usr/local/lib/R/site-library
 Version: 0.1.4
 Depends: R (>= 3.1)
+Imports: broom, dplyr, magrittr, purrr (>= 0.2.2), rlang (>= 0.2.0),
+        tibble, tidyr (>= 0.8.0)
 Suggests: compiler, covr, ggplot2, testthat
 License: GPL-3
 NeedsCompilation: no
-Imports: broom, dplyr, magrittr, purrr (>= 0.2.2), rlang (>= 0.2.0),
-        tibble, tidyr (>= 0.8.0)
+Built: 3.6.1
 
 Package: munsell
+LibPath: /usr/local/lib/R/site-library
 Version: 0.5.0
+Imports: colorspace, methods
 Suggests: ggplot2, testthat
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: colorspace, methods
+Built: 3.6.1
 
 Package: nleqslv
+LibPath: /usr/local/lib/R/site-library
 Version: 3.3.2
 License: GPL (>= 2)
 NeedsCompilation: yes
+Built: 3.6.1
 
 Package: openssl
+LibPath: /usr/local/lib/R/site-library
 Version: 1.4.1
+Imports: askpass
 Suggests: testthat, digest, knitr, rmarkdown, jsonlite, jose, sodium
 License: MIT + file LICENSE
 NeedsCompilation: yes
-Imports: askpass
+Built: 3.6.1
 
 Package: pillar
+LibPath: /usr/local/lib/R/site-library
 Version: 1.4.2
+Imports: cli, crayon (>= 1.3.4), fansi, rlang (>= 0.3.0), utf8 (>=
+        1.1.0), vctrs
 Suggests: knitr, lubridate, testthat, withr
 License: GPL-3
 NeedsCompilation: no
-Imports: cli, crayon (>= 1.3.4), fansi, rlang (>= 0.3.0), utf8 (>=
-        1.1.0), vctrs
+Built: 3.6.1
 
 Package: pkgconfig
+LibPath: /usr/local/lib/R/site-library
 Version: 2.0.2
+Imports: utils
 Suggests: covr, testthat, disposables (>= 1.0.3)
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: utils
+Built: 3.6.1
 
 Package: plogr
+LibPath: /usr/local/lib/R/site-library
 Version: 0.2.0
 Suggests: Rcpp
 License: MIT + file LICENSE
 NeedsCompilation: no
+Built: 3.6.1
 
 Package: plyr
+LibPath: /usr/local/lib/R/site-library
 Version: 1.8.4
 Depends: R (>= 3.1.0)
+Imports: Rcpp (>= 0.11.0)
+LinkingTo: Rcpp
 Suggests: abind, testthat, tcltk, foreach, doParallel, itertools,
         iterators, covr
 License: MIT + file LICENSE
 NeedsCompilation: yes
-Imports: Rcpp (>= 0.11.0)
-LinkingTo: Rcpp
+Built: 3.6.1
 
 Package: polynom
+LibPath: /usr/local/lib/R/site-library
 Version: 1.4-0
+Imports: stats, graphics
 Suggests: knitr, rmarkdown
 License: GPL-2
 NeedsCompilation: no
-Imports: stats, graphics
+Built: 3.6.1
 
 Package: prettyunits
+LibPath: /usr/local/lib/R/site-library
 Version: 1.0.2
+Imports: magrittr, assertthat, methods
 Suggests: testthat
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: magrittr, assertthat, methods
+Built: 3.6.1
 
 Package: processx
+LibPath: /usr/local/lib/R/site-library
 Version: 3.4.1
+Imports: ps (>= 1.2.0), R6, utils
 Suggests: callr (>= 3.2.0), codetools, covr, crayon, curl, debugme,
         parallel, testthat, withr
 License: MIT + file LICENSE
 NeedsCompilation: yes
-Imports: ps (>= 1.2.0), R6, utils
+Built: 3.6.1
 
 Package: progress
+LibPath: /usr/local/lib/R/site-library
 Version: 1.2.2
+Imports: hms, prettyunits, R6, crayon
 Suggests: Rcpp, testthat, withr
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: hms, prettyunits, R6, crayon
+Built: 3.6.1
 
 Package: promises
+LibPath: /usr/local/lib/R/site-library
 Version: 1.0.1
+Imports: R6, Rcpp, later, rlang, stats, magrittr
+LinkingTo: later, Rcpp
 Suggests: testthat, future, knitr, rmarkdown
 License: MIT + file LICENSE
 NeedsCompilation: yes
-Imports: R6, Rcpp, later, rlang, stats, magrittr
-LinkingTo: later, Rcpp
+Built: 3.6.1
 
 Package: ps
+LibPath: /usr/local/lib/R/site-library
 Version: 1.3.0
 Depends: R (>= 3.1)
+Imports: utils
 Suggests: callr, covr, curl, pingr, processx (>= 3.1.0), R6, rlang,
         testthat, tibble
 License: BSD_3_clause + file LICENSE
 NeedsCompilation: yes
-Imports: utils
+Built: 3.6.1
 
 Package: purrr
+LibPath: /usr/local/lib/R/site-library
 Version: 0.3.2
 Depends: R (>= 3.1)
+Imports: magrittr (>= 1.5), rlang (>= 0.3.1)
 Suggests: covr, crayon, dplyr (>= 0.7.8), knitr, rmarkdown, testthat,
         tibble, tidyselect
 License: GPL-3 | file LICENSE
 NeedsCompilation: yes
-Imports: magrittr (>= 1.5), rlang (>= 0.3.1)
-
-Package: R6
-Version: 2.4.0
-Depends: R (>= 3.0)
-Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
-License: MIT + file LICENSE
-NeedsCompilation: no
-
-Package: RColorBrewer
-Version: 1.1-2
-Depends: R (>= 2.0.0)
-License: Apache License 2.0
-NeedsCompilation: no
-
-Package: Rcpp
-Version: 1.0.2
-Depends: R (>= 3.0.0)
-Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten
-        (>= 0.1.2)
-License: GPL (>= 2)
-NeedsCompilation: yes
-Imports: methods, utils
+Built: 3.6.1
 
 Package: readr
+LibPath: /usr/local/lib/R/site-library
 Version: 1.3.1
 Depends: R (>= 3.1)
-Suggests: curl, testthat, knitr, rmarkdown, stringi, covr, spelling
-License: GPL (>= 2) | file LICENSE
-NeedsCompilation: yes
 Imports: Rcpp (>= 0.12.0.5), tibble, hms (>= 0.4.1), R6, clipr, crayon,
         methods
 LinkingTo: Rcpp, BH
+Suggests: curl, testthat, knitr, rmarkdown, stringi, covr, spelling
+License: GPL (>= 2) | file LICENSE
+NeedsCompilation: yes
+Built: 3.6.1
 
 Package: readxl
+LibPath: /usr/local/lib/R/site-library
 Version: 1.3.1
+Imports: cellranger, Rcpp (>= 0.12.18), tibble (>= 1.3.1), utils
+LinkingTo: progress, Rcpp
 Suggests: covr, knitr, rmarkdown, rprojroot (>= 1.1), testthat
 License: GPL-3
 NeedsCompilation: yes
-Imports: cellranger, Rcpp (>= 0.12.18), tibble (>= 1.3.1), utils
-LinkingTo: progress, Rcpp
+Built: 3.6.1
 
 Package: rematch
+LibPath: /usr/local/lib/R/site-library
 Version: 1.0.1
 Suggests: covr, testthat
 License: MIT + file LICENSE
 NeedsCompilation: no
+Built: 3.6.1
 
 Package: reprex
+LibPath: /usr/local/lib/R/site-library
 Version: 0.3.0
 Depends: R (>= 3.1)
+Imports: callr (>= 2.0.0), clipr (>= 0.4.0), fs, rlang, rmarkdown,
+        utils, whisker, withr
 Suggests: covr, devtools, fortunes, knitr, miniUI, rprojroot,
         rstudioapi, shiny, styler (>= 1.0.2), testthat (>= 2.0.0)
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: callr (>= 2.0.0), clipr (>= 0.4.0), fs, rlang, rmarkdown,
-        utils, whisker, withr
+Built: 3.6.1
 
 Package: reshape2
+LibPath: /usr/local/lib/R/site-library
 Version: 1.4.3
 Depends: R (>= 3.1)
+Imports: plyr (>= 1.8.1), Rcpp, stringr
+LinkingTo: Rcpp
 Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 NeedsCompilation: yes
-Imports: plyr (>= 1.8.1), Rcpp, stringr
-LinkingTo: Rcpp
+Built: 3.6.1
+
+Package: rgeos
+LibPath: /usr/local/lib/R/site-library
+Version: 0.5-1
+Depends: R (>= 3.3.0), methods, sp (>= 1.1-0)
+Imports: utils, stats, graphics
+LinkingTo: sp
+Suggests: maptools (>= 0.8-5), testthat, XML, maps, rgdal
+License: GPL (>= 2)
+NeedsCompilation: yes
+Built: 3.6.1
 
 Package: rlang
+LibPath: /usr/local/lib/R/site-library
 Version: 0.4.0
 Depends: R (>= 3.2.0)
 Suggests: covr, crayon, magrittr, methods, pillar, rmarkdown, testthat
         (>= 2.0.0)
 License: GPL-3
 NeedsCompilation: yes
+Built: 3.6.1
 
 Package: rmarkdown
+LibPath: /usr/local/lib/R/site-library
 Version: 1.14
 Depends: R (>= 3.0)
+Imports: tools, utils, knitr (>= 1.22), yaml (>= 2.1.19), htmltools (>=
+        0.3.5), evaluate (>= 0.13), base64enc, jsonlite, mime, tinytex
+        (>= 0.11), xfun, methods, stringr (>= 1.2.0)
 Suggests: shiny (>= 0.11), tufte, testthat, digest, dygraphs, tibble,
         fs, pkgdown, callr (>= 2.0.0)
 License: GPL-3
 NeedsCompilation: no
-Imports: tools, utils, knitr (>= 1.22), yaml (>= 2.1.19), htmltools (>=
-        0.3.5), evaluate (>= 0.13), base64enc, jsonlite, mime, tinytex
-        (>= 0.11), xfun, methods, stringr (>= 1.2.0)
+Built: 3.6.1
 
 Package: rstudioapi
+LibPath: /usr/local/lib/R/site-library
 Version: 0.10
 Suggests: testthat, knitr, rmarkdown
 License: MIT + file LICENSE
 NeedsCompilation: no
+Built: 3.6.1
 
 Package: rvest
+LibPath: /usr/local/lib/R/site-library
 Version: 0.3.4
 Depends: R (>= 3.2), xml2
+Imports: httr (>= 0.5), magrittr, selectr
 Suggests: covr, knitr, png, rmarkdown, spelling, stringi (>= 0.3.1),
         testthat
 License: GPL-3
 NeedsCompilation: no
-Imports: httr (>= 0.5), magrittr, selectr
+Built: 3.6.1
 
 Package: scales
+LibPath: /usr/local/lib/R/site-library
 Version: 1.0.0
 Depends: R (>= 3.1)
-Suggests: dichromat, bit64, covr, hms, testthat (>= 2.0)
-License: MIT + file LICENSE
-NeedsCompilation: yes
 Imports: labeling, munsell (>= 0.5), R6, RColorBrewer, Rcpp,
         viridisLite
 LinkingTo: Rcpp
+Suggests: dichromat, bit64, covr, hms, testthat (>= 2.0)
+License: MIT + file LICENSE
+NeedsCompilation: yes
+Built: 3.6.1
 
 Package: selectr
+LibPath: /usr/local/lib/R/site-library
 Version: 0.4-1
 Depends: R (>= 3.0)
+Imports: methods, stringr, R6
 Suggests: testthat, XML, xml2
 License: BSD_3_clause + file LICENCE
 NeedsCompilation: no
-Imports: methods, stringr, R6
+Built: 3.6.1
 
 Package: shiny
+LibPath: /usr/local/lib/R/site-library
 Version: 1.3.2
 Depends: R (>= 3.0.2), methods
-Suggests: datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),
-        markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0), magrittr
-License: GPL-3 | file LICENSE
-NeedsCompilation: no
 Imports: utils, grDevices, httpuv (>= 1.5.0), mime (>= 0.3), jsonlite
         (>= 0.9.16), xtable, digest, htmltools (>= 0.3.6), R6 (>= 2.0),
         sourcetools, later (>= 0.7.2), promises (>= 1.0.1), tools,
         crayon, rlang
-
-Package: shinyBS
-Version: 0.61
-License: GPL-3
-NeedsCompilation: no
-Imports: shiny (>= 0.11), htmltools
-
-Package: shinythemes
-Version: 1.1.2
-Depends: R (>= 3.0.0)
+Suggests: datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),
+        markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0), magrittr
 License: GPL-3 | file LICENSE
 NeedsCompilation: no
+Built: 3.6.1
+
+Package: shinyBS
+LibPath: /usr/local/lib/R/site-library
+Version: 0.61
+Imports: shiny (>= 0.11), htmltools
+License: GPL-3
+NeedsCompilation: no
+Built: 3.6.1
+
+Package: shinythemes
+LibPath: /usr/local/lib/R/site-library
+Version: 1.1.2
+Depends: R (>= 3.0.0)
 Imports: shiny (>= 0.11)
+License: GPL-3 | file LICENSE
+NeedsCompilation: no
+Built: 3.6.1
 
 Package: sourcetools
+LibPath: /usr/local/lib/R/site-library
 Version: 0.1.7
 Depends: R (>= 3.0.2)
 Suggests: testthat
 License: MIT + file LICENSE
 NeedsCompilation: yes
+Built: 3.6.1
+
+Package: sp
+LibPath: /usr/local/lib/R/site-library
+Version: 1.3-1
+Depends: R (>= 3.0.0), methods
+Imports: utils, stats, graphics, grDevices, lattice, grid
+Suggests: RColorBrewer, rgdal (>= 0.8-7), rgeos (>= 0.3-13), gstat,
+        maptools, deldir
+License: GPL (>= 2)
+NeedsCompilation: yes
+Built: 3.6.1
 
 Package: stringi
+LibPath: /usr/local/lib/R/site-library
 Version: 1.4.3
 Depends: R (>= 2.14)
-License: file LICENSE
-NeedsCompilation: yes
 Imports: tools, utils, stats
+License: file LICENSE
 License_is_FOSS: yes
+NeedsCompilation: yes
+Built: 3.6.1
 
 Package: stringr
+LibPath: /usr/local/lib/R/site-library
 Version: 1.4.0
 Depends: R (>= 3.1)
+Imports: glue (>= 1.2.0), magrittr, stringi (>= 1.1.7)
 Suggests: covr, htmltools, htmlwidgets, knitr, rmarkdown, testthat
 License: GPL-2 | file LICENSE
 NeedsCompilation: no
-Imports: glue (>= 1.2.0), magrittr, stringi (>= 1.1.7)
+Built: 3.6.1
 
 Package: sys
+LibPath: /usr/local/lib/R/site-library
 Version: 3.2
 Suggests: unix (>= 1.4), spelling, testthat
 License: MIT + file LICENSE
 NeedsCompilation: yes
+Built: 3.6.1
 
 Package: tibble
+LibPath: /usr/local/lib/R/site-library
 Version: 2.1.3
 Depends: R (>= 3.1.0)
+Imports: cli, crayon (>= 1.3.4), fansi (>= 0.4.0), methods, pillar (>=
+        1.3.1), pkgconfig, rlang (>= 0.3.0), utils
 Suggests: bench, covr, dplyr, htmltools, import, knitr, mockr,
         nycflights13, rmarkdown, testthat, withr
 License: MIT + file LICENSE
 NeedsCompilation: yes
-Imports: cli, crayon (>= 1.3.4), fansi (>= 0.4.0), methods, pillar (>=
-        1.3.1), pkgconfig, rlang (>= 0.3.0), utils
+Built: 3.6.1
 
 Package: tidyr
+LibPath: /usr/local/lib/R/site-library
 Version: 0.8.3
 Depends: R (>= 3.1)
-Suggests: covr, gapminder, knitr, rmarkdown, testthat
-License: MIT + file LICENSE
-NeedsCompilation: yes
 Imports: dplyr (>= 0.7.0), glue, magrittr, purrr, Rcpp, rlang, stringi,
         tibble, tidyselect (>= 0.2.5), utils
 LinkingTo: Rcpp
+Suggests: covr, gapminder, knitr, rmarkdown, testthat
+License: MIT + file LICENSE
+NeedsCompilation: yes
+Built: 3.6.1
 
 Package: tidyselect
+LibPath: /usr/local/lib/R/site-library
 Version: 0.2.5
 Depends: R (>= 3.1)
+Imports: glue (>= 1.3.0), purrr, rlang (>= 0.2.2), Rcpp (>= 0.12.0)
+LinkingTo: Rcpp (>= 0.12.0),
 Suggests: covr, dplyr, testthat
 License: GPL-3
 NeedsCompilation: yes
-Imports: glue (>= 1.3.0), purrr, rlang (>= 0.2.2), Rcpp (>= 0.12.0)
-LinkingTo: Rcpp (>= 0.12.0),
+Built: 3.6.1
 
 Package: tidyverse
+LibPath: /usr/local/lib/R/site-library
 Version: 1.2.1
-Suggests: feather (>= 0.3.1), knitr (>= 1.17), rmarkdown (>= 1.7.4)
-License: GPL-3 | file LICENSE
-NeedsCompilation: no
 Imports: broom (>= 0.4.2), cli (>= 1.0.0), crayon (>= 1.3.4), dplyr (>=
         0.7.4), dbplyr (>= 1.1.0), forcats (>= 0.2.0), ggplot2 (>=
         2.2.1), haven (>= 1.1.0), hms (>= 0.3), httr (>= 1.3.1),
@@ -722,86 +912,384 @@ Imports: broom (>= 0.4.2), cli (>= 1.0.0), crayon (>= 1.3.4), dplyr (>=
         (>= 1.0.0), reprex (>= 0.1.1), rlang (>= 0.1.4), rstudioapi (>=
         0.7), rvest (>= 0.3.2), stringr (>= 1.2.0), tibble (>= 1.3.4),
         tidyr (>= 0.7.2), xml2 (>= 1.1.1)
+Suggests: feather (>= 0.3.1), knitr (>= 1.17), rmarkdown (>= 1.7.4)
+License: GPL-3 | file LICENSE
+NeedsCompilation: no
+Built: 3.6.1
 
 Package: tinytex
+LibPath: /usr/local/lib/R/site-library
 Version: 0.14
+Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: xfun (>= 0.5)
+Built: 3.6.1
 
 Package: utf8
+LibPath: /usr/local/lib/R/site-library
 Version: 1.1.4
 Depends: R (>= 2.10)
 Suggests: knitr, rmarkdown, testthat
 License: Apache License (== 2.0) | file LICENSE
 NeedsCompilation: yes
+Built: 3.6.1
 
 Package: vctrs
+LibPath: /usr/local/lib/R/site-library
 Version: 0.2.0
 Depends: R (>= 3.2)
+Imports: backports, ellipsis (>= 0.2.0), digest, glue, rlang (>=
+        0.4.0), zeallot
 Suggests: bit64, covr, crayon, generics, knitr, pillar (>= 1.4.1),
         pkgdown, rmarkdown, testthat, tibble
 License: GPL-3
 NeedsCompilation: yes
-Imports: backports, ellipsis (>= 0.2.0), digest, glue, rlang (>=
-        0.4.0), zeallot
+Built: 3.6.1
 
 Package: viridisLite
+LibPath: /usr/local/lib/R/site-library
 Version: 0.3.0
 Depends: R (>= 2.10)
 Suggests: hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr
 License: MIT + file LICENSE
 NeedsCompilation: no
+Built: 3.6.1
 
 Package: whisker
+LibPath: /usr/local/lib/R/site-library
 Version: 0.3-2
 Suggests: markdown
 License: GPL-3
 NeedsCompilation: no
+Built: 3.6.1
 
 Package: withr
+LibPath: /usr/local/lib/R/site-library
 Version: 2.1.2
 Depends: R (>= 3.0.2)
+Imports: stats, graphics, grDevices
 Suggests: testthat, covr, lattice, DBI, RSQLite, methods, knitr,
         rmarkdown
 License: GPL (>= 2)
 NeedsCompilation: no
-Imports: stats, graphics, grDevices
+Built: 3.6.1
 
 Package: xfun
+LibPath: /usr/local/lib/R/site-library
 Version: 0.8
+Imports: stats, tools
 Suggests: testit, parallel, rstudioapi, tinytex, mime, markdown, knitr,
         htmltools, base64enc, remotes, rmarkdown
 License: MIT + file LICENSE
 NeedsCompilation: no
-Imports: stats, tools
-
-Package: xml2
-Version: 1.2.0
-Depends: R (>= 3.1.0)
-Suggests: testthat, curl, covr, knitr, rmarkdown, magrittr, httr
-License: GPL (>= 2)
-NeedsCompilation: yes
-Imports: Rcpp
-LinkingTo: Rcpp (>= 0.12.12)
+Built: 3.6.1
 
 Package: xtable
+LibPath: /usr/local/lib/R/site-library
 Version: 1.8-4
 Depends: R (>= 2.10.0)
+Imports: stats, utils
 Suggests: knitr, plm, zoo, survival
 License: GPL (>= 2)
 NeedsCompilation: no
-Imports: stats, utils
+Built: 3.6.1
 
 Package: yaml
+LibPath: /usr/local/lib/R/site-library
 Version: 2.2.0
 Suggests: RUnit
 License: BSD_3_clause + file LICENSE
 NeedsCompilation: yes
+Built: 3.6.1
 
 Package: zeallot
+LibPath: /usr/local/lib/R/site-library
 Version: 0.1.0
 Suggests: testthat, knitr, rmarkdown, purrr, magrittr
 License: MIT + file LICENSE
 NeedsCompilation: no
+Built: 3.6.1
+
+Package: KernSmooth
+LibPath: /usr/lib/R/library
+Version: 2.23-15
+Priority: recommended
+Depends: R (>= 2.5.0), stats
+Suggests: MASS
+License: Unlimited
+NeedsCompilation: yes
+Built: 3.5.0
+
+Package: MASS
+LibPath: /usr/lib/R/library
+Version: 7.3-51.1
+Priority: recommended
+Depends: R (>= 3.1.0), grDevices, graphics, stats, utils
+Imports: methods
+Suggests: lattice, nlme, nnet, survival
+License: GPL-2 | GPL-3
+NeedsCompilation: yes
+Built: 3.5.1
+
+Package: Matrix
+LibPath: /usr/lib/R/library
+Version: 1.2-17
+Priority: recommended
+Depends: R (>= 3.2.0)
+Imports: methods, graphics, grid, stats, utils, lattice
+Suggests: expm, MASS
+Enhances: MatrixModels, graph, SparseM, sfsmisc
+License: GPL (>= 2) | file LICENCE
+NeedsCompilation: yes
+Built: 3.5.3
+
+Package: base
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Suggests: methods
+License: Part of R 3.6.1
+Built: 3.6.1
+
+Package: boot
+LibPath: /usr/lib/R/library
+Version: 1.3-23
+Priority: recommended
+Depends: R (>= 3.0.0), graphics, stats
+Suggests: MASS, survival
+License: Unlimited
+NeedsCompilation: no
+Built: 3.6.1
+
+Package: class
+LibPath: /usr/lib/R/library
+Version: 7.3-15
+Priority: recommended
+Depends: R (>= 3.0.0), stats, utils
+Imports: MASS
+License: GPL-2 | GPL-3
+NeedsCompilation: yes
+Built: 3.5.2
+
+Package: cluster
+LibPath: /usr/lib/R/library
+Version: 2.1.0
+Priority: recommended
+Depends: R (>= 3.3.0)
+Imports: graphics, grDevices, stats, utils
+Suggests: MASS, Matrix
+License: GPL (>= 2)
+NeedsCompilation: yes
+Built: 3.6.0
+
+Package: codetools
+LibPath: /usr/lib/R/library
+Version: 0.2-16
+Priority: recommended
+Depends: R (>= 2.1)
+License: GPL
+NeedsCompilation: no
+Built: 3.5.2
+
+Package: compiler
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+License: Part of R 3.6.1
+Built: 3.6.1
+
+Package: datasets
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+License: Part of R 3.6.1
+Built: 3.6.1
+
+Package: foreign
+LibPath: /usr/lib/R/library
+Version: 0.8-72
+Priority: recommended
+Depends: R (>= 3.0.0)
+Imports: methods, utils, stats
+License: GPL (>= 2)
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: grDevices
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Suggests: KernSmooth
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: graphics
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Imports: grDevices
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: grid
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Imports: grDevices, utils
+Suggests: lattice
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: lattice
+LibPath: /usr/lib/R/library
+Version: 0.20-38
+Priority: recommended
+Depends: R (>= 3.0.0)
+Imports: grid, grDevices, graphics, stats, utils
+Suggests: KernSmooth, MASS, latticeExtra
+Enhances: chron
+License: GPL (>= 2)
+NeedsCompilation: yes
+Built: 3.5.1
+
+Package: methods
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Imports: utils, stats
+Suggests: codetools
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: mgcv
+LibPath: /usr/lib/R/library
+Version: 1.8-28
+Priority: recommended
+Depends: R (>= 2.14.0), nlme (>= 3.1-64)
+Imports: methods, stats, graphics, Matrix, splines, utils
+Suggests: parallel, survival, MASS
+License: GPL (>= 2)
+NeedsCompilation: yes
+Built: 3.5.3
+
+Package: nlme
+LibPath: /usr/lib/R/library
+Version: 3.1-140
+Priority: recommended
+Depends: R (>= 3.4.0)
+Imports: graphics, stats, utils, lattice
+Suggests: Hmisc, MASS
+License: GPL (>= 2) | file LICENCE
+NeedsCompilation: yes
+Built: 3.6.0
+
+Package: nnet
+LibPath: /usr/lib/R/library
+Version: 7.3-12
+Priority: recommended
+Depends: R (>= 2.14.0), stats, utils
+Suggests: MASS
+License: GPL-2 | GPL-3
+NeedsCompilation: yes
+Built: 3.5.0
+
+Package: parallel
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Imports: tools, compiler
+Suggests: methods
+Enhances: snow, nws, Rmpi
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: rpart
+LibPath: /usr/lib/R/library
+Version: 4.1-15
+Priority: recommended
+Depends: R (>= 2.15.0), graphics, stats, grDevices
+Suggests: survival
+License: GPL-2 | GPL-3
+NeedsCompilation: yes
+Built: 3.6.0
+
+Package: spatial
+LibPath: /usr/lib/R/library
+Version: 7.3-11
+Priority: recommended
+Depends: R (>= 3.0.0), graphics, stats, utils
+Suggests: MASS
+License: GPL-2 | GPL-3
+NeedsCompilation: yes
+Built: 3.5.0
+
+Package: splines
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Imports: graphics, stats
+Suggests: Matrix, methods
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: stats
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Imports: utils, grDevices, graphics
+Suggests: MASS, Matrix, SuppDists, methods, stats4
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: stats4
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Imports: graphics, methods, stats
+License: Part of R 3.6.1
+Built: 3.6.1
+
+Package: survival
+LibPath: /usr/lib/R/library
+Version: 2.43-3
+Priority: recommended
+Depends: R (>= 2.13.0)
+Imports: graphics, Matrix, methods, splines, stats, utils
+License: LGPL (>= 2)
+NeedsCompilation: yes
+Built: 3.5.1
+
+Package: tcltk
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Imports: utils
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: tools
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Suggests: codetools, methods, xml2, curl, commonmark
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
+
+Package: utils
+LibPath: /usr/lib/R/library
+Version: 3.6.1
+Priority: base
+Suggests: methods, xml2, commonmark
+License: Part of R 3.6.1
+NeedsCompilation: yes
+Built: 3.6.1
