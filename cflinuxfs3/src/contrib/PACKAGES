@@ -604,6 +604,13 @@ License: GPL-3 | file LICENSE
 MD5sum: 0ad861b80bba54d430a5b16c5ee480f3
 NeedsCompilation: yes
 
+Package: rMR
+Version: 1.1.0
+Depends: R (>= 2.10), biglm
+License: GPL-3
+MD5sum: 97f0173b614855ea606f7db6c3918c5b
+NeedsCompilation: no
+
 Package: readr
 Version: 1.3.1
 Depends: R (>= 3.1)
