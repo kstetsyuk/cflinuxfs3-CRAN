@@ -166,11 +166,12 @@ MD5sum: ce733c7d6698ca60208f47addd4a1dcf
 NeedsCompilation: yes
 
 Package: digest
-Version: 0.6.20
+Version: 0.6.25
 Depends: R (>= 3.1.0)
+Imports: utils
 Suggests: tinytest, knitr, rmarkdown
 License: GPL (>= 2)
-MD5sum: 5b58cefa6bc62c40d52f8f0626c22eda
+MD5sum: 0ffc8bc79194b009c102c561fe0f2728
 NeedsCompilation: yes
 
 Package: dplyr
@@ -218,6 +219,13 @@ Depends: R (>= 3.1.0)
 Suggests: unitizer, knitr, rmarkdown
 License: GPL (>= 2)
 MD5sum: 0d338cd5d6f12b1d4e165273e05c79b6
+NeedsCompilation: yes
+
+Package: fastmap
+Version: 1.0.1
+Suggests: testthat (>= 2.1.1)
+License: MIT + file LICENSE
+MD5sum: 6049c5d4d18bacd38b3e8d145896d19b
 NeedsCompilation: yes
 
 Package: forcats
@@ -307,14 +315,14 @@ MD5sum: 384fdf5db25e13126ef10ac35cd32ca9
 NeedsCompilation: no
 
 Package: htmltools
-Version: 0.3.6
+Version: 0.4.0
 Depends: R (>= 2.14.1)
-Imports: utils, digest, Rcpp
+Imports: utils, digest, Rcpp, rlang
 LinkingTo: Rcpp
-Suggests: markdown, testthat
+Suggests: markdown, testthat, withr
 Enhances: knitr
 License: GPL (>= 2)
-MD5sum: 352187c32357535d66319e1d032b325e
+MD5sum: 000630c9f71afa15daf0b4e44cdf897c
 NeedsCompilation: yes
 
 Package: htmlwidgets
@@ -327,13 +335,13 @@ MD5sum: c4b0677b15aad9399f6615b5db3c736f
 NeedsCompilation: no
 
 Package: httpuv
-Version: 1.5.1
+Version: 1.5.2
 Depends: R (>= 2.15.1)
 Imports: Rcpp (>= 0.11.0), utils, R6, promises, later (>= 0.8.0)
 LinkingTo: Rcpp, BH, later
-Suggests: testthat, callr, curl
+Suggests: testthat, callr, curl, websocket
 License: GPL (>= 2) | file LICENSE
-MD5sum: d7f8ba36200179855b9e9ccdb94acaae
+MD5sum: 9ef200b92b263dadec523446ad38e86c
 NeedsCompilation: yes
 
 Package: httr
@@ -346,11 +354,11 @@ MD5sum: 1698348765030c999c12fdd6f4419bba
 NeedsCompilation: no
 
 Package: jsonlite
-Version: 1.6
+Version: 1.6.1
 Depends: methods
 Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sp
 License: MIT + file LICENSE
-MD5sum: dfd24ff79c1b2192ba305838af7ecbba
+MD5sum: c74f3daa29d5f0d4bf0355df571107d5
 NeedsCompilation: yes
 
 Package: knitr
@@ -371,12 +379,12 @@ MD5sum: 1e38e8ccb20c2a30f611dddd11bf8a1c
 NeedsCompilation: no
 
 Package: later
-Version: 0.8.0
+Version: 1.0.0
 Imports: Rcpp (>= 0.12.9), rlang
 LinkingTo: Rcpp, BH
 Suggests: knitr, rmarkdown, testthat
 License: GPL (>= 2)
-MD5sum: 6a859da241a1fb067df9716a114cdcf0
+MD5sum: f1077f1943e45d2a6357d9a09da94440
 NeedsCompilation: yes
 
 Package: lazyeval
@@ -415,10 +423,10 @@ MD5sum: 771f3e2ab438064058263047203c6f2d
 NeedsCompilation: yes
 
 Package: mime
-Version: 0.7
+Version: 0.9
 Imports: tools
 License: GPL
-MD5sum: d017cc13644653fa4d199376ec1d1ff5
+MD5sum: cf767dbcd30caad9eb5695b66dcdd6dd
 NeedsCompilation: yes
 
 Package: modelr
@@ -545,11 +553,11 @@ MD5sum: 0ad861b80bba54d430a5b16c5ee480f3
 NeedsCompilation: yes
 
 Package: R6
-Version: 2.4.0
+Version: 2.4.1
 Depends: R (>= 3.0)
 Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
 License: MIT + file LICENSE
-MD5sum: 954f6697fea710ba7b4e9bc2eada8225
+MD5sum: d521f47f76de06379dcab959ad996d70
 NeedsCompilation: no
 
 Package: RColorBrewer
@@ -560,12 +568,11 @@ MD5sum: 132050f4970d96a6f7f7104c690a46db
 NeedsCompilation: no
 
 Package: Rcpp
-Version: 1.0.2
-Depends: R (>= 3.0.0)
+Version: 1.0.4.6
 Imports: methods, utils
-Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten (>= 0.1.2)
+Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
-MD5sum: a01af2f375c09fbf5e326efdbe8bcdf4
+MD5sum: adce1ca067097d793f5b94fd92d92c0f
 NeedsCompilation: yes
 
 Package: readr
@@ -625,11 +632,11 @@ MD5sum: 840cd0a56b3c3be4b974fd2d4395ceb0
 NeedsCompilation: yes
 
 Package: rlang
-Version: 0.4.0
+Version: 0.4.6
 Depends: R (>= 3.2.0)
-Suggests: covr, crayon, magrittr, methods, pillar, rmarkdown, testthat (>= 2.0.0)
+Suggests: cli, covr, crayon, glue, magrittr, methods, pillar, rmarkdown, testthat (>= 2.3.0), vctrs (>= 0.2.3)
 License: GPL-3
-MD5sum: de3cf6b34f09f741a8678f17bfcef125
+MD5sum: d4352f2a3684abc286bd4eb0d98fe721
 NeedsCompilation: yes
 
 Package: rmarkdown
