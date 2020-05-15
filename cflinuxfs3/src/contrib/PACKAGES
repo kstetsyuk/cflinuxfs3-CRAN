@@ -118,7 +118,7 @@ Version: 1.3.4
 Imports: grDevices, methods, utils
 Suggests: mockery, rstudioapi, testthat, withr
 License: MIT + file LICENSE
-MD5sum: 891b722e1ae99172df019b5066155f79
+MD5sum: 5626aed692d0aa121b58094a550422e5
 NeedsCompilation: no
 
 Package: crosstalk
@@ -171,7 +171,7 @@ Depends: R (>= 3.1.0)
 Imports: utils
 Suggests: tinytest, knitr, rmarkdown
 License: GPL (>= 2)
-MD5sum: 04ee445646be14d79566f2273dd77aef
+MD5sum: af7533f787996dfa31f6c108814474e5
 NeedsCompilation: yes
 
 Package: dplyr
@@ -225,7 +225,7 @@ Package: fastmap
 Version: 1.0.1
 Suggests: testthat (>= 2.1.1)
 License: MIT + file LICENSE
-MD5sum: a497c89ad768f482f89167f78fdbd6da
+MD5sum: ae7a61e320491a7314847e0daab154bc
 NeedsCompilation: yes
 
 Package: forcats
@@ -322,7 +322,7 @@ LinkingTo: Rcpp
 Suggests: markdown, testthat, withr
 Enhances: knitr
 License: GPL (>= 2)
-MD5sum: 1906837de5a9f86cce95d3bf2c019435
+MD5sum: 94d2e0d981b9e85cad2eeb40778fc0de
 NeedsCompilation: yes
 
 Package: htmlwidgets
@@ -358,7 +358,7 @@ Version: 1.6.1
 Depends: methods
 Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sp
 License: MIT + file LICENSE
-MD5sum: 462fb344885401482ffcd6118fbb6aa2
+MD5sum: 3d9a18f1c8745d0b23b80bea69db4275
 NeedsCompilation: yes
 
 Package: knitr
@@ -410,7 +410,7 @@ Package: magrittr
 Version: 1.5
 Suggests: testthat, knitr
 License: MIT + file LICENSE
-MD5sum: b76e74c8ca9e5db1b7989a5a345adc5f
+MD5sum: ccbd2ea83b61abcc1a4dd5bb2251c77b
 NeedsCompilation: no
 
 Package: markdown
@@ -426,7 +426,7 @@ Package: mime
 Version: 0.9
 Imports: tools
 License: GPL
-MD5sum: fdc57d4c7b176a4abb493bcbdca35738
+MD5sum: d20995aa8ea74fc5f1c804894fcd2eba
 NeedsCompilation: yes
 
 Package: modelr
@@ -531,7 +531,7 @@ Imports: R6, Rcpp, later, rlang, stats, magrittr
 LinkingTo: later, Rcpp
 Suggests: testthat, future, knitr, rmarkdown
 License: MIT + file LICENSE
-MD5sum: 282cd4713e07d0f8039d1a1856e29d00
+MD5sum: 12367544e63a3941b3bc25146714ba7e
 NeedsCompilation: yes
 
 Package: ps
@@ -557,7 +557,7 @@ Version: 2.4.1
 Depends: R (>= 3.0)
 Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
 License: MIT + file LICENSE
-MD5sum: 671077b265f14a007bba3660f5679eda
+MD5sum: 794bdf900e5b4be0fe5132d594b163d1
 NeedsCompilation: no
 
 Package: RColorBrewer
@@ -572,7 +572,7 @@ Version: 1.0.4.6
 Imports: methods, utils
 Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
-MD5sum: c1d54c0bda57d764188553663a99a72a
+MD5sum: 02bb1cf3d8cf74e6ba45e9951847c197
 NeedsCompilation: yes
 
 Package: readr
@@ -636,7 +636,7 @@ Version: 0.4.6
 Depends: R (>= 3.2.0)
 Suggests: cli, covr, crayon, glue, magrittr, methods, pillar, rmarkdown, testthat (>= 2.3.0), vctrs (>= 0.2.3)
 License: GPL-3
-MD5sum: c75e1672002b6de98aa5b62bb1712352
+MD5sum: ce87ab8bb9ee9d826fd6668e12f740dc
 NeedsCompilation: yes
 
 Package: rmarkdown
@@ -700,7 +700,7 @@ Imports: utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite (>= 0.9.16
 Suggests: datasets, Cairo (>= 1.5-5), testthat (>= 2.1.1), knitr (>= 1.6), markdown, rmarkdown, ggplot2,
             reactlog (>= 1.0.0), magrittr, yaml
 License: GPL-3 | file LICENSE
-MD5sum: 55a1cbb789b8ad44b85d6ced6fc702f3
+MD5sum: b2614901548932232fbf4d9daa3708ab
 NeedsCompilation: no
 
 Package: shinyBS
@@ -723,7 +723,7 @@ Version: 0.1.7
 Depends: R (>= 3.0.2)
 Suggests: testthat
 License: MIT + file LICENSE
-MD5sum: 1838fca29ec4d3b465f415d40e3ec2d3
+MD5sum: 902e578dd815458b7afedaf1caa55d5b
 NeedsCompilation: yes
 
 Package: sp
@@ -876,7 +876,7 @@ Depends: R (>= 2.10.0)
 Imports: stats, utils
 Suggests: knitr, plm, zoo, survival
 License: GPL (>= 2)
-MD5sum: 3741e5203ede170182d9c13eec22c27d
+MD5sum: cb775e9aee5f3bdfc457a8735952fa62
 NeedsCompilation: no
 
 Package: yaml
