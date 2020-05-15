@@ -379,12 +379,12 @@ MD5sum: 1e38e8ccb20c2a30f611dddd11bf8a1c
 NeedsCompilation: no
 
 Package: later
-Version: 0.8.0
+Version: 1.0.0
 Imports: Rcpp (>= 0.12.9), rlang
 LinkingTo: Rcpp, BH
 Suggests: knitr, rmarkdown, testthat
 License: GPL (>= 2)
-MD5sum: 6a859da241a1fb067df9716a114cdcf0
+MD5sum: 7f13dc0ba140e342935bced78b27a968
 NeedsCompilation: yes
 
 Package: lazyeval
