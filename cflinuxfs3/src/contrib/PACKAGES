@@ -208,6 +208,19 @@ License: GPL (>= 2)
 MD5sum: cc4716f71b62cf14976a57e6427e13d7
 NeedsCompilation: yes
 
+Package: dplyr
+Version: 0.8.5
+Depends: R (>= 3.2.0)
+Imports: ellipsis, assertthat (>= 0.2.0), glue (>= 1.3.0), magrittr (>= 1.5), methods, pkgconfig, R6, Rcpp (>=
+            1.0.1), rlang (>= 0.4.0), tibble (>= 2.0.0), tidyselect (>= 0.2.5), utils
+LinkingTo: BH, plogr (>= 0.2.0), Rcpp (>= 1.0.1)
+Suggests: bit64, callr, covr, crayon (>= 1.3.4), DBI, dbplyr, dtplyr, ggplot2, hms, knitr, Lahman, lubridate,
+            MASS, mgcv, microbenchmark, nycflights13, rmarkdown, RMySQL, RPostgreSQL, RSQLite, testthat,
+            withr, broom, purrr, readr
+License: MIT + file LICENSE
+MD5sum: 0c2006675d8c461aae168c0aa88234ff
+NeedsCompilation: yes
+
 Package: DT
 Version: 0.7
 Imports: htmltools (>= 0.3.6), htmlwidgets (>= 1.3), magrittr, crosstalk, promises
@@ -313,7 +326,7 @@ Imports: ggrepel, grid, ggsci, stats, utils, tidyr, purrr, dplyr (>= 0.7.1), cow
             gridExtra, glue, polynom, rlang, rstatix (>= 0.4.0), tibble, magrittr
 Suggests: grDevices, knitr, RColorBrewer, gtable
 License: GPL-2
-MD5sum: 0fd21b20fdb93732eb9ef316f46ffeb2
+MD5sum: 87a25a969750f8d45299d8e565651267
 NeedsCompilation: no
 
 Package: ggrepel
@@ -358,7 +371,7 @@ Version: 2.3
 Imports: gtable, grid, grDevices, graphics, utils
 Suggests: ggplot2, egg, lattice, knitr, testthat
 License: GPL (>= 2)
-MD5sum: e83a4c2b01f7a21a5a51a50a66195274
+MD5sum: 054276d5130304eaef1fce8d78c37589
 NeedsCompilation: no
 
 Package: gtable
@@ -404,7 +417,7 @@ LinkingTo: Rcpp
 Suggests: markdown, testthat, withr
 Enhances: knitr
 License: GPL (>= 2)
-MD5sum: c7e09a603e43de5988ba39fab3007481
+MD5sum: 79018388f4c358ed5ef7530bc0ff6900
 NeedsCompilation: yes
 
 Package: htmlwidgets
@@ -682,7 +695,7 @@ Version: 1.0.0
 Imports: ggplot2 (>= 3.0.0), gtable, grid, stats, grDevices, utils, graphics
 Suggests: knitr, rmarkdown, gridGraphics, gridExtra, ragg, testthat (>= 2.1.0), vdiffr, covr
 License: MIT + file LICENSE
-MD5sum: 2298a1b839939d087629c17339190894
+MD5sum: ec2f405a3cb49cd0d59b4eef9bda7a49
 NeedsCompilation: no
 
 Package: pbkrtest
@@ -978,7 +991,7 @@ Depends: R (>= 3.1.0)
 Imports: digest (>= 0.6.8), htmltools (>= 0.2.9), jsonlite, shiny (>= 1.0.0)
 Suggests: knitr (>= 1.7), rmarkdown, shinyAce, testthat (>= 0.9.1), V8 (>= 0.6)
 License: AGPL-3
-MD5sum: 8d1486a36c88f0d204ad6ad4314cf17f
+MD5sum: 20555b33005bb42dd5c849d7ab75fb3b
 NeedsCompilation: no
 
 Package: shinythemes
@@ -987,6 +1000,16 @@ Depends: R (>= 3.0.0)
 Imports: shiny (>= 0.11)
 License: GPL-3 | file LICENSE
 MD5sum: 12403871fa407ad1195be66df7b9f4e4
+NeedsCompilation: no
+
+Package: shinyWidgets
+Version: 0.5.2
+Depends: R (>= 3.1.0)
+Imports: shiny (>= 0.14), htmltools, jsonlite, grDevices, scales
+Suggests: shinydashboard, testthat, covr, shinydashboardPlus, bs4Dash, argonR, argonDash, tablerDash, ggplot2,
+            DT
+License: GPL-3
+MD5sum: 3eaee3d9698e30ebf60dcab404dfef87
 NeedsCompilation: no
 
 Package: sourcetools
