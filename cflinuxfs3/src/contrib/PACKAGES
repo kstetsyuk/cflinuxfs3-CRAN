@@ -96,6 +96,13 @@ License: GPL (>= 2)
 MD5sum: d442b54da362906df6dbc93eb0d275b0
 NeedsCompilation: no
 
+Package: carData
+Version: 3.0-4
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+MD5sum: 2d15ad8c1c35c41d89c36fb48dc96fa4
+NeedsCompilation: no
+
 Package: cellranger
 Version: 1.1.0
 Depends: R (>= 3.0.0)
