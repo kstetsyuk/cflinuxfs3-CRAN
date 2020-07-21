@@ -53,6 +53,12 @@ License: GPL
 MD5sum: 9246e8d9bfa11067b78e094406a0e3bb
 NeedsCompilation: yes
 
+Package: bitops
+Version: 1.0-6
+License: GPL (>= 2)
+MD5sum: ab520fc86f3ba965cfad5548df773db8
+NeedsCompilation: yes
+
 Package: boot
 Version: 1.3-25
 Priority: recommended
@@ -833,6 +839,13 @@ License: MIT + file LICENSE
 MD5sum: b67418e0661715d6693f13dd330ce210
 NeedsCompilation: no
 
+Package: rCharts
+Version: 0.4.5
+Imports: plyr, lattice, RCurl, RJSONIO, whisker, yaml
+License: MIT
+MD5sum: ee85d36ee2b28e4da61da33d7f046e58
+NeedsCompilation: no
+
 Package: RColorBrewer
 Version: 1.1-2
 Depends: R (>= 2.0.0)
@@ -841,11 +854,20 @@ MD5sum: 132050f4970d96a6f7f7104c690a46db
 NeedsCompilation: no
 
 Package: Rcpp
-Version: 1.0.4.6
+Version: 1.0.5
 Imports: methods, utils
 Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
-MD5sum: 82f40d92028cb3bd66835ba7a27fb9a4
+MD5sum: ade649389a5b70c31658de1f851bfa91
+NeedsCompilation: yes
+
+Package: RCurl
+Version: 1.98-1.2
+Depends: R (>= 3.4.0), methods
+Imports: bitops
+Suggests: XML
+License: BSD_3_clause + file LICENSE
+MD5sum: bc8e6b7054b38d5ee415960da4c57a20
 NeedsCompilation: yes
 
 Package: readr
@@ -914,6 +936,13 @@ Suggests: datasets, bit64, testthat, knitr, magrittr, clipr, csvy, feather, fst,
 License: GPL-2
 MD5sum: 885eb0b2b07f12e6e00931ff9a0893f3
 NeedsCompilation: no
+
+Package: RJSONIO
+Version: 1.3-1.4
+Imports: methods
+License: BSD_3_clause + file LICENSE
+MD5sum: 8669b0d995b0058828df9a86ea421ebd
+NeedsCompilation: yes
 
 Package: rlang
 Version: 0.4.6
@@ -1159,10 +1188,10 @@ MD5sum: c10a13bf88ead9fbe762c75809e0ca67
 NeedsCompilation: no
 
 Package: whisker
-Version: 0.3-2
+Version: 0.4
 Suggests: markdown
 License: GPL-3
-MD5sum: 0cfdb825c336bb0e5b44dea9122341fd
+MD5sum: 2968eee0f10d4df1399a29e7246ff6a5
 NeedsCompilation: no
 
 Package: withr
@@ -1203,10 +1232,10 @@ MD5sum: cb775e9aee5f3bdfc457a8735952fa62
 NeedsCompilation: no
 
 Package: yaml
-Version: 2.2.0
+Version: 2.2.1
 Suggests: RUnit
 License: BSD_3_clause + file LICENSE
-MD5sum: eb394aaa9bb58298bc3c0071e38342c3
+MD5sum: 4ad7f8279a5968b23d749368c3dc45da
 NeedsCompilation: yes
 
 Package: zeallot
