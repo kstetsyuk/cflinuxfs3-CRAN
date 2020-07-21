@@ -1,0 +1,2 @@
+Build: TRUE
+DockerImage: gitcran/cflinuxfs3:r-3.6.3
