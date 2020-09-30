@@ -1,0 +1,24 @@
+on:
+  issues:
+    type: [labeled]
+
+jobs:
+  process_package_requests:
+    runs-on: ubuntu-latest
+    name: Add packages from open package requests
+    container:
+      image: gitcran/cflinuxfs3:r-4.0.2
+    steps:
+      - name: Run package addition pipeline in docker
+        id: add_package_pipeline
+        env:
+          GITCRAN_REPO_OWNER: "USEPA"
+          GITCRAN_REPO: "cflinuxfs3-CRAN"
+          GITCRAN_SUBDIR: "cflinuxfs3"
+          GITCRAN_LABELS: "package-request"
+          GITCRAN_STATE: "open"
+          GITHUB_USER: "${{ secrets.user }}"
+          GITHUB_PAT: "${{ secrets.pat }}"
+        run: |
+          printenv
+          R -e "gitCRAN::package_request_pipeline()"
