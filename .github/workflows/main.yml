@@ -9,10 +9,10 @@ jobs:
     container:
       image: gitcran/cflinuxfs3:r-4.0.2
     steps:
-     - name: Turnstyle
-       uses: softprops/turnstyle@v1
-       env:
-         GITHUB_TOKEN: ${{ secrets.pat }}
+      - name: Turnstyle
+        uses: softprops/turnstyle@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.pat }}
       - name: Run package addition pipeline in docker
         id: add_package_pipeline
         env:
