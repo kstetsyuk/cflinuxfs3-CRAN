@@ -24,5 +24,4 @@ jobs:
           GITHUB_USER: "${{ secrets.user }}"
           GITHUB_PAT: "${{ secrets.pat }}"
         run: |
-          printenv
           R -e "gitCRAN::package_request_pipeline()"
