@@ -18,6 +18,7 @@ jobs:
         env:
           GITCRAN_REPO_OWNER: "USEPA"
           GITCRAN_REPO: "cflinuxfs3-CRAN"
+          GITCRAN_FILTER_ORG: "USEPA"
           GITCRAN_SUBDIR: "cflinuxfs3"
           GITCRAN_LABELS: "package-request"
           GITCRAN_STATE: "open"
