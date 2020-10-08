@@ -1114,6 +1114,14 @@ License: GPL-3 | file LICENSE
 MD5sum: a673068ac7dcd1ab615aa4e1b48efa0a
 NeedsCompilation: no
 
+Package: shinydashboard
+Version: 0.7.1
+Depends: R (>= 3.0)
+Imports: utils, shiny (>= 1.0.0), htmltools (>= 0.2.6), promises
+License: GPL (>= 2) | file LICENSE
+MD5sum: 2eefa2b38e56e425ceb7969e030cacec
+NeedsCompilation: no
+
 Package: shinyjs
 Version: 1.1
 Depends: R (>= 3.1.0)
