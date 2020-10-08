@@ -1307,7 +1307,7 @@ Depends: R (>= 2.10.0)
 Imports: stats, utils
 Suggests: knitr, plm, zoo, survival
 License: GPL (>= 2)
-MD5sum: cb775e9aee5f3bdfc457a8735952fa62
+MD5sum: c299878d003535bc3a199639142a8d62
 NeedsCompilation: no
 
 Package: yaml
