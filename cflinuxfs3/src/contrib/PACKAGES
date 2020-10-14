@@ -221,18 +221,6 @@ License: GPL-3
 MD5sum: 6d1815e14367627d299377d9fb4f9926
 NeedsCompilation: no
 
-Package: colorspace
-Version: 1.4-1
-Depends: R (>= 3.0.0), methods
-Imports: graphics, grDevices, stats
-Suggests: datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
-        tcltk, shiny, shinyjs, ggplot2, dplyr, scales, grid, png, jpeg,
-        knitr, rmarkdown, RColorBrewer, rcartocolor, scico, viridis,
-        wesanderson
-License: BSD_3_clause + file LICENSE
-MD5sum: 8751629b3691e7d1b470b6423334d11e
-NeedsCompilation: yes
-
 Package: commonmark
 Version: 1.7
 Suggests: curl, testthat, xml2
