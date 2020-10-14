@@ -1168,14 +1168,14 @@ MD5sum: 2eefa2b38e56e425ceb7969e030cacec
 NeedsCompilation: no
 
 Package: shinyjs
-Version: 1.1
+Version: 2.0.0
 Depends: R (>= 3.1.0)
 Imports: digest (>= 0.6.8), htmltools (>= 0.2.9), jsonlite, shiny (>=
         1.0.0)
-Suggests: knitr (>= 1.7), rmarkdown, shinyAce, testthat (>= 0.9.1), V8
-        (>= 0.6)
-License: AGPL-3
-MD5sum: 20555b33005bb42dd5c849d7ab75fb3b
+Suggests: knitr (>= 1.7), rmarkdown, shinyAce, shinydisconnect,
+        testthat (>= 0.9.1)
+License: MIT + file LICENSE
+MD5sum: 50c08731efdeb6065423f94919baa008
 NeedsCompilation: no
 
 Package: shinythemes
