@@ -695,13 +695,6 @@ License: GPL (>= 2)
 MD5sum: b92da170bd70979656439316788540dc
 NeedsCompilation: yes
 
-Package: magrittr
-Version: 1.5
-Suggests: testthat, knitr
-License: MIT + file LICENSE
-MD5sum: 6fc86a3346f7c6fd632ff956a755a89c
-NeedsCompilation: no
-
 Package: maptools
 Version: 1.0-1
 Depends: R (>= 2.10), sp (>= 1.0-11)
