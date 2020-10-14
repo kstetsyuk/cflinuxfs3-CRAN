@@ -738,14 +738,6 @@ License: GPL-3
 MD5sum: a4562294eef3ea2b004c5a46fa43eaec
 NeedsCompilation: no
 
-Package: munsell
-Version: 0.5.0
-Imports: colorspace, methods
-Suggests: ggplot2, testthat
-License: MIT + file LICENSE
-MD5sum: 77cce3e882e185ad60c163944a11b53c
-NeedsCompilation: no
-
 Package: nleqslv
 Version: 3.3.2
 License: GPL (>= 2)
