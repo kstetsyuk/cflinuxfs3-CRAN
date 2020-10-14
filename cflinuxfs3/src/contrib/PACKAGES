@@ -1272,14 +1272,6 @@ License: GPL-3
 MD5sum: 325babd3ec25e91d49753acb0c3003ba
 NeedsCompilation: yes
 
-Package: viridisLite
-Version: 0.3.0
-Depends: R (>= 2.10)
-Suggests: hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr
-License: MIT + file LICENSE
-MD5sum: c10a13bf88ead9fbe762c75809e0ca67
-NeedsCompilation: no
-
 Package: whisker
 Version: 0.4
 Suggests: markdown
