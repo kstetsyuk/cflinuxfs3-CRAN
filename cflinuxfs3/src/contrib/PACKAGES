@@ -1086,17 +1086,6 @@ License: GPL-3
 MD5sum: d4b3b4b4d5da97f08f377e0080c43995
 NeedsCompilation: no
 
-Package: scales
-Version: 1.1.1
-Depends: R (>= 3.2)
-Imports: farver (>= 2.0.3), labeling, lifecycle, munsell (>= 0.5), R6,
-        RColorBrewer, viridisLite
-Suggests: bit64, covr, dichromat, ggplot2, hms (>= 0.5.0), testthat (>=
-        2.1.0)
-License: MIT + file LICENSE
-MD5sum: 412a434aff51f517c10a2554a1bf60f9
-NeedsCompilation: no
-
 Package: selectr
 Version: 0.4-1
 Depends: R (>= 3.0)
