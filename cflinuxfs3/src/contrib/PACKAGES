@@ -83,14 +83,6 @@ License: BSD_3_clause + file LICENSE
 MD5sum: 8669b0d995b0058828df9a86ea421ebd
 NeedsCompilation: yes
 
-Package: Rcpp
-Version: 1.0.5
-Imports: methods, utils
-Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
-License: GPL (>= 2)
-MD5sum: ade649389a5b70c31658de1f851bfa91
-NeedsCompilation: yes
-
 Package: abind
 Version: 1.4-5
 Depends: R (>= 1.5.0)
