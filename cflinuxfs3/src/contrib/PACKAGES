@@ -116,11 +116,11 @@ MD5sum: 9b5af7f6c87ceac6067e924cab6cc74e
 NeedsCompilation: no
 
 Package: backports
-Version: 1.1.7
+Version: 1.1.10
 Depends: R (>= 3.0.0)
 Imports: utils
 License: GPL-2 | GPL-3
-MD5sum: 7fa18a6c3a595fc991a585c254b707f7
+MD5sum: 898a5936c6c0dc9493a28ebda0b935f7
 NeedsCompilation: yes
 
 Package: base64enc
@@ -209,6 +209,17 @@ Suggests: covr, testthat (>= 1.0.0), knitr, rmarkdown
 License: MIT + file LICENSE
 MD5sum: 764986dc6bb6640eadd856ed1f8ca213
 NeedsCompilation: no
+
+Package: checkmate
+Version: 2.0.0
+Depends: R (>= 3.0.0)
+Imports: backports (>= 1.1.0), utils
+Suggests: R6, fastmatch, data.table (>= 1.9.8), devtools, ggplot2,
+        knitr, magrittr, microbenchmark, rmarkdown, testthat (>=
+        0.11.0), tinytest (>= 1.1.0), tibble
+License: BSD_3_clause + file LICENSE
+MD5sum: 616e351f50d1426c56ea804234d9add2
+NeedsCompilation: yes
 
 Package: cli
 Version: 2.0.2
@@ -1127,6 +1138,15 @@ License: BSD_3_clause + file LICENCE
 MD5sum: f0c89e8b2edc2bff2e3a6bc01816012c
 NeedsCompilation: no
 
+Package: shinyAce
+Version: 0.4.1
+Depends: R (>= 3.3.0)
+Imports: shiny (>= 1.0.5), jsonlite, utils, tools
+Suggests: testthat (>= 2.0.0), dplyr (>= 0.8.3)
+License: MIT + file LICENSE
+MD5sum: 663cd46436170037db1b9d2636ad21f2
+NeedsCompilation: no
+
 Package: shinyBS
 Version: 0.61
 Imports: shiny (>= 0.11), htmltools
@@ -1165,6 +1185,15 @@ Depends: R (>= 3.0)
 Imports: utils, shiny (>= 1.0.0), htmltools (>= 0.2.6), promises
 License: GPL (>= 2) | file LICENSE
 MD5sum: 2eefa2b38e56e425ceb7969e030cacec
+NeedsCompilation: no
+
+Package: shinydisconnect
+Version: 0.1.0
+Depends: R (>= 3.0.0)
+Imports: checkmate, glue, htmltools, shiny (>= 1.0)
+Suggests: colourpicker
+License: MIT + file LICENSE
+MD5sum: 389fd9cb5029a5fe084aaa4ae6262428
 NeedsCompilation: no
 
 Package: shinyjs
