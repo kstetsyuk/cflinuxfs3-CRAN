@@ -751,6 +751,13 @@ License: GPL
 MD5sum: d89a0f15ac795ddb0d0f3110f92c6c01
 NeedsCompilation: yes
 
+Package: miniUI
+Version: 0.1.1.1
+Imports: shiny (>= 0.13), htmltools (>= 0.3), utils
+License: GPL-3
+MD5sum: e6375ba6362c40510b8f7a936b8809a3
+NeedsCompilation: no
+
 Package: minqa
 Version: 1.2.4
 Imports: Rcpp (>= 0.9.10)
