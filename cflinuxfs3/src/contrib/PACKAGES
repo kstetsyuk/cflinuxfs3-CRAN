@@ -129,6 +129,16 @@ License: BSD_3_clause + file LICENSE
 MD5sum: 8669b0d995b0058828df9a86ea421ebd
 NeedsCompilation: yes
 
+Package: RcppEigen
+Version: 0.3.3.7.0
+Depends: R (>= 2.15.1)
+Imports: Matrix (>= 1.1-0), Rcpp (>= 0.11.0), stats, utils
+LinkingTo: Rcpp
+Suggests: inline, tinytest, pkgKitten, microbenchmark
+License: GPL (>= 2) | file LICENSE
+MD5sum: 1fd77d5d07b56c55b7642b2817ff5c61
+NeedsCompilation: yes
+
 Package: Rcpp
 Version: 1.0.5
 Imports: methods, utils
