@@ -147,6 +147,14 @@ License: GPL (>= 2)
 MD5sum: ade649389a5b70c31658de1f851bfa91
 NeedsCompilation: yes
 
+Package: SparseM
+Version: 1.78
+Depends: R (>= 2.15), methods
+Imports: graphics, stats, utils
+License: GPL (>= 2)
+MD5sum: 3ba68e835c8291de11f88660eb8d84e2
+NeedsCompilation: yes
+
 Package: abind
 Version: 1.4-5
 Depends: R (>= 1.5.0)
