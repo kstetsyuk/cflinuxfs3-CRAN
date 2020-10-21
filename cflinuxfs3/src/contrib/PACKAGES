@@ -973,13 +973,13 @@ MD5sum: 578bb1b72ee9297a71ee94b35e2750a0
 NeedsCompilation: yes
 
 Package: openxlsx
-Version: 4.1.5
+Version: 4.2.2
 Depends: R (>= 3.3.0)
 Imports: grDevices, methods, Rcpp, stats, utils, zip, stringi
 LinkingTo: Rcpp
-Suggests: knitr, testthat, roxygen2
+Suggests: knitr, testthat, roxygen2, rmarkdown
 License: MIT + file LICENSE
-MD5sum: 5d333c8c6c64692a75707f6d70a40750
+MD5sum: 4526a3a334f576b1ac8e9c8ec9039f77
 NeedsCompilation: yes
 
 Package: patchwork
@@ -1686,8 +1686,8 @@ MD5sum: d553337e8fc19717b24ebeb87afa39c8
 NeedsCompilation: no
 
 Package: zip
-Version: 2.0.4
+Version: 2.1.1
 Suggests: covr, processx, R6, testthat, withr
 License: CC0
-MD5sum: 45ba85fae8d447bf77896ba8ba6f60c5
+MD5sum: 98a51c37fcbdba0fd7d9003058130353
 NeedsCompilation: yes
