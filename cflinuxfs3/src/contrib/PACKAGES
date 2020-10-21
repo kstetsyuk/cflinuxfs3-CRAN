@@ -844,15 +844,15 @@ MD5sum: 6fc86a3346f7c6fd632ff956a755a89c
 NeedsCompilation: no
 
 Package: maptools
-Version: 1.0-1
+Version: 1.0-2
 Depends: R (>= 2.10), sp (>= 1.0-11)
 Imports: foreign (>= 0.8), methods, grid, lattice, stats, utils,
         grDevices
 Suggests: rgeos (>= 0.1-8), spatstat (>= 1.60), PBSmapping, maps,
-        RColorBrewer, raster, polyclip, spatstat.utils
+        RColorBrewer, raster, polyclip, spatstat.utils, plotrix
 Enhances: gpclib
 License: GPL (>= 2)
-MD5sum: d0042b875315fdd9a876974dae65b54b
+MD5sum: d59c88bc12bfd70b7d5d94f3790996bb
 NeedsCompilation: yes
 
 Package: markdown
@@ -1429,13 +1429,13 @@ MD5sum: decfc18227eacf584294bdb0bd71eb85
 NeedsCompilation: yes
 
 Package: sp
-Version: 1.3-1
+Version: 1.4-4
 Depends: R (>= 3.0.0), methods
 Imports: utils, stats, graphics, grDevices, lattice, grid
-Suggests: RColorBrewer, rgdal (>= 0.8-7), rgeos (>= 0.3-13), gstat,
+Suggests: RColorBrewer, rgdal (>= 1.2-3), rgeos (>= 0.3-13), gstat,
         maptools, deldir
 License: GPL (>= 2)
-MD5sum: d37329cf3dd235731bc3bed44db90c45
+MD5sum: 131cc30caa5cd343267cab2e0811db88
 NeedsCompilation: yes
 
 Package: sparkline
