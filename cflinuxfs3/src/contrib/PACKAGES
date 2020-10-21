@@ -312,12 +312,12 @@ MD5sum: 1362284a238ea83a2d87ad99b5444147
 NeedsCompilation: no
 
 Package: clipr
-Version: 0.7.0
+Version: 0.7.1
 Imports: utils
 Suggests: covr, knitr, rmarkdown, rstudioapi (>= 0.5), testthat (>=
         2.0.0)
 License: GPL-3
-MD5sum: 6d1815e14367627d299377d9fb4f9926
+MD5sum: 977aaff2bbb04d2e03dfc60c697820b8
 NeedsCompilation: no
 
 Package: colorspace
