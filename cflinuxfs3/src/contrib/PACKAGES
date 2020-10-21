@@ -425,12 +425,12 @@ MD5sum: ce733c7d6698ca60208f47addd4a1dcf
 NeedsCompilation: yes
 
 Package: digest
-Version: 0.6.25
-Depends: R (>= 3.1.0)
+Version: 0.6.26
+Depends: R (>= 3.3.0)
 Imports: utils
-Suggests: tinytest, knitr, rmarkdown
+Suggests: tinytest, knitr, rmarkdown, minidown
 License: GPL (>= 2)
-MD5sum: cc4716f71b62cf14976a57e6427e13d7
+MD5sum: d8a24a5f861eba986a32808078440006
 NeedsCompilation: yes
 
 Package: dplyr
@@ -1360,13 +1360,13 @@ MD5sum: ad3ba450803cf03ef8ba6ce7747ea533
 NeedsCompilation: no
 
 Package: shinyWidgets
-Version: 0.5.2
+Version: 0.5.4
 Depends: R (>= 3.1.0)
-Imports: shiny (>= 0.14), htmltools, jsonlite, grDevices, scales
+Imports: shiny (>= 0.14), htmltools, jsonlite, grDevices
 Suggests: shinydashboard, testthat, covr, shinydashboardPlus, bs4Dash,
-        argonR, argonDash, tablerDash, ggplot2, DT
+        argonR, argonDash, tablerDash, ggplot2, DT, scales
 License: GPL-3
-MD5sum: 3eaee3d9698e30ebf60dcab404dfef87
+MD5sum: 2062de8a00812ce32a83623e627341e5
 NeedsCompilation: no
 
 Package: shiny
