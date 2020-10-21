@@ -1455,12 +1455,12 @@ MD5sum: 66459907438a7be4cd4ab963ffa681bf
 NeedsCompilation: no
 
 Package: statmod
-Version: 1.4.34
+Version: 1.4.35
 Depends: R (>= 3.0.0)
 Imports: stats, graphics
 Suggests: MASS, tweedie
 License: GPL-2 | GPL-3
-MD5sum: 1882a33df4b2773fdaa7df2f6ac404f3
+MD5sum: 3ee41c6b2e953bf301e38462a7768ddb
 NeedsCompilation: yes
 
 Package: stringi
