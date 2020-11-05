@@ -1031,17 +1031,6 @@ License: MIT + file LICENSE
 MD5sum: cfd0af23be7b36e931c9519edb0443f9
 NeedsCompilation: no
 
-Package: plyr
-Version: 1.8.6
-Depends: R (>= 3.1.0)
-Imports: Rcpp (>= 0.11.0)
-LinkingTo: Rcpp
-Suggests: abind, covr, doParallel, foreach, iterators, itertools,
-        tcltk, testthat
-License: MIT + file LICENSE
-MD5sum: add01a1db3f11ae58060d2d2778adf0a
-NeedsCompilation: yes
-
 Package: png
 Version: 0.1-7
 Depends: R (>= 2.9.0)
