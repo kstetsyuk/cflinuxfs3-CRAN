@@ -122,13 +122,6 @@ License: BSD_3_clause + file LICENSE
 MD5sum: bc8e6b7054b38d5ee415960da4c57a20
 NeedsCompilation: yes
 
-Package: RJSONIO
-Version: 1.3-1.4
-Imports: methods
-License: BSD_3_clause + file LICENSE
-MD5sum: 8669b0d995b0058828df9a86ea421ebd
-NeedsCompilation: yes
-
 Package: RcppEigen
 Version: 0.3.3.7.0
 Depends: R (>= 2.15.1)
