@@ -122,6 +122,13 @@ License: BSD_3_clause + file LICENSE
 MD5sum: bc8e6b7054b38d5ee415960da4c57a20
 NeedsCompilation: yes
 
+Package: RJSONIO
+Version: 1.3-1.4
+Imports: methods
+License: BSD_3_clause + file LICENSE
+MD5sum: f142a6b5fea766a5f8eec966891a00d3
+NeedsCompilation: yes
+
 Package: RcppEigen
 Version: 0.3.3.7.0
 Depends: R (>= 2.15.1)
@@ -1023,6 +1030,17 @@ Suggests: Rcpp
 License: MIT + file LICENSE
 MD5sum: cfd0af23be7b36e931c9519edb0443f9
 NeedsCompilation: no
+
+Package: plyr
+Version: 1.8.6
+Depends: R (>= 3.1.0)
+Imports: Rcpp (>= 0.11.0)
+LinkingTo: Rcpp
+Suggests: abind, covr, doParallel, foreach, iterators, itertools,
+        tcltk, testthat
+License: MIT + file LICENSE
+MD5sum: e4d2111f4960d655e82ce15ca2bc2596
+NeedsCompilation: yes
 
 Package: png
 Version: 0.1-7
