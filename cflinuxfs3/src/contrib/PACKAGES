@@ -99,11 +99,11 @@ MD5sum: fa15f376b40b6b6e521acf4db9a310ae
 NeedsCompilation: no
 
 Package: R6
-Version: 2.4.1
+Version: 2.5.0
 Depends: R (>= 3.0)
 Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
 License: MIT + file LICENSE
-MD5sum: b67418e0661715d6693f13dd330ce210
+MD5sum: 079a80c52a0222201869b4c3148d86aa
 NeedsCompilation: no
 
 Package: RColorBrewer
@@ -708,6 +708,17 @@ License: GPL-2 | LGPL-2.1 | MPL-1.1
 MD5sum: 5f8f631d1eed03dc076ff55d12879b18
 NeedsCompilation: yes
 
+Package: igraph
+Version: 1.2.6
+Depends: methods
+Imports: graphics, grDevices, magrittr, Matrix, pkgconfig (>= 2.0.0),
+        stats, utils
+Suggests: ape, digest, graph, igraphdata, rgl, scales, stats4, tcltk,
+        testthat, withr
+License: GPL (>= 2)
+MD5sum: 85d99f28afba11ac0e46e80004e1309e
+NeedsCompilation: yes
+
 Package: inline
 Version: 0.3.16
 Depends: R (>= 2.4.0)
@@ -888,6 +899,16 @@ Imports: tools
 License: GPL
 MD5sum: d89a0f15ac795ddb0d0f3110f92c6c01
 NeedsCompilation: yes
+
+Package: miniCRAN
+Version: 0.2.14
+Imports: graphics, httr, methods, stats, tools, utils, igraph,
+        assertthat (>= 0.2.0)
+Suggests: devtools, knitr, rmarkdown, testthat (>= 2.1.0), covr, withr,
+        mockery, testthis, roxygen2
+License: GPL-2
+MD5sum: fe1e2e3a6f2fa8204c3304e8256fe793
+NeedsCompilation: no
 
 Package: miniUI
 Version: 0.1.1.1
