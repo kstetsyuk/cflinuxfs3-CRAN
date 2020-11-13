@@ -320,6 +320,14 @@ License: GPL-3
 MD5sum: 977aaff2bbb04d2e03dfc60c697820b8
 NeedsCompilation: no
 
+Package: codetools
+Version: 0.2-18
+Priority: recommended
+Depends: R (>= 2.1)
+License: GPL
+MD5sum: cc10efa36c85a733872415c920b12513
+NeedsCompilation: no
+
 Package: colorspace
 Version: 1.4-1
 Depends: R (>= 3.0.0), methods
@@ -540,6 +548,15 @@ License: GPL-3
 MD5sum: 9eb0cc61d9246ae45f6e74f7d51f89ae
 NeedsCompilation: yes
 
+Package: future
+Version: 1.20.1
+Imports: digest, globals (>= 0.13.1), listenv (>= 0.8.0), parallel,
+        parallelly (>= 1.21.0), tools, utils
+Suggests: RhpcBLASctl, R.rsp, markdown
+License: LGPL (>= 2.1)
+MD5sum: 987f8f9846ff48108508a1edc5a05e2d
+NeedsCompilation: no
+
 Package: generics
 Version: 0.0.2
 Depends: R (>= 3.1)
@@ -600,6 +617,14 @@ Imports: ggplot2 (>= 2.0.0)
 Suggests: testthat, knitr, rmarkdown
 License: GPL-3
 MD5sum: b83d11ecf74e5b8f9b810e7c6fc7f2f0
+NeedsCompilation: no
+
+Package: globals
+Version: 0.13.1
+Depends: R (>= 3.1.2)
+Imports: codetools
+License: LGPL (>= 2.1)
+MD5sum: ad2ceef61b57fe4d1db28a6352307bb3
 NeedsCompilation: no
 
 Package: glue
@@ -822,6 +847,14 @@ License: GPL-3
 MD5sum: f2260c411221795c5ea2abc2f2bc5818
 NeedsCompilation: no
 
+Package: listenv
+Version: 0.8.0
+Depends: R (>= 3.1.2)
+Suggests: R.utils, R.rsp, markdown
+License: LGPL (>= 2.1)
+MD5sum: 5c7444dc812de3f03346426ed1b0daf1
+NeedsCompilation: no
+
 Package: lme4
 Version: 1.1-23
 Depends: R (>= 3.2.0), Matrix (>= 1.2-1), methods, stats
@@ -1002,6 +1035,13 @@ Suggests: knitr, testthat, roxygen2, rmarkdown
 License: MIT + file LICENSE
 MD5sum: 4526a3a334f576b1ac8e9c8ec9039f77
 NeedsCompilation: yes
+
+Package: parallelly
+Version: 1.21.0
+Imports: parallel, tools, utils
+License: LGPL (>= 2.1)
+MD5sum: 8384f8f8bc7152ef9602bab5b6069c8c
+NeedsCompilation: no
 
 Package: patchwork
 Version: 1.0.0
