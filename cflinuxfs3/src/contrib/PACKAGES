@@ -425,12 +425,12 @@ MD5sum: ce733c7d6698ca60208f47addd4a1dcf
 NeedsCompilation: yes
 
 Package: digest
-Version: 0.6.26
+Version: 0.6.27
 Depends: R (>= 3.3.0)
 Imports: utils
 Suggests: tinytest, knitr, rmarkdown, minidown
 License: GPL (>= 2)
-MD5sum: d8a24a5f861eba986a32808078440006
+MD5sum: 407dae6bac5dcd490e0b7b4e734810c1
 NeedsCompilation: yes
 
 Package: dplyr
@@ -1378,6 +1378,13 @@ Version: 0.61
 Imports: shiny (>= 0.11), htmltools
 License: GPL-3
 MD5sum: ad3ba450803cf03ef8ba6ce7747ea533
+NeedsCompilation: no
+
+Package: shinyTypeahead
+Version: 0.2
+Imports: shiny, jsonlite (>= 0.9.14), htmltools (>= 0.2.6)
+License: MIT
+MD5sum: 0d497b8d3949fad4c97c35d2def856c6
 NeedsCompilation: no
 
 Package: shinyWidgets
