@@ -281,15 +281,6 @@ License: GPL (>= 2)
 MD5sum: d442b54da362906df6dbc93eb0d275b0
 NeedsCompilation: no
 
-Package: cellranger
-Version: 1.1.0
-Depends: R (>= 3.0.0)
-Imports: rematch, tibble
-Suggests: covr, testthat (>= 1.0.0), knitr, rmarkdown
-License: MIT + file LICENSE
-MD5sum: 764986dc6bb6640eadd856ed1f8ca213
-NeedsCompilation: no
-
 Package: checkmate
 Version: 2.0.0
 Depends: R (>= 3.0.0)
