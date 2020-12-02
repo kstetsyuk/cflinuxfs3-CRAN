@@ -424,12 +424,12 @@ MD5sum: 2e3bb42c60f6a2782e9530be6a017578
 NeedsCompilation: no
 
 Package: deSolve
-Version: 1.24
-Depends: R (>= 2.15.0)
+Version: 1.28
+Depends: R (>= 3.3.0)
 Imports: methods, graphics, grDevices, stats
 Suggests: scatterplot3d, FME
 License: GPL (>= 2)
-MD5sum: ce733c7d6698ca60208f47addd4a1dcf
+MD5sum: 73d77d3a880f7edb8006e95af0acea55
 NeedsCompilation: yes
 
 Package: digest
