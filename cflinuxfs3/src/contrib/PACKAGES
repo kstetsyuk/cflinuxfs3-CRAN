@@ -1439,17 +1439,6 @@ License: MIT + file LICENSE
 MD5sum: 4360e470c3e4c15ab0875a7ed8372033
 NeedsCompilation: yes
 
-Package: tidyselect
-Version: 1.1.0
-Depends: R (>= 3.2)
-Imports: ellipsis, glue (>= 1.3.0), purrr (>= 0.3.2), rlang (>= 0.4.6),
-        vctrs (>= 0.2.2)
-Suggests: covr, crayon, dplyr, knitr, magrittr, rmarkdown, testthat (>=
-        2.3.0), tibble (>= 2.1.3), withr
-License: GPL-3
-MD5sum: 9c0f3221713976e15fde79d952311200
-NeedsCompilation: yes
-
 Package: tikzDevice
 Version: 0.12.3.1
 Depends: R (>= 2.14.0)
