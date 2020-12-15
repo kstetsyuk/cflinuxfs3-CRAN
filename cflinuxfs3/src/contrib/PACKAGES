@@ -383,6 +383,14 @@ License: MIT + file LICENSE
 MD5sum: b993ec29e753c396a29ad8e47a1b9d15
 NeedsCompilation: no
 
+Package: hms
+Version: 0.5.3
+Imports: methods, pkgconfig, rlang, vctrs (>= 0.2.1)
+Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
+License: GPL-3
+MD5sum: e5a56be4ab28c68830f4acebeafba625
+NeedsCompilation: no
+
 Package: htmltools
 Version: 0.5.0
 Depends: R (>= 2.14.1)
@@ -673,6 +681,13 @@ License: GPL-2 | GPL-3
 MD5sum: 49698d265b3b8441ebf0bd97ab305584
 NeedsCompilation: yes
 
+Package: prettyunits
+Version: 1.1.1
+Suggests: codetools, covr, testthat
+License: MIT + file LICENSE
+MD5sum: e84d140b478372918c37be8f8a222f98
+NeedsCompilation: no
+
 Package: processx
 Version: 3.4.4
 Imports: ps (>= 1.2.0), R6, utils
@@ -681,6 +696,14 @@ Suggests: callr (>= 3.2.0), codetools, covr, crayon, curl, debugme,
 License: MIT + file LICENSE
 MD5sum: 22179cfeb4f426ea1ec39770c3b1dd57
 NeedsCompilation: yes
+
+Package: progress
+Version: 1.2.2
+Imports: hms, prettyunits, R6, crayon
+Suggests: Rcpp, testthat, withr
+License: MIT + file LICENSE
+MD5sum: 337f39877339e0b4bc920dba4ec550b0
+NeedsCompilation: no
 
 Package: promises
 Version: 1.1.1
