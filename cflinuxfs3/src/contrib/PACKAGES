@@ -267,6 +267,15 @@ License: BSD_2_clause + file LICENSE
 MD5sum: ec6587381a9b117614f7b69168289508
 NeedsCompilation: yes
 
+Package: cpp11
+Version: 0.4.2
+Suggests: bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,
+        knitr, lobstr, mockery, progress, rmarkdown, scales, Rcpp,
+        testthat, tibble, utils, vctrs, withr
+License: MIT + file LICENSE
+MD5sum: 0348dba22eeddbc2ffbb0f59622afb0c
+NeedsCompilation: no
+
 Package: crayon
 Version: 1.5.0
 Imports: grDevices, methods, utils
@@ -757,6 +766,17 @@ Suggests: R.utils, R.rsp, markdown
 License: LGPL (>= 2.1)
 MD5sum: 5c7444dc812de3f03346426ed1b0daf1
 NeedsCompilation: no
+
+Package: lubridate
+Version: 1.8.0
+Depends: methods, R (>= 3.2)
+Imports: generics
+LinkingTo: cpp11 (>= 0.2.7)
+Suggests: covr, knitr, testthat (>= 2.1.0), vctrs (>= 0.3.0), rmarkdown
+Enhances: chron, timeDate, tis, zoo
+License: GPL (>= 2)
+MD5sum: 874e63c510d1e43520ea3bf79ddd75dd
+NeedsCompilation: yes
 
 Package: magrittr
 Version: 2.0.2
