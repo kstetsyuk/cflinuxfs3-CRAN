@@ -1497,3 +1497,13 @@ Suggests: covr, processx, R6, testthat, withr
 License: CC0
 MD5sum: 98a51c37fcbdba0fd7d9003058130353
 NeedsCompilation: yes
+
+Package: zoo
+Version: 1.8-9
+Depends: R (>= 3.1.0), stats
+Imports: utils, graphics, grDevices, lattice (>= 0.20-27)
+Suggests: AER, coda, chron, fts, ggplot2 (>= 3.0.0), mondate, scales,
+        stinepack, strucchange, timeDate, timeSeries, tis, tseries, xts
+License: GPL-2 | GPL-3
+MD5sum: bec8f4c0b6ef1fdb02f9f2c3fb4e235e
+NeedsCompilation: yes
