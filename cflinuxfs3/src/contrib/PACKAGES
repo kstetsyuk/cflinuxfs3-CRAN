@@ -639,6 +639,15 @@ License: GPL-3
 MD5sum: 07817ffcae85e4929767cef7f5a36b56
 NeedsCompilation: yes
 
+Package: leaflet.extras
+Version: 1.0.0
+Depends: R (>= 3.1.0), leaflet (>= 2.0.0)
+Imports: htmlwidgets, htmltools, stringr, magrittr
+Suggests: jsonlite, readr
+License: GPL-3 | file LICENSE
+MD5sum: 4448dca195625e73236b10c5ef33c40b
+NeedsCompilation: no
+
 Package: leaflet.providers
 Version: 1.9.0
 Depends: R (>= 2.10)
@@ -1164,11 +1173,12 @@ MD5sum: 3ee41c6b2e953bf301e38462a7768ddb
 NeedsCompilation: yes
 
 Package: stringi
-Version: 1.5.3
-Depends: R (>= 2.14)
+Version: 1.7.6
+Depends: R (>= 3.1)
 Imports: tools, utils, stats
 License: file LICENSE
-MD5sum: a6b307e578edeebaa44918ec94e85cbf
+License_is_FOSS: yes
+MD5sum: d95319cf0838b2de9a1c006c0e5a8e2f
 NeedsCompilation: yes
 
 Package: stringr
