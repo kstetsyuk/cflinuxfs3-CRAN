@@ -320,6 +320,12 @@ License: GPL (>= 2)
 MD5sum: a311d2b6669dff308c4ffa05bbe0980e
 NeedsCompilation: yes
 
+Package: dotenv
+Version: 1.0.3
+License: MIT + file LICENSE
+MD5sum: e3e50ca0bd4287ea8a001494a09d66b4
+NeedsCompilation: no
+
 Package: dplyr
 Version: 1.0.8
 Depends: R (>= 3.4.0)
