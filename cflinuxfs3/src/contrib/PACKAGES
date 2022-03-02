@@ -1186,6 +1186,14 @@ License: GPL-3 | file LICENSE
 MD5sum: dbc97254fa03c908d0940e3734af7b79
 NeedsCompilation: no
 
+Package: shinybusy
+Version: 0.3.0
+Imports: htmltools, shiny, jsonlite, htmlwidgets
+Suggests: testthat, covr, knitr, rmarkdown
+License: GPL-3
+MD5sum: e797d1d38c888ebee98d7f5b4d863e1e
+NeedsCompilation: no
+
 Package: shinydashboard
 Version: 0.7.2
 Depends: R (>= 3.0)
