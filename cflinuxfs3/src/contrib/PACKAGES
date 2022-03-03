@@ -1889,10 +1889,10 @@ MD5sum: 504f531b646b76480f116074ecfdd622
 NeedsCompilation: yes
 
 Package: zip
-Version: 2.1.1
+Version: 2.2.0
 Suggests: covr, processx, R6, testthat, withr
-License: CC0
-MD5sum: 98a51c37fcbdba0fd7d9003058130353
+License: MIT + file LICENSE
+MD5sum: 199f76eaee6755b4ecdc293c34f12b22
 NeedsCompilation: yes
 
 Package: zoo
