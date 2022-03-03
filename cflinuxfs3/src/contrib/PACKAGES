@@ -1590,6 +1590,15 @@ License: GPL-3
 MD5sum: e797d1d38c888ebee98d7f5b4d863e1e
 NeedsCompilation: no
 
+Package: shinycssloaders
+Version: 1.0.0
+Depends: R (>= 3.1)
+Imports: digest, glue, grDevices, shiny
+Suggests: shinydisconnect, shinyjs
+License: MIT + file LICENSE
+MD5sum: 5ac71da28ec076859e32a648a6391f50
+NeedsCompilation: no
+
 Package: shinydashboard
 Version: 0.7.2
 Depends: R (>= 3.0)
