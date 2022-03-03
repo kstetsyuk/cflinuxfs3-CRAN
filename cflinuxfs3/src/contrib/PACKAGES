@@ -205,6 +205,13 @@ License: MIT + file LICENSE
 MD5sum: 6ad872ea7953cd4e1e634690269258d2
 NeedsCompilation: no
 
+Package: brew
+Version: 1.0-7
+Suggests: testthat
+License: GPL-2
+MD5sum: ce3e4e0823195b6dbe1df2a31480843b
+NeedsCompilation: no
+
 Package: broom
 Version: 0.7.12
 Depends: R (>= 3.1)
@@ -592,6 +599,17 @@ License: MIT + file LICENSE
 MD5sum: bc92ee3d0574e76cc9f2598bf8d43796
 NeedsCompilation: no
 
+Package: geojsonsf
+Version: 2.0.1
+Depends: R (>= 3.3.0)
+Imports: Rcpp
+LinkingTo: geometries, jsonify (>= 1.1.1), rapidjsonr (>= 1.2.0), Rcpp,
+        sfheaders (>= 0.2.2)
+Suggests: covr, jsonify, knitr, rmarkdown, tinytest
+License: MIT + file LICENSE
+MD5sum: a188f0b753ba5a8eda800844e4d29f69
+NeedsCompilation: yes
+
 Package: ggplot2
 Version: 3.3.5
 Depends: R (>= 3.3)
@@ -895,6 +913,16 @@ License: GPL-3
 MD5sum: 07817ffcae85e4929767cef7f5a36b56
 NeedsCompilation: yes
 
+Package: leafem
+Version: 0.1.6
+Depends: R (>= 3.1.0)
+Imports: base64enc, geojsonsf, htmltools (>= 0.3), htmlwidgets, leaflet
+        (>= 2.0.1), methods, raster, sf, png
+Suggests: clipr, gdalUtils, leafgl, mapdeck, plainview, stars
+License: MIT + file LICENSE
+MD5sum: 2189dd0c8e08c0bdb40635f72170f933
+NeedsCompilation: no
+
 Package: leaflet.extras
 Version: 1.0.0
 Depends: R (>= 3.1.0), leaflet (>= 2.0.0)
@@ -923,6 +951,14 @@ Suggests: knitr, maps, sf (>= 0.9-6), shiny, rgdal, rgeos, R6, RJSONIO,
         purrr, testthat (>= 3.0.0), s2
 License: GPL-3
 MD5sum: e11fdd9bef053bbfe2252342fedbd457
+NeedsCompilation: no
+
+Package: leafpop
+Version: 0.1.0
+Imports: base64enc, brew, htmltools, htmlwidgets, sf, svglite, uuid
+Suggests: lattice, leaflet (>= 2.0.0), sp
+License: MIT + file LICENSE
+MD5sum: 297639aec6e20f3d85ddc70430bf343f
 NeedsCompilation: no
 
 Package: lifecycle
@@ -972,6 +1008,19 @@ Enhances: gpclib
 License: GPL (>= 2)
 MD5sum: d59c88bc12bfd70b7d5d94f3790996bb
 NeedsCompilation: yes
+
+Package: mapview
+Version: 2.10.0
+Depends: methods, R (>= 3.6.0)
+Imports: base64enc, htmltools, htmlwidgets, lattice, leafem, leaflet
+        (>= 2.0.0), leafpop, png, raster, satellite, scales (>= 0.2.5),
+        servr, sf, sp, webshot
+Suggests: covr, knitr, later, leaflet.extras2, leafsync, lwgeom,
+        mapdeck, plainview, poorman, rmarkdown, rstudioapi, s2, stars,
+        tinytest
+License: GPL (>= 3) | file LICENSE
+MD5sum: b0aa14ad38c4888355c7beaea16bbe8d
+NeedsCompilation: no
 
 Package: markdown
 Version: 1.1
@@ -1431,6 +1480,17 @@ License: MIT + file LICENSE
 MD5sum: a11835a7e7f369fe4ef6ff48b39b6fd2
 NeedsCompilation: yes
 
+Package: satellite
+Version: 1.0.4
+Depends: R (>= 2.10), raster, methods, utils, stats, grDevices,
+        graphics
+Imports: plyr, Rcpp (>= 0.10.3), terra, tools, stats4
+LinkingTo: Rcpp
+Suggests: devtools, knitr, rgdal, testthat, rmarkdown
+License: MIT + file LICENSE
+MD5sum: e01eb9e27894cbcc120fe8e372709254
+NeedsCompilation: yes
+
 Package: scales
 Version: 1.1.1
 Depends: R (>= 3.2)
@@ -1449,6 +1509,15 @@ Imports: methods, stringr, R6
 Suggests: testthat, XML, xml2
 License: BSD_3_clause + file LICENCE
 MD5sum: f0c89e8b2edc2bff2e3a6bc01816012c
+NeedsCompilation: no
+
+Package: servr
+Version: 0.24
+Depends: R (>= 3.0.0)
+Imports: mime (>= 0.2), httpuv (>= 1.5.2), xfun, jsonlite
+Suggests: tools, later, rstudioapi, knitr (>= 1.9), rmarkdown
+License: GPL
+MD5sum: 9facdad1780c3cdc338ea517e22195f3
 NeedsCompilation: no
 
 Package: sf
@@ -1631,11 +1700,31 @@ License: GPL-3
 MD5sum: 7e10c7bc637466cea5463ef087289404
 NeedsCompilation: no
 
+Package: svglite
+Version: 2.1.0
+Depends: R (>= 3.0.0)
+Imports: systemfonts (>= 1.0.0)
+LinkingTo: cpp11, systemfonts
+Suggests: htmltools, testthat, xml2 (>= 1.0.0), covr, fontquiver (>=
+        0.2.0), knitr, rmarkdown
+License: GPL (>= 2)
+MD5sum: 5e8da9117e052154b2500e0e8cfa521e
+NeedsCompilation: yes
+
 Package: sys
 Version: 3.4
 Suggests: unix (>= 1.4), spelling, testthat
 License: MIT + file LICENSE
 MD5sum: bd9b9a88b9e4b80a310a2824c7a1595e
+NeedsCompilation: yes
+
+Package: systemfonts
+Version: 1.0.4
+Depends: R (>= 3.2.0)
+LinkingTo: cpp11 (>= 0.2.1)
+Suggests: testthat (>= 2.1.0), covr, knitr, rmarkdown, tools
+License: MIT + file LICENSE
+MD5sum: 2b94d0c3435abd34aae78afb2ee98a7b
 NeedsCompilation: yes
 
 Package: terra
