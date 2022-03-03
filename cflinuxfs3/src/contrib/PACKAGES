@@ -799,6 +799,17 @@ License: MIT + file LICENSE
 MD5sum: f93916f0cb21a7ba848f190a174eb607
 NeedsCompilation: yes
 
+Package: janitor
+Version: 2.1.0
+Depends: R (>= 3.1.2)
+Imports: dplyr (>= 1.0.0), lifecycle, lubridate, magrittr, purrr,
+        rlang, stringi, stringr, snakecase (>= 0.9.2), tidyselect (>=
+        1.0.0), tidyr (>= 0.7.0)
+Suggests: knitr, rmarkdown, sf, testthat, tibble, tidygraph
+License: MIT + file LICENSE
+MD5sum: 87c30af262826ef97ea5b11427e8c4a0
+NeedsCompilation: no
+
 Package: jpeg
 Version: 0.1-9
 Depends: R (>= 2.9.0)
@@ -1536,6 +1547,15 @@ Suggests: knitr (>= 1.7), rmarkdown, shinyAce, shinydisconnect,
         testthat (>= 0.9.1)
 License: MIT + file LICENSE
 MD5sum: 50c08731efdeb6065423f94919baa008
+NeedsCompilation: no
+
+Package: snakecase
+Version: 0.11.0
+Depends: R (>= 3.2)
+Imports: stringr, stringi
+Suggests: testthat, covr, tibble, purrrlyr, knitr, rmarkdown, magrittr
+License: GPL-3
+MD5sum: 061094fb7b3baee17dc5f269612a180d
 NeedsCompilation: no
 
 Package: sourcetools
