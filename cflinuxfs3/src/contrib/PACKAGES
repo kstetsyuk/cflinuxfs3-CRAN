@@ -1623,6 +1623,13 @@ License: MIT + file LICENSE
 MD5sum: 389fd9cb5029a5fe084aaa4ae6262428
 NeedsCompilation: no
 
+Package: shinyhelper
+Version: 0.3.2
+Imports: shiny, markdown
+License: GPL-3
+MD5sum: f6fb770e5de730bfe34b4520c61e1186
+NeedsCompilation: no
+
 Package: shinyjs
 Version: 2.0.0
 Depends: R (>= 3.1.0)
