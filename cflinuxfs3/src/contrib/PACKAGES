@@ -1627,6 +1627,14 @@ License: MIT + file LICENSE
 MD5sum: 50c08731efdeb6065423f94919baa008
 NeedsCompilation: no
 
+Package: shinythemes
+Version: 1.2.0
+Depends: R (>= 3.0.0)
+Imports: shiny (>= 0.11)
+License: GPL-3 | file LICENSE
+MD5sum: f3063faa10ce1f5421fcdd7a1d0ef2e9
+NeedsCompilation: no
+
 Package: snakecase
 Version: 0.11.0
 Depends: R (>= 3.2)
