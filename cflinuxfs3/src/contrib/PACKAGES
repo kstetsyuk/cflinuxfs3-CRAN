@@ -1992,6 +1992,13 @@ License: MIT + file LICENSE
 MD5sum: 0ee7ccb7181597986158aeafff959573
 NeedsCompilation: yes
 
+Package: udunits2
+Version: 0.13.2
+Depends: R (>= 2.10.0)
+License: GPL-2
+MD5sum: c0476aabf3ac747169aedb0c0f460b1c
+NeedsCompilation: yes
+
 Package: units
 Version: 0.8-0
 Depends: R (>= 3.0.2)
