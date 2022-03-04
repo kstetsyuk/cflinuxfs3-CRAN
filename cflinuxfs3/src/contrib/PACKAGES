@@ -1,3 +1,9 @@
+Package: AlgDesign
+Version: 1.2.0
+License: GPL (>= 2)
+MD5sum: ce098eb92f84443b052bd6d31c5c42ed
+NeedsCompilation: yes
+
 Package: DBI
 Version: 1.1.2
 Depends: methods, R (>= 3.0.0)
@@ -205,6 +211,15 @@ License: MIT + file LICENSE
 MD5sum: 6ad872ea7953cd4e1e634690269258d2
 NeedsCompilation: no
 
+Package: boot
+Version: 1.3-28
+Priority: recommended
+Depends: R (>= 3.0.0), graphics, stats
+Suggests: MASS, survival
+License: Unlimited
+MD5sum: ddccff4713f1bf6344763438742e7358
+NeedsCompilation: no
+
 Package: brew
 Version: 1.0-7
 Suggests: testthat
@@ -366,6 +381,13 @@ License: MIT + file LICENSE
 MD5sum: fdb7ae0659fd2a3896c347dcda7b0168
 NeedsCompilation: no
 
+Package: crossdes
+Version: 1.1-1
+Depends: AlgDesign, gtools
+License: GPL-2
+MD5sum: 96938e748175b71e64ef433a22a92fde
+NeedsCompilation: no
+
 Package: crosstalk
 Version: 1.2.0
 Imports: htmltools (>= 0.3.6), jsonlite, lazyeval, R6
@@ -415,6 +437,15 @@ Imports: methods, graphics, grDevices, stats
 Suggests: scatterplot3d, FME
 License: GPL (>= 2)
 MD5sum: 73d77d3a880f7edb8006e95af0acea55
+NeedsCompilation: yes
+
+Package: deldir
+Version: 1.0-6
+Depends: R (>= 3.5.0)
+Imports: graphics, grDevices
+Suggests: polyclip
+License: GPL (>= 2)
+MD5sum: 1e787d3ab06d7b310aae29c41618e91c
 NeedsCompilation: yes
 
 Package: digest
@@ -699,6 +730,14 @@ License: GPL-2
 MD5sum: 3fdec0bfe37f4efa3613ba1c76ae5871
 NeedsCompilation: no
 
+Package: gtools
+Version: 3.9.2
+Depends: methods, stats, utils
+Suggests: car, gplots, knitr, rstudioapi, SGP, taxize
+License: GPL-2
+MD5sum: f75f903417340fab90a4b232c66a9c6d
+NeedsCompilation: yes
+
 Package: haven
 Version: 2.4.3
 Depends: R (>= 3.2)
@@ -979,6 +1018,25 @@ License: LGPL (>= 2.1)
 MD5sum: 5c7444dc812de3f03346426ed1b0daf1
 NeedsCompilation: no
 
+Package: lme4
+Version: 1.1-28
+Depends: R (>= 3.2.0), Matrix (>= 1.2-1), methods, stats
+Imports: graphics, grid, splines, utils, parallel, MASS, lattice, boot,
+        nlme (>= 3.1-123), minqa (>= 1.1.15), nloptr (>= 1.0.4)
+LinkingTo: Rcpp (>= 0.10.5), RcppEigen
+Suggests: knitr, rmarkdown, PKPDmodels, MEMSS, testthat (>= 0.8.1),
+        ggplot2, mlmRev, optimx (>= 2013.8.6), gamm4, pbkrtest, HSAUR3,
+        numDeriv, car, dfoptim, mgcv, statmod, rr2, semEff, tibble
+License: GPL (>= 2)
+MD5sum: 9ca792a063f57dfb47a6991f76cf8ae5
+NeedsCompilation: yes
+
+Package: lpSolve
+Version: 5.6.15
+License: LGPL-2
+MD5sum: 3f9f9ed330297500e91393beb5859fa9
+NeedsCompilation: yes
+
 Package: lubridate
 Version: 1.8.0
 Depends: methods, R (>= 3.2)
@@ -1073,6 +1131,22 @@ License: GPL-3
 MD5sum: e6375ba6362c40510b8f7a936b8809a3
 NeedsCompilation: no
 
+Package: minqa
+Version: 1.2.4
+Imports: Rcpp (>= 0.9.10)
+LinkingTo: Rcpp
+License: GPL-2
+MD5sum: 261e92994bc1b76f86570123757f6fc0
+NeedsCompilation: yes
+
+Package: mitools
+Version: 2.4
+Imports: DBI, methods, stats
+Suggests: RODBC, foreign
+License: GPL-2
+MD5sum: aa55c57af4d1aceba6c976ad7ccf3463
+NeedsCompilation: no
+
 Package: modelr
 Version: 0.1.8
 Depends: R (>= 3.2)
@@ -1100,6 +1174,21 @@ Suggests: Hmisc, MASS
 License: GPL (>= 2) | file LICENCE
 MD5sum: 8d6351e69b6eb1f590b8ea2f8bf040d0
 NeedsCompilation: yes
+
+Package: nloptr
+Version: 2.0.0
+LinkingTo: testthat
+Suggests: knitr, rmarkdown, xml2, testthat (>= 3.0.0), covr
+License: LGPL (>= 3)
+MD5sum: 859e4ce181e304aa914e3e77515c942b
+NeedsCompilation: yes
+
+Package: numDeriv
+Version: 2016.8-1.1
+Depends: R (>= 2.11.1)
+License: GPL-2
+MD5sum: 37728cbbbe3588a477368814eec3c14a
+NeedsCompilation: no
 
 Package: nycflights13
 Version: 1.0.1
@@ -1472,6 +1561,13 @@ License: Apache License (== 2.0)
 MD5sum: 99be56f4f699b54e10da5c7fdad7cb7a
 NeedsCompilation: yes
 
+Package: sampling
+Version: 2.9
+Imports: MASS, lpSolve
+License: GPL (>= 2)
+MD5sum: f7397c95ea53aee064aa023fa72c2a40
+NeedsCompilation: yes
+
 Package: sass
 Version: 0.4.0
 Imports: fs, rlang (>= 0.4.10), htmltools (>= 0.5.1), R6, rappdirs
@@ -1692,6 +1788,16 @@ License: MIT + file LICENSE
 MD5sum: 66459907438a7be4cd4ab963ffa681bf
 NeedsCompilation: no
 
+Package: spsurvey
+Version: 5.3.0
+Depends: R (>= 3.5.0), sf, survey (>= 4.1-1)
+Imports: boot, crossdes, deldir, graphics, grDevices, lme4, MASS,
+        sampling, stats, units
+Suggests: knitr, testthat, rmarkdown
+License: GPL (>= 3)
+MD5sum: 844b0a957f90eef72e419b09008f74f7
+NeedsCompilation: no
+
 Package: statmod
 Version: 1.4.35
 Depends: R (>= 3.0.0)
@@ -1730,6 +1836,26 @@ Suggests: data.tree (>= 0.1.6), digest, dplyr, here, knitr, prettycode,
 License: GPL-3
 MD5sum: 7e10c7bc637466cea5463ef087289404
 NeedsCompilation: no
+
+Package: survey
+Version: 4.1-1
+Depends: R (>= 3.5.0), grid, methods, Matrix, survival
+Imports: stats, graphics, splines, lattice, minqa, numDeriv, mitools
+        (>= 2.4)
+Suggests: foreign, MASS, KernSmooth, hexbin, RSQLite, quantreg,
+        parallel, CompQuadForm, DBI, AER
+License: GPL-2 | GPL-3
+MD5sum: d3ed72cf90e1f125ae7dd56096af856b
+NeedsCompilation: no
+
+Package: survival
+Version: 3.3-1
+Priority: recommended
+Depends: R (>= 3.5.0)
+Imports: graphics, Matrix, methods, splines, stats, utils
+License: LGPL (>= 2)
+MD5sum: da55305b02c7e829a4bebf40905871b5
+NeedsCompilation: yes
 
 Package: svglite
 Version: 2.1.0
