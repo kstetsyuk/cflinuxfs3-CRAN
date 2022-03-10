@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Add packages from open package requests
     container:
-      image: gitcran/cflinuxfs3:r-4.0.2
+      image: gitcran/cflinuxfs3:r-4.1.2
     steps:
       - name: Turnstyle
         uses: softprops/turnstyle@v1
@@ -20,9 +20,9 @@ jobs:
       - name: Run package addition pipeline in docker
         id: add_package_pipeline
         env:
-          GITCRAN_REPO_OWNER: "testorg-2020"
+          GITCRAN_REPO_OWNER: "USEPA"
           GITCRAN_REPO: "cflinuxfs3-CRAN"
-          GITCRAN_FILTER_ORG: "testorg-2020"
+          GITCRAN_FILTER_ORG: "USEPA"
           GITCRAN_SUBDIR: "cflinuxfs3"
           GITCRAN_LABELS: "package-request"
           GITCRAN_STATE: "open"
