@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Add packages from open package requests
     container:
-      image: gitcran/cflinuxfs3:r-4.1.2
+      image: gitcran/cflinuxfs3:r-4.0.2
     steps:
       - name: Turnstyle
         uses: softprops/turnstyle@v1
