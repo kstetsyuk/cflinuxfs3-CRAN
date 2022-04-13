@@ -158,8 +158,8 @@ package_request_pipeline <- function(
 
   api_user <- get_api_user(username, token)
 
-  git2r::config(git2r_repo, user.name = api_user$login,
-                user.email = api_user$email)
+  git2r::config(git2r_repo, user.name = "github-actions",
+                user.email = "github-actions@github.com")
 
   if (nchar(subpath) > 0)
     local_repository <- file.path(local_repository, subpath)
