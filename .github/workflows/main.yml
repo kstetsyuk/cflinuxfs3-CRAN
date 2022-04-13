@@ -48,6 +48,7 @@ jobs:
           GITCRAN_LABELS: "package-request"
           GITCRAN_STATE: "open"
           GITHUB_USER: "github-actions"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
           R -e "devtools::install_local('CRANpiled')"
