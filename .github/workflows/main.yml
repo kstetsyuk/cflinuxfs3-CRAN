@@ -46,7 +46,7 @@ jobs:
         run: |
           cd /workspace
           R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
-          R -e "devtools::install('./CRANpiled')"
-          R -e "devtools::install('./gitCRAN')"
+          R -e "devtools::install_local('CRANpiled')"
+          R -e "devtools::install_local('gitCRAN')"
 
           R -e "gitCRAN::package_request_pipeline()"
