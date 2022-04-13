@@ -18,9 +18,11 @@ jobs:
         uses: softprops/turnstyle@v1
       - name: Install package dependencies
         run: |
-          sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-          sudo apt-get -y update
-          sudo apt-get -y install libgdal-dev libgeos-dev libproj-dev libudunits2-dev libnlopt-dev
+          apt-get -y update
+          apt-get install -y software-properties-common
+          add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+          apt-get -y update
+          apt-get -y install libgdal-dev libgeos-dev libproj-dev libudunits2-dev libnlopt-dev
       - name: Check install
         run: echo "$LD_LIBRARY_PATH"
       - name: Run package addition pipeline in docker
