@@ -31,8 +31,6 @@ jobs:
 
           apt install -y r-base=4.1.3-1.1804.0 && \
           mkdir -p $R_LIBS_USER
-
-          R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
       - name: Check install
         run: echo "$LD_LIBRARY_PATH"
       - name: Run package addition pipeline in docker
@@ -47,6 +45,7 @@ jobs:
           GITHUB_USER: "github-actions"
         run: |
           cd /workspace
+          R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
           R -e "devtools::install('./CRANpiled')"
           R -e "devtools::install('./gitCRAN')"
 
