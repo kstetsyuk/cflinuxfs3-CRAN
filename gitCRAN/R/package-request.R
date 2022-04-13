@@ -1,7 +1,7 @@
 get_issues <- function(owner, repo, labels = NULL,
                        state = c("open", "closed", "all"),
                        username = Sys.getenv("GITHUB_USER"),
-                       token = Sys.getenv("GITHUB_PAT")) {
+                       token = Sys.getenv("GITHUB_TOKEN")) {
   state <- match.arg(state)
 
   uri <- sprintf("/repos/%s/%s/issues", owner, repo)
@@ -19,7 +19,7 @@ get_issues <- function(owner, repo, labels = NULL,
 
 get_members <- function(github_org,
                         username = Sys.getenv("GITHUB_USER"),
-                        token = Sys.getenv("GITHUB_PAT")) {
+                        token = Sys.getenv("GITHUB_TOKEN")) {
   response <- httr::GET(
     sprintf("https://api.github.com/orgs/%s/members", github_org),
     httr::authenticate(username, token)
@@ -32,7 +32,7 @@ filter_issues <- function(
   issues,
   github_org = Sys.getenv("GITCRAN_FILTER_ORG"),
   username = Sys.getenv("GITHUB_USER"),
-  token = Sys.getenv("GITHUB_PAT")
+  token = Sys.getenv("GITHUB_TOKEN")
 ) {
   if (github_org == username || github_org == "")
     organization_members <- username
@@ -49,7 +49,7 @@ get_package_requests <- function(
   state = "open",
   filter_org = Sys.getenv("GITCRAN_FILTER_ORG"),
   username = Sys.getenv("GITHUB_USER"),
-  token = Sys.getenv("GITHUB_PAT")
+  token = Sys.getenv("GITHUB_TOKEN")
 ) {
   issues <- filter_issues(
     issues = get_issues(owner, repo, labels, state, username, token),
@@ -116,7 +116,7 @@ get_api_user <- function(username, token) {
 #' issues, defaults to the environment variable GITHUB_USER
 #' @param token character - Github Personal Access TOKEN (PAT) for the provided
 #' username with repository read and write permissions, defaults to the
-#' environment variable GITHUB_PAT
+#' environment variable GITHUB_TOKEN
 #'
 #' @export
 package_request_pipeline <- function(
@@ -126,7 +126,7 @@ package_request_pipeline <- function(
   labels = Sys.getenv("GITCRAN_LABELS", "package-request"),
   state = Sys.getenv("GITCRAN_STATE", "open"),
   username = Sys.getenv("GITHUB_USER"),
-  token = Sys.getenv("GITHUB_PAT")
+  token = Sys.getenv("GITHUB_TOKEN")
 ) {
   stopifnot(nchar(owner) > 0)
   stopifnot(nchar(gh_repository) > 0)
