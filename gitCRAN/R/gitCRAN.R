@@ -1,0 +1,14 @@
+#' gitCRAN: A package for keeping your internal/custom CRAN repo in Github
+#'
+#' @section Concept:
+#' Creating and maintaining a custom/internal CRAN repository requires setting
+#' up a file server and a way of adding/removing packages, as well as updating
+#' the PACKAGES file that registers the available packages.
+#'
+#' Furthermore, a simple file server lacks any version control, history, etc.
+#' By taking advantage of a git repository and git repository viewer, a CRAN
+#' repo can be created, browsed, rolled-back, access controlled, etc.
+#'
+#' @docType package
+#' @name gitCRAN
+NULL
