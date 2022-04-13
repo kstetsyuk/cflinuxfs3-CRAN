@@ -16,6 +16,8 @@ jobs:
       volumes: 
        - ${{ github.workspace }}:/workspace
     steps:
+      - name: Check out code
+        uses: actions/checkout@v2
       - name: Turnstyle
         uses: softprops/turnstyle@v1
       - name: Install package dependencies
@@ -46,7 +48,7 @@ jobs:
         run: |
           cd /workspace
           R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
-          R -e "devtools::install_local('/workspace/CRANpiled')"
-          R -e "devtools::install_local('/workspace/gitCRAN')"
+          R -e "devtools::install_local('CRANpiled')"
+          R -e "devtools::install_local('gitCRAN')"
 
           R -e "gitCRAN::package_request_pipeline()"
