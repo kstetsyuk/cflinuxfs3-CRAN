@@ -11,7 +11,7 @@ get_issues <- function(owner, repo, labels = NULL,
   issues_req <- httr::GET(
     paste0("https://api.github.com", uri),
     query = list(labels = labels, state = state),
-    httr::authenticate(username, token)
+    add_headers(authorization = paste("Bearer :", token))
   )
 
   httr::content(issues_req, as = "parsed")
@@ -22,7 +22,7 @@ get_members <- function(github_org,
                         token = Sys.getenv("GITHUB_TOKEN")) {
   response <- httr::GET(
     sprintf("https://api.github.com/orgs/%s/members", github_org),
-    httr::authenticate(username, token)
+    add_headers(authorization = paste("Bearer :", token))
   )
 
   sapply(httr::content(response, as = "parsed"), `[[`, "login")
@@ -86,15 +86,6 @@ parse_package_request <- function(issue_body) {
   unique(strsplit(packages_csv, ",\\s*")[[1]])
 }
 
-get_api_user <- function(username, token) {
-  user_resp <- httr::GET(
-    paste0("https://api.github.com", "/user"),
-    httr::authenticate(username, token)
-  )
-
-  httr::content(user_resp, as = "parsed")
-}
-
 #' Handle Package Requests from Issues Automatically
 #'
 #' This pipeline fetches issues from a Github repository and if they follow
@@ -156,8 +147,6 @@ package_request_pipeline <- function(
     git2r_repo <- git2r::repository(local_repository)
   }
 
-  api_user <- get_api_user(username, token)
-
   git2r::config(git2r_repo, user.name = "github-actions",
                 user.email = "github-actions@github.com")
 
@@ -192,7 +181,7 @@ package_request_pipeline <- function(
 
     git2r::push(
       git2r_repo,
-      credentials = git2r::cred_user_pass(username, token)
+      credentials = git2r::cred_token(token)
     )
   
   cat("Pipeline finished.")
@@ -206,7 +195,7 @@ create_comment <- function(owner, repository, issue_id, comment, username,
       owner, repository, issue_id
     ),
     body = jsonlite::toJSON(list(body = comment), auto_unbox = TRUE),
-    httr::authenticate(username, token)
+    add_headers(authorization = paste("Bearer :", token))
   )
 }
 
@@ -217,7 +206,7 @@ close_issue <- function(owner, repository, issue_id, username, token) {
       owner, repository, issue_id
     ),
     body = jsonlite::toJSON(list(state = "closed"), auto_unbox = TRUE),
-    httr::authenticate(username, token)
+    add_headers(authorization = paste("Bearer :", token))
   )
 }
 
