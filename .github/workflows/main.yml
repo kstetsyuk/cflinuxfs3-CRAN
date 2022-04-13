@@ -11,6 +11,9 @@ jobs:
   process_package_requests:
     runs-on: ubuntu-latest
     name: Add packages from open package requests
+    defaults:
+      run:
+        working-directory: /workspace
     container:
       image: cloudfoundry/cflinuxfs3
       volumes: 
@@ -46,7 +49,6 @@ jobs:
           GITCRAN_STATE: "open"
           GITHUB_USER: "github-actions"
         run: |
-          cd /workspace
           R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
           R -e "devtools::install_local('CRANpiled')"
           R -e "devtools::install_local('gitCRAN')"
