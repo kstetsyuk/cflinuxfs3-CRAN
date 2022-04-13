@@ -2,6 +2,9 @@ on:
   issues:
     type: [labeled]
   workflow_dispatch:
+    inputs:
+      package_requests:
+        description: 'Packages to add'     
 
 permissions:
   contents: write
@@ -19,8 +22,6 @@ jobs:
       volumes: 
        - ${{ github.workspace }}:/workspace
     steps:
-      - name: Check out code
-        uses: actions/checkout@v2
       - name: Turnstyle
         uses: softprops/turnstyle@v1
       - name: Install package dependencies
@@ -30,14 +31,23 @@ jobs:
           apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 && \
           add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/' && \
           add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+          add-apt-repository ppa:git-core/ppa
           apt-get -y update
-          apt-get -y install libgdal-dev libgeos-dev libproj-dev libudunits2-dev libnlopt-dev
-                    export R_LIBS_USER=/opt/Rlib
-
-          apt install -y r-base=4.1.3-1.1804.0 && \
-          mkdir -p $R_LIBS_USER
+          apt-get -y install libgdal-dev libgeos-dev libproj-dev libudunits2-dev libnlopt-dev git
+          
+          apt install -y r-base=4.1.3-1.1804.0
+          git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
+      - name: Check out code
+        uses: actions/checkout@v2
       - name: Check install
-        run: echo "$LD_LIBRARY_PATH"
+        run: |
+          echo "$LD_LIBRARY_PATH"
+          git --version
+      - name: Install local packages
+        run: |
+          R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
+          R -e "devtools::install_local('CRANpiled')"
+          R -e "devtools::install_local('gitCRAN')"
       - name: Run package addition pipeline in docker
         id: add_package_pipeline
         env:
@@ -49,9 +59,4 @@ jobs:
           GITCRAN_STATE: "open"
           GITHUB_USER: "github-actions"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
-          R -e "devtools::install_local('CRANpiled')"
-          R -e "devtools::install_local('gitCRAN')"
-
-          R -e "gitCRAN::package_request_pipeline()"
+        run: R -e "gitCRAN::package_request_pipeline('${{ github.event.inputs.package_requests }}')"

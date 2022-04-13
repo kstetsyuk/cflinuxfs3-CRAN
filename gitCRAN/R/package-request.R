@@ -11,7 +11,7 @@ get_issues <- function(owner, repo, labels = NULL,
   issues_req <- httr::GET(
     paste0("https://api.github.com", uri),
     query = list(labels = labels, state = state),
-    add_headers(authorization = paste("Bearer :", token))
+    httr::add_headers(authorization = paste("Bearer ", token))
   )
 
   httr::content(issues_req, as = "parsed")
@@ -20,12 +20,16 @@ get_issues <- function(owner, repo, labels = NULL,
 get_members <- function(github_org,
                         username = Sys.getenv("GITHUB_USER"),
                         token = Sys.getenv("GITHUB_TOKEN")) {
-  response <- httr::GET(
-    sprintf("https://api.github.com/orgs/%s/members", github_org),
-    add_headers(authorization = paste("Bearer :", token))
-  )
-
-  sapply(httr::content(response, as = "parsed"), `[[`, "login")
+  c(lapply(1:10, function(i) {
+    response <- httr::GET(
+      sprintf(
+        "https://api.github.com/orgs/%s/members?per_page=100&page=%s", 
+        github_org,
+        i),
+      httr::add_headers(authorization = paste("Bearer ", token))
+    )
+    sapply(httr::content(response, as = "parsed"), `[[`, "login")
+  }), recursive=TRUE)
 }
 
 filter_issues <- function(
@@ -111,6 +115,7 @@ parse_package_request <- function(issue_body) {
 #'
 #' @export
 package_request_pipeline <- function(
+  package_request_raw,
   owner = Sys.getenv("GITCRAN_REPO_OWNER"),
   gh_repository = Sys.getenv("GITCRAN_REPO"),
   subpath = Sys.getenv("GITCRAN_SUBDIR", ""),
@@ -126,26 +131,12 @@ package_request_pipeline <- function(
   stopifnot(nchar(username) > 0)
   stopifnot(nchar(token) > 0)
 
-  package_requests <- do.call(
-    get_package_requests,
-    list(owner = owner, repo = gh_repository, labels = labels, state = state,
-         username = username, token = token)
-  )
+  package_requests <- package_request_raw
 
-  CRAN_repo <- Sys.getenv("CRAN_REPO", "cloud.r-project.org")
+  CRAN_repo <- Sys.getenv("CRAN_REPO", "https://cloud.r-project.org")
 
-  local_repository <- file.path(tempdir(), "gitCRAN")
-
-
-  if (!dir.exists(local_repository)) {
-    dir.create(local_repository)
-
-    repo_remote <- sprintf("https://github.com/%s/%s", owner, gh_repository)
-
-    git2r_repo <- git2r::clone(repo_remote, local_repository)
-  } else {
-    git2r_repo <- git2r::repository(local_repository)
-  }
+  local_repository <- getwd()
+  git2r_repo <- git2r::repository(local_repository)
 
   git2r::config(git2r_repo, user.name = "github-actions",
                 user.email = "github-actions@github.com")
@@ -169,7 +160,7 @@ package_request_pipeline <- function(
       quiet = FALSE
     )
 
-    git2r::add(git2r_repo, ".")
+    git2r::add(git2r_repo, local_repository)
 
     git2r::commit(
       git2r_repo,
@@ -184,6 +175,8 @@ package_request_pipeline <- function(
       credentials = git2r::cred_token(token)
     )
   
+  
+  }
   cat("Pipeline finished.")
 }
 
@@ -195,7 +188,7 @@ create_comment <- function(owner, repository, issue_id, comment, username,
       owner, repository, issue_id
     ),
     body = jsonlite::toJSON(list(body = comment), auto_unbox = TRUE),
-    add_headers(authorization = paste("Bearer :", token))
+    httr::add_headers(authorization = paste("Bearer ", token))
   )
 }
 
@@ -206,7 +199,7 @@ close_issue <- function(owner, repository, issue_id, username, token) {
       owner, repository, issue_id
     ),
     body = jsonlite::toJSON(list(state = "closed"), auto_unbox = TRUE),
-    add_headers(authorization = paste("Bearer :", token))
+    httr::add_headers(authorization = paste("Bearer ", token))
   )
 }
 
