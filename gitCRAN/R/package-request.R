@@ -171,46 +171,30 @@ package_request_pipeline <- function(
   for (package_request_id in names(package_requests)) {
     package_request <- package_requests[[package_request_id]]
 
-    tryCatch({
-      cat(paste0("Adding packages from request #", package_request_id))
-      packages_added <- CRANpiled::add_packages(
-        package_request,
-        local_repository,
-        available_packages,
-        compile = TRUE,
-        quiet = FALSE
+    cat(paste0("Adding packages from request #", package_request_id))
+    packages_added <- CRANpiled::add_packages(
+      package_request,
+      local_repository,
+      available_packages,
+      compile = TRUE,
+      quiet = FALSE
+    )
+
+    git2r::add(git2r_repo, ".")
+
+    git2r::commit(
+      git2r_repo,
+      paste0(
+        "Closes #", package_request_id, " Adds:\n ",
+        paste(packages_added, collapse = ", ")
       )
+    )
 
-      git2r::add(git2r_repo, ".")
-
-      git2r::commit(
-        git2r_repo,
-        paste0(
-          "Closes #", package_request_id, " Adds:\n ",
-          paste(packages_added, collapse = ", ")
-        )
-      )
-
-      git2r::push(
-        git2r_repo,
-        credentials = git2r::cred_user_pass(username, token)
-      )
-    }, error = function(e) {
-      error_comment <- paste0(
-        "There was an issue processing your package addition request. ",
-        "Tagging @", username, " to debug and closing the issue. ",
-        "See the logs:\n",
-        "```\n",
-        trimws(e)
-      )
-
-      cat(paste0("Commenting on and closing issue #", package_request_id))
-      create_comment(owner, gh_repository, package_request_id, error_comment,
-                     username, token)
-      close_issue(owner, gh_repository, package_request_id, username, token)
-    })
-  }
-
+    git2r::push(
+      git2r_repo,
+      credentials = git2r::cred_user_pass(username, token)
+    )
+  
   cat("Pipeline finished.")
 }
 
