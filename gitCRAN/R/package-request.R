@@ -131,8 +131,6 @@ package_request_pipeline <- function(
   stopifnot(nchar(username) > 0)
   stopifnot(nchar(token) > 0)
 
-  package_requests <- package_request_raw
-
   CRAN_repo <- Sys.getenv("CRAN_REPO", "https://cloud.r-project.org")
 
   local_repository <- getwd()
@@ -148,35 +146,33 @@ package_request_pipeline <- function(
 
   available_packages <- available.packages(repos = CRAN_repo)
 
-  for (package_request_id in names(package_requests)) {
-    package_request <- package_requests[[package_request_id]]
+  package_request <- c(package_request_raw)
 
-    cat(paste0("Adding packages from request #", package_request_id))
-    packages_added <- CRANpiled::add_packages(
-      package_request,
-      local_repository,
-      available_packages,
-      compile = TRUE,
-      quiet = FALSE
+  cat(paste0("Adding package request", package_request))
+  packages_added <- CRANpiled::add_packages(
+    package_request,
+    local_repository,
+    available_packages,
+    compile = TRUE,
+    quiet = FALSE
+  )
+
+  git2r::add(git2r_repo, local_repository)
+
+  git2r::commit(
+    git2r_repo,
+    paste0(
+      "Adds:\n ",
+      paste(packages_added, collapse = ", ")
     )
+  )
 
-    git2r::add(git2r_repo, local_repository)
+  git2r::push(
+    git2r_repo,
+    credentials = git2r::cred_token(token)
+  )
 
-    git2r::commit(
-      git2r_repo,
-      paste0(
-        "Closes #", package_request_id, " Adds:\n ",
-        paste(packages_added, collapse = ", ")
-      )
-    )
-
-    git2r::push(
-      git2r_repo,
-      credentials = git2r::cred_token(token)
-    )
   
-  
-  }
   cat("Pipeline finished.")
 }
 
