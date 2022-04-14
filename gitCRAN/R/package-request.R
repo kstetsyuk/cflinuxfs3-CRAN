@@ -169,7 +169,7 @@ package_request_pipeline <- function(
 
   git2r::push(
     git2r_repo,
-    credentials = git2r::cred_token(token)
+    credentials = git2r::cred_token("GITHUB_TOKEN")
   )
 
   
