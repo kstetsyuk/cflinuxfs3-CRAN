@@ -39,6 +39,8 @@ jobs:
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
       - name: Check out code
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Check install
         run: |
           echo "$LD_LIBRARY_PATH"
