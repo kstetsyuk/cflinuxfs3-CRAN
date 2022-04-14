@@ -43,17 +43,17 @@ MD5sum: b473a09fcb54d8ce01949c5531619c71
 NeedsCompilation: yes
 
 Package: MASS
-Version: 7.3-55
+Version: 7.3-56
 Priority: recommended
 Depends: R (>= 3.3.0), grDevices, graphics, stats, utils
 Imports: methods
 Suggests: lattice, nlme, nnet, survival
 License: GPL-2 | GPL-3
-MD5sum: e795560a74622b3787a0e110c440caa9
+MD5sum: b23596f582cf9ef451ef6b9c5feed26b
 NeedsCompilation: yes
 
 Package: Matrix
-Version: 1.4-0
+Version: 1.4-1
 Priority: recommended
 Depends: R (>= 3.5.0)
 Imports: methods, graphics, grid, stats, utils, lattice
@@ -61,7 +61,7 @@ Suggests: expm, MASS
 Enhances: MatrixModels, graph, SparseM, sfsmisc, igraph, maptools, sp,
         spdep
 License: GPL (>= 2) | file LICENCE
-MD5sum: e167a1bfb83478cc10514291defcf85b
+MD5sum: a64405d080942fa474bf9bb0f682fcf6
 NeedsCompilation: yes
 
 Package: R.cache
@@ -133,11 +133,11 @@ MD5sum: 1fd77d5d07b56c55b7642b2817ff5c61
 NeedsCompilation: yes
 
 Package: Rcpp
-Version: 1.0.8
+Version: 1.0.8.3
 Imports: methods, utils
 Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
-MD5sum: 1137d57433499cc7d0c7e86727756f12
+MD5sum: 1341a2d1a0a361b24e5e10137d5753a8
 NeedsCompilation: yes
 
 Package: SparseM
@@ -155,6 +155,17 @@ Imports: methods, utils
 License: LGPL (>= 2)
 MD5sum: 6f74fcfcc95eb00797ba06592661b29d
 NeedsCompilation: no
+
+Package: ape
+Version: 5.6-2
+Depends: R (>= 3.2.0)
+Imports: nlme, lattice, graphics, methods, stats, tools, utils,
+        parallel, Rcpp (>= 0.12.0)
+LinkingTo: Rcpp
+Suggests: gee, expm, igraph, phangorn
+License: GPL-2 | GPL-3
+MD5sum: 4f7b4ebaea629439a5d7274908e1b0ea
+NeedsCompilation: yes
 
 Package: askpass
 Version: 1.1
@@ -337,6 +348,21 @@ License: GPL-3
 MD5sum: ff860fd840390be4fc9a0019f3ee6578
 NeedsCompilation: no
 
+Package: clusterGeneration
+Version: 1.3.7
+Depends: R (>= 3.5.0), MASS
+License: GPL (>= 2)
+MD5sum: d4dc45b364e049fcadedc824b1e718c7
+NeedsCompilation: no
+
+Package: coda
+Version: 0.19-4
+Depends: R (>= 2.14.0)
+Imports: lattice
+License: GPL (>= 2)
+MD5sum: cb9027d972ba0e2cc428ccf9c30a42ba
+NeedsCompilation: no
+
 Package: codetools
 Version: 0.2-18
 Priority: recommended
@@ -356,6 +382,12 @@ Suggests: datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
 License: BSD_3_clause + file LICENSE
 MD5sum: 435a6955a87170c19af85c2f7f36f857
 NeedsCompilation: yes
+
+Package: combinat
+Version: 0.0-8
+License: GPL-2
+MD5sum: daa7ecfc6f5106f6839cf5286512ecbc
+NeedsCompilation: no
 
 Package: commonmark
 Version: 1.7
@@ -431,12 +463,12 @@ MD5sum: fd16a28ac6ae5e1698a7aae2c36e4bfd
 NeedsCompilation: no
 
 Package: deSolve
-Version: 1.28
+Version: 1.31
 Depends: R (>= 3.3.0)
 Imports: methods, graphics, grDevices, stats
 Suggests: scatterplot3d, FME
 License: GPL (>= 2)
-MD5sum: 73d77d3a880f7edb8006e95af0acea55
+MD5sum: e18f5e9e2e1cbb1e4985237e3e0c179f
 NeedsCompilation: yes
 
 Package: deldir
@@ -516,6 +548,15 @@ License: MIT + file LICENSE
 MD5sum: ec1abafcc59d5e2a8b27fedfdb8438ce
 NeedsCompilation: no
 
+Package: expm
+Version: 0.999-6
+Depends: Matrix
+Imports: methods
+Suggests: RColorBrewer, sfsmisc, Rmpfr
+License: GPL (>= 2)
+MD5sum: 63edcc4496e41c058a7cba7897b747e5
+NeedsCompilation: yes
+
 Package: fansi
 Version: 1.0.2
 Depends: R (>= 3.1.0)
@@ -537,6 +578,13 @@ Version: 1.1.0
 Suggests: testthat (>= 2.1.1)
 License: MIT + file LICENSE
 MD5sum: 1b2297b6ec4ea31c10897ae2fb353fc9
+NeedsCompilation: yes
+
+Package: fastmatch
+Version: 1.1-3
+Depends: R (>= 2.3.0)
+License: GPL-2
+MD5sum: 42296bbff5213d9bd0b31201d06d7b0f
 NeedsCompilation: yes
 
 Package: filehash
@@ -620,6 +668,16 @@ Suggests: aws.ec2metadata, aws.signature, covr, httpuv, knitr, mockr,
 License: MIT + file LICENSE
 MD5sum: efb8cc74b52cb92ce0a793f5bba9bbda
 NeedsCompilation: no
+
+Package: geiger
+Version: 2.0.7
+Depends: ape (>= 3.0-6), R (>= 2.15.0)
+Imports: MASS, mvtnorm, subplex, deSolve (>= 1.7), digest, Rcpp (>=
+        0.11.0), coda, ncbit, colorspace, methods, phytools (>= 0.7.31)
+LinkingTo: Rcpp
+License: GPL (>= 2)
+MD5sum: 0bcca321113ead8dd0a97b35468e36a5
+NeedsCompilation: yes
 
 Package: generics
 Version: 0.1.2
@@ -828,14 +886,14 @@ MD5sum: e44364486fd7480a91b64627e11383fb
 NeedsCompilation: no
 
 Package: igraph
-Version: 1.2.6
+Version: 1.3.0
 Depends: methods
 Imports: graphics, grDevices, magrittr, Matrix, pkgconfig (>= 2.0.0),
         stats, utils
-Suggests: ape, digest, graph, igraphdata, rgl, scales, stats4, tcltk,
-        testthat, withr
+Suggests: ape, graph, igraphdata, rgl, scales, stats4, tcltk, testthat,
+        withr, digest
 License: GPL (>= 2)
-MD5sum: 85d99f28afba11ac0e46e80004e1309e
+MD5sum: 6629ae08ff46aa41d1b35bdd7424e46d
 NeedsCompilation: yes
 
 Package: inline
@@ -1049,10 +1107,20 @@ MD5sum: 874e63c510d1e43520ea3bf79ddd75dd
 NeedsCompilation: yes
 
 Package: magrittr
-Version: 2.0.2
+Version: 2.0.3
+Depends: R (>= 3.4.0)
 Suggests: covr, knitr, rlang, rmarkdown, testthat
 License: MIT + file LICENSE
-MD5sum: 7d77addb55022d00c499777b35f315d8
+MD5sum: c21e40aecd74bf2643e829345b00f3ab
+NeedsCompilation: yes
+
+Package: maps
+Version: 3.4.0
+Depends: R (>= 3.5.0)
+Imports: graphics, utils
+Suggests: mapproj (>= 1.2-0), mapdata (>= 2.3.0), sp, rnaturalearth
+License: GPL-2
+MD5sum: 0bf293134ac06c2380b87207a945f954
 NeedsCompilation: yes
 
 Package: maptools
@@ -1147,6 +1215,14 @@ License: GPL-2
 MD5sum: aa55c57af4d1aceba6c976ad7ccf3463
 NeedsCompilation: no
 
+Package: mnormt
+Version: 2.0.2
+Depends: R (>= 2.2.0)
+Imports: tmvnsim (>= 1.0-2)
+License: GPL-2 | GPL-3
+MD5sum: afffe725c46fcf0e828dd35ff43d3a4c
+NeedsCompilation: yes
+
 Package: modelr
 Version: 0.1.8
 Depends: R (>= 3.2)
@@ -1165,14 +1241,29 @@ License: MIT + file LICENSE
 MD5sum: 16f341901fd530ea88ff6df00af23bfc
 NeedsCompilation: no
 
+Package: mvtnorm
+Version: 1.1-3
+Depends: R(>= 3.5.0)
+Imports: stats, methods
+License: GPL-2
+MD5sum: ec1b981ad0b981c05e4fb40f3bbb67fd
+NeedsCompilation: yes
+
+Package: ncbit
+Version: 2013.03.29
+Depends: R (>= 2.10)
+License: GPL (>= 2)
+MD5sum: e4660d4edb63004e8acbe08a4023c9d3
+NeedsCompilation: no
+
 Package: nlme
-Version: 3.1-155
+Version: 3.1-157
 Priority: recommended
-Depends: R (>= 3.4.0)
+Depends: R (>= 3.5.0)
 Imports: graphics, stats, utils, lattice
-Suggests: Hmisc, MASS
-License: GPL (>= 2) | file LICENCE
-MD5sum: 8d6351e69b6eb1f590b8ea2f8bf040d0
+Suggests: Hmisc, MASS, SASmixed
+License: GPL (>= 2)
+MD5sum: 3ea3e7011eb15f0b3ca91f7770f3ab7a
 NeedsCompilation: yes
 
 Package: nloptr
@@ -1225,6 +1316,29 @@ License: LGPL (>= 2.1)
 MD5sum: 8384f8f8bc7152ef9602bab5b6069c8c
 NeedsCompilation: no
 
+Package: phangorn
+Version: 2.8.1
+Depends: ape (>= 5.5), R (>= 4.1.0)
+Imports: fastmatch, graphics, grDevices, igraph (>= 1.0), Matrix,
+        methods, parallel, quadprog, Rcpp, stats, utils
+LinkingTo: Rcpp
+Suggests: Biostrings, knitr, magick, prettydoc, rgl, rmarkdown, seqinr,
+        seqLogo, tinytest, xtable
+License: GPL (>= 2)
+MD5sum: eb57348c391e1bcc69353f8d685ed31e
+NeedsCompilation: yes
+
+Package: phytools
+Version: 1.0-3
+Depends: R (>= 3.5.0), ape (>= 4.0), maps
+Imports: clusterGeneration, coda, combinat, expm, graphics, grDevices,
+        MASS, methods, mnormt, nlme, numDeriv, phangorn (>= 2.3.1),
+        plotrix, scatterplot3d, stats, utils
+Suggests: animation, geiger, RColorBrewer, rgl
+License: GPL (>= 2)
+MD5sum: 5a36d84f0e73b35c62f7f3800765bacb
+NeedsCompilation: no
+
 Package: pillar
 Version: 1.7.0
 Imports: cli (>= 2.3.0), crayon (>= 1.3.4), ellipsis (>= 0.3.2), fansi,
@@ -1268,6 +1382,14 @@ Suggests: MASS, maps, hexbin, ggthemes, GGally, testthat, knitr,
         forcats, palmerpenguins, rversions, reticulate
 License: MIT + file LICENSE
 MD5sum: 84ab837ac4defe01d7b7085fe01113ef
+NeedsCompilation: no
+
+Package: plotrix
+Version: 3.8-2
+Depends: R (>= 3.5.0)
+Imports: grDevices, graphics, stats, utils
+License: GPL (>= 2)
+MD5sum: 91f3d7146a81f6d5ddd59324d654c34b
 NeedsCompilation: no
 
 Package: plyr
@@ -1357,6 +1479,13 @@ Suggests: covr, crayon, dplyr (>= 0.7.8), knitr, rmarkdown, testthat,
         tibble, tidyselect
 License: GPL-3 | file LICENSE
 MD5sum: ae79ebeee04f08e01afeb7f3412a5ee5
+NeedsCompilation: yes
+
+Package: quadprog
+Version: 1.5-8
+Depends: R (>= 3.1.0)
+License: GPL (>= 2)
+MD5sum: c0350dc6f728a4c187d6b3ecf3731ed3
 NeedsCompilation: yes
 
 Package: quietR
@@ -1598,6 +1727,14 @@ License: MIT + file LICENSE
 MD5sum: a98c546662e970cc04a9496bf277fcd5
 NeedsCompilation: no
 
+Package: scatterplot3d
+Version: 0.3-41
+Depends: R (>= 2.7.0)
+Imports: grDevices, graphics, stats
+License: GPL-2
+MD5sum: 4504c3fbefef6286ebd12f5ed6d77c3d
+NeedsCompilation: no
+
 Package: selectr
 Version: 0.4-2
 Depends: R (>= 3.0)
@@ -1837,6 +1974,13 @@ License: GPL-3
 MD5sum: 7e10c7bc637466cea5463ef087289404
 NeedsCompilation: no
 
+Package: subplex
+Version: 1.8
+Depends: R(>= 2.5.1)
+License: GPL-3
+MD5sum: fd8162db47befdc1eb6e293cf920acf9
+NeedsCompilation: yes
+
 Package: survey
 Version: 4.1-1
 Depends: R (>= 3.5.0), grid, methods, Matrix, survival
@@ -1982,6 +2126,12 @@ Suggests: testit, rstudioapi
 License: MIT + file LICENSE
 MD5sum: 03fd968910584c0d96b1bd1055975912
 NeedsCompilation: no
+
+Package: tmvnsim
+Version: 1.0-2
+License: GPL-2
+MD5sum: 41f6a30aae3d0d274abf9c665d0a4214
+NeedsCompilation: yes
 
 Package: tzdb
 Version: 0.2.0
