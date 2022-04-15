@@ -12,5 +12,3 @@ Package: ggplot2, https://github.com/thomascjohnson/CRANpiled/archive/master.zip
 
 Or in other words, a single `Package: ` followed by a comma separated string of package names, tarball URLs and/or zip URLs.
 
-This will kick off a Github action that will try to add the package to the repository. If it is successful, it will close the issue via the commit message. If it is not successful, it will tag the user specified to run the action and add the error output to the issue, and then close the issue.
-
