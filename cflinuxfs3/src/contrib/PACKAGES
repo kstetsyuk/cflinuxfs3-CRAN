@@ -122,6 +122,16 @@ License: BSD_3_clause + file LICENSE
 MD5sum: f142a6b5fea766a5f8eec966891a00d3
 NeedsCompilation: yes
 
+Package: RcppArmadillo
+Version: 0.11.0.0.0
+Depends: R (>= 3.3.0)
+Imports: Rcpp (>= 0.11.0), stats, utils, methods
+LinkingTo: Rcpp
+Suggests: tinytest, Matrix (>= 1.3.0), pkgKitten, reticulate, slam
+License: GPL (>= 2)
+MD5sum: d197a8bd8e731b0613132e62c3d6b06a
+NeedsCompilation: yes
+
 Package: RcppEigen
 Version: 0.3.3.7.0
 Depends: R (>= 2.15.1)
