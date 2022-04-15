@@ -37,6 +37,8 @@ jobs:
           
           apt install -y r-base=4.1.3-1.1804.0
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
+          
+          ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/x86_64-linux-gnu/libgfortran.so
       - name: Check out code
         uses: actions/checkout@v2
         with:
