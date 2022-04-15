@@ -1935,6 +1935,16 @@ License: MIT + file LICENSE
 MD5sum: 66459907438a7be4cd4ab963ffa681bf
 NeedsCompilation: no
 
+Package: splines2
+Version: 0.4.5
+Depends: R (>= 3.2.3)
+Imports: Rcpp, stats
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, tinytest
+License: GPL (>= 3)
+MD5sum: 5470cce7eb83b5bd33a00f64f2133cb2
+NeedsCompilation: yes
+
 Package: spsurvey
 Version: 5.3.0
 Depends: R (>= 3.5.0), sf, survey (>= 4.1-1)
