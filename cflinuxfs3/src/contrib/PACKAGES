@@ -141,6 +141,16 @@ License: BSD_3_clause + file LICENSE
 MD5sum: f142a6b5fea766a5f8eec966891a00d3
 NeedsCompilation: yes
 
+Package: RSpectra
+Version: 0.16-0
+Depends: R (>= 3.0.2)
+Imports: Matrix (>= 1.1-0), Rcpp (>= 0.11.5)
+LinkingTo: Rcpp, RcppEigen (>= 0.3.3.3.0)
+Suggests: knitr, rmarkdown, prettydoc
+License: MPL (>= 2)
+MD5sum: d8029266429a8782425b42df8ed1bcb3
+NeedsCompilation: yes
+
 Package: RcppArmadillo
 Version: 0.11.0.0.0
 Depends: R (>= 3.3.0)
@@ -159,6 +169,16 @@ LinkingTo: Rcpp
 Suggests: inline, tinytest, pkgKitten, microbenchmark
 License: GPL (>= 2) | file LICENSE
 MD5sum: 1fd77d5d07b56c55b7642b2817ff5c61
+NeedsCompilation: yes
+
+Package: RcppTOML
+Version: 0.1.7
+Depends: R (>= 3.3.0)
+Imports: Rcpp (>= 0.11.5)
+LinkingTo: Rcpp
+Suggests: tinytest
+License: GPL (>= 2)
+MD5sum: ef8929c71739d6655fdab2b1ed279486
 NeedsCompilation: yes
 
 Package: Rcpp
@@ -846,6 +866,15 @@ Suggests: cli, covr, crayon, fs, knitr, pillar (>= 1.4.0), rmarkdown,
 License: MIT + file LICENSE
 MD5sum: 1a196eb8bd1f1780d7023e2967cc05d7
 NeedsCompilation: yes
+
+Package: here
+Version: 1.0.1
+Imports: rprojroot (>= 2.0.2)
+Suggests: conflicted, covr, fs, knitr, palmerpenguins, plyr, readr,
+        rlang, rmarkdown, testthat, uuid, withr
+License: MIT + file LICENSE
+MD5sum: 9c14842986c52872ce69e2ff05b1572d
+NeedsCompilation: no
 
 Package: highr
 Version: 0.9
@@ -1658,14 +1687,14 @@ MD5sum: e4c8006eaacec038b6854e03eaa1469b
 NeedsCompilation: yes
 
 Package: reticulate
-Version: 1.16
+Version: 1.24
 Depends: R (>= 3.0)
-Imports: graphics, jsonlite, Matrix, methods, rappdirs, Rcpp (>=
-        0.12.7), utils
+Imports: Matrix, Rcpp (>= 0.12.7), RcppTOML, graphics, here, jsonlite,
+        methods, png, rappdirs, utils, withr
 LinkingTo: Rcpp
-Suggests: callr, knitr, rmarkdown, testthat
+Suggests: callr, knitr, rlang, rmarkdown, testthat
 License: Apache License 2.0
-MD5sum: 010a798ecc66df81bdb7849bb5e68e69
+MD5sum: 2deeac5a3563e64c13f3fe84836e2a88
 NeedsCompilation: yes
 
 Package: rgdal
@@ -1731,12 +1760,12 @@ MD5sum: 43d2c50f49269640e4d1971aa098c8e1
 NeedsCompilation: yes
 
 Package: rprojroot
-Version: 1.3-2
+Version: 2.0.3
 Depends: R (>= 3.0.0)
-Imports: backports
-Suggests: testthat, mockr, knitr, withr, rmarkdown
-License: GPL-3
-MD5sum: ba428d1a64584a73bfcc24bd753c4de7
+Suggests: covr, knitr, lifecycle, mockr, rmarkdown, testthat (>=
+        3.0.0), withr
+License: MIT + file LICENSE
+MD5sum: 053a0aeddbc7982676dfb0409f6a482e
 NeedsCompilation: no
 
 Package: rstudioapi
@@ -2234,6 +2263,17 @@ Version: 0.13.2
 Depends: R (>= 2.10.0)
 License: GPL-2
 MD5sum: c0476aabf3ac747169aedb0c0f460b1c
+NeedsCompilation: yes
+
+Package: umap
+Version: 0.2.8.0
+Depends: R (>= 3.1.2)
+Imports: Matrix, methods, openssl, reticulate, Rcpp (>= 0.12.6),
+        RSpectra, stats
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, testthat
+License: MIT + file LICENSE
+MD5sum: 9eab86192dc7c0b365e4558e74acad5f
 NeedsCompilation: yes
 
 Package: units
