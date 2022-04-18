@@ -12,3 +12,9 @@ Package: ggplot2, https://github.com/thomascjohnson/CRANpiled/archive/master.zip
 
 Or in other words, a single `Package: ` followed by a comma separated string of package names, tarball URLs and/or zip URLs.
 
+## How to use this CRAN in cloud.gov
+To use this, start your r.yml file with the lines:
+```
+packages:
+- cran_mirror: https://raw.githubusercontent.com/USEPA/cflinuxfs3-CRAN/master/cflinuxfs3/
+```
