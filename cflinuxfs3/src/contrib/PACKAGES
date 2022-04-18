@@ -134,11 +134,20 @@ License: Apache License 2.0
 MD5sum: 230cb889d27185851ffc1742bae3526d
 NeedsCompilation: no
 
+Package: RCurl
+Version: 1.98-1.6
+Depends: R (>= 3.4.0), methods
+Imports: bitops
+Suggests: XML
+License: BSD_3_clause + file LICENSE
+MD5sum: 3934555598c65ac567799859b4dafd79
+NeedsCompilation: yes
+
 Package: RJSONIO
-Version: 1.3-1.4
+Version: 1.3-1.6
 Imports: methods
 License: BSD_3_clause + file LICENSE
-MD5sum: f142a6b5fea766a5f8eec966891a00d3
+MD5sum: 2d8a054179aa54b56d25146663560bb6
 NeedsCompilation: yes
 
 Package: RSpectra
@@ -261,6 +270,12 @@ Suggests: testthat (>= 0.11.0), roxygen2, knitr, rmarkdown,
         microbenchmark, bit64 (>= 4.0.0), ff (>= 4.0.0)
 License: GPL-2 | GPL-3
 MD5sum: 23c8da4aa3a9a33e7342ef11b3397cf7
+NeedsCompilation: yes
+
+Package: bitops
+Version: 1.0-7
+License: GPL (>= 2)
+MD5sum: 2ff4aea908e630c0a926b0ee59ec41de
 NeedsCompilation: yes
 
 Package: blob
@@ -1490,14 +1505,14 @@ MD5sum: 91f3d7146a81f6d5ddd59324d654c34b
 NeedsCompilation: no
 
 Package: plyr
-Version: 1.8.6
+Version: 1.8.7
 Depends: R (>= 3.1.0)
 Imports: Rcpp (>= 0.11.0)
 LinkingTo: Rcpp
 Suggests: abind, covr, doParallel, foreach, iterators, itertools,
         tcltk, testthat
 License: MIT + file LICENSE
-MD5sum: e4d2111f4960d655e82ce15ca2bc2596
+MD5sum: da039d4424d22fdfd7ba326757709e16
 NeedsCompilation: yes
 
 Package: png
@@ -1590,6 +1605,13 @@ Version: 0.1.0
 Suggests: testthat
 License: MIT + file LICENSE
 MD5sum: ff7cb15d237f9b98427b7647c147d7c8
+NeedsCompilation: no
+
+Package: rCharts
+Version: 0.4.5
+Imports: plyr, lattice, RCurl, RJSONIO, whisker, yaml
+License: MIT
+MD5sum: fda11d5897356d673628423f909d1838
 NeedsCompilation: no
 
 Package: rappdirs
@@ -2357,6 +2379,13 @@ Imports: magrittr, jsonlite, callr
 Suggests: httpuv, knitr, rmarkdown, shiny
 License: GPL-2
 MD5sum: 85776f3b8d34de8c6df5b2738edf6118
+NeedsCompilation: no
+
+Package: whisker
+Version: 0.4
+Suggests: markdown
+License: GPL-3
+MD5sum: bb5e83c365f7e6eb3c884fd3c0089abe
 NeedsCompilation: no
 
 Package: withr
