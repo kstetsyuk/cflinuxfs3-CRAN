@@ -49,7 +49,6 @@ jobs:
       - name: Install local packages
         run: |
           R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
-          R -e "install.packages('RcppArmadillo', repos = 'cloud.r-project.org')"
           R -e "devtools::install_local('CRANpiled')"
           R -e "devtools::install_local('gitCRAN')"
       - name: Run package addition pipeline in docker
