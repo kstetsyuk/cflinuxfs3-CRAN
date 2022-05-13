@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       package_requests:
-        description: 'Packages to add'     
+        description: 'Packages to add'
 
 permissions:
   contents: write
@@ -19,7 +19,7 @@ jobs:
         working-directory: /workspace
     container:
       image: cloudfoundry/cflinuxfs3
-      volumes: 
+      volumes:
        - ${{ github.workspace }}:/workspace
     steps:
       - name: Turnstyle
@@ -34,9 +34,17 @@ jobs:
           add-apt-repository ppa:git-core/ppa
           apt-get -y update
           apt-get -y install libgdal-dev libgeos-dev libproj-dev libudunits2-dev libnlopt-dev git
-          
-          apt install -y r-base=4.1.3-1.1804.0
+
+          apt-get install -y --no-install-recommends \
+                libopenblas0-pthread \
+                r-cran-docopt \
+                r-base=${{ R_BASE_VERSION }}-* \
+                r-base-dev=${{ R_BASE_VERSION }}-* \
+                r-base-core=${{ R_BASE_VERSION }}-* \
+                r-recommended=${{ R_BASE_VERSION }}-*
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
+        env:
+          R_BASE_VERSION: 4.2.0
 
       - name: Check out code
         uses: actions/checkout@v2
