@@ -63,13 +63,13 @@ MD5sum: f85cf948cc0503c77e9a49c52d34c4bc
 NeedsCompilation: yes
 
 Package: JuliaCall
-Version: 0.17.1
+Version: 0.17.4
 Depends: R (>= 3.4.0)
-Imports: utils, Rcpp (>= 0.12.7), knitr (>= 1.18)
+Imports: utils, Rcpp (>= 0.12.7), knitr (>= 1.28)
 LinkingTo: Rcpp
-Suggests: testthat, rmarkdown
+Suggests: testthat, rmarkdown, rappdirs
 License: MIT + file LICENSE
-MD5sum: 670258f5939edfa5f90c28a1bc7dc679
+MD5sum: ccff65974b41fd6647ee3e62d767a4ab
 NeedsCompilation: yes
 
 Package: KernSmooth
@@ -1052,6 +1052,17 @@ License: GPL (>= 2)
 MD5sum: 09789d517a7c863d96e710f5386422e1
 NeedsCompilation: no
 
+Package: gstat
+Version: 2.0-9
+Depends: R (>= 2.10)
+Imports: utils, stats, graphics, methods, lattice, sp (>= 0.9-72), zoo,
+        spacetime (>= 1.0-0), FNN
+Suggests: fields, maps, mapdata, maptools, rgdal (>= 0.5.2), rgeos, sf
+        (>= 0.7-2), stars (>= 0.3-0), xts, raster, future, future.apply
+License: GPL (>= 2.0)
+MD5sum: 5e8f91b9f11ab0fb9170256714ed14c1
+NeedsCompilation: yes
+
 Package: gtable
 Version: 0.3.0
 Depends: R (>= 3.0)
@@ -1204,6 +1215,14 @@ License: LGPL
 MD5sum: 937893016bd266986c1f29b0ec7da348
 NeedsCompilation: no
 
+Package: intervals
+Version: 0.15.2
+Depends: R (>= 2.9.0)
+Imports: utils, graphics, methods
+License: Artistic-2.0
+MD5sum: c4a38b6fe7a294db64dd395b036a5466
+NeedsCompilation: yes
+
 Package: irlba
 Version: 2.3.5
 Depends: R (>= 3.6.2), Matrix
@@ -1269,7 +1288,7 @@ MD5sum: 9793c8a0b5cf9e7d35840f0680fd6271
 NeedsCompilation: no
 
 Package: knitr
-Version: 1.38
+Version: 1.39
 Depends: R (>= 3.3.0)
 Imports: evaluate (>= 0.15), highr, methods, stringr (>= 0.6), yaml (>=
         2.1.19), xfun (>= 0.29), tools
@@ -1280,7 +1299,7 @@ Suggests: markdown, formatR, testit, digest, rgl (>= 0.95.1201),
         0.4-1), showtext, tibble, sass, bslib, ragg, styler (>= 1.2.0),
         targets (>= 0.6.0)
 License: GPL
-MD5sum: f7f00820d685d9e878098d7fba3c94ba
+MD5sum: 6eaed127c7b5f0ad7a799a29d9f47dc6
 NeedsCompilation: no
 
 Package: labeling
@@ -2337,6 +2356,19 @@ License: GPL (>= 2)
 MD5sum: 33ba1dd33efd8e6747911679421e2025
 NeedsCompilation: yes
 
+Package: spacetime
+Version: 1.2-6
+Depends: R (>= 3.0.0)
+Imports: graphics, utils, stats, methods, lattice, sp (>= 1.1-0), zoo
+        (>= 1.7-9), xts (>= 0.8-8), intervals
+Suggests: adehabitatLT, cshapes (>= 2.0), foreign, gstat (>= 1.0-16),
+        maps, mapdata, maptools, plm, raster, RColorBrewer, rgdal,
+        rgeos, rmarkdown, RPostgreSQL, knitr, googleVis, ISOcodes,
+        markdown, sf
+License: GPL (>= 2)
+MD5sum: d991ad63730c5b6b195a8398890870d3
+NeedsCompilation: no
+
 Package: sparkline
 Version: 2.0
 Imports: htmltools, htmlwidgets (>= 0.8)
@@ -2794,13 +2826,13 @@ MD5sum: fc1c2d90f690c4be719be5fd4781d9a6
 NeedsCompilation: yes
 
 Package: xfun
-Version: 0.30
+Version: 0.31
 Imports: stats, tools
 Suggests: testit, parallel, codetools, rstudioapi, tinytex (>= 0.30),
         mime, markdown, knitr, htmltools, remotes, pak, rhub, renv,
         curl, jsonlite, rmarkdown
 License: MIT + file LICENSE
-MD5sum: 1697dc345a4d2a732e6f8bd635f551ff
+MD5sum: 001544a74d95114e19134fb46a332f47
 NeedsCompilation: yes
 
 Package: xml2
@@ -2821,6 +2853,16 @@ Suggests: knitr, plm, zoo, survival
 License: GPL (>= 2)
 MD5sum: c299878d003535bc3a199639142a8d62
 NeedsCompilation: no
+
+Package: xts
+Version: 0.12.1
+Depends: zoo (>= 1.7-12)
+Imports: methods
+LinkingTo: zoo
+Suggests: timeSeries, timeDate, tseries, chron, fts, tis, RUnit
+License: GPL (>= 2)
+MD5sum: e4cb3f2c83eb5f22c81bcc531ef39f71
+NeedsCompilation: yes
 
 Package: yaml
 Version: 2.3.5
