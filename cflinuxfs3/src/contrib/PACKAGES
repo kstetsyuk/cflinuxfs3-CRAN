@@ -820,6 +820,18 @@ License: GPL-3
 MD5sum: e9a801cd77cdc3e811159fbd883bc454
 NeedsCompilation: no
 
+Package: ggthemes
+Version: 4.2.4
+Depends: R (>= 3.3.0)
+Imports: ggplot2 (>= 3.0.0), graphics, grid, methods, purrr, scales,
+        stringr, tibble
+Suggests: dplyr, covr, extrafont, glue, knitr, lattice, lintr, maps,
+        mapproj, pander, rlang, rmarkdown, spelling, testthat, tidyr,
+        vdiffr, withr
+License: GPL-2
+MD5sum: 62bbb231964abfa680cb3f2f515aa617
+NeedsCompilation: no
+
 Package: globals
 Version: 0.13.1
 Depends: R (>= 3.1.2)
