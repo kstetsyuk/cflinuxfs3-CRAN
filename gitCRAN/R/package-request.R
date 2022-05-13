@@ -23,7 +23,7 @@ get_members <- function(github_org,
   c(lapply(1:10, function(i) {
     response <- httr::GET(
       sprintf(
-        "https://api.github.com/orgs/%s/members?per_page=100&page=%s", 
+        "https://api.github.com/orgs/%s/members?per_page=100&page=%s",
         github_org,
         i),
       httr::add_headers(authorization = paste("Bearer ", token))
@@ -146,7 +146,7 @@ package_request_pipeline <- function(
 
   available_packages <- available.packages(repos = CRAN_repo)
 
-  package_request <- c(package_request_raw)
+  package_request <- unique(strsplit(package_request_raw, ",\\s*")[[1]])
 
   cat(paste0("Adding package request", package_request))
   packages_added <- CRANpiled::add_packages(
@@ -172,7 +172,7 @@ package_request_pipeline <- function(
     credentials = git2r::cred_token("GITHUB_TOKEN")
   )
 
-  
+
   cat("Pipeline finished.")
 }
 
@@ -198,6 +198,3 @@ close_issue <- function(owner, repository, issue_id, username, token) {
     httr::add_headers(authorization = paste("Bearer ", token))
   )
 }
-
-
-
