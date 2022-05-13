@@ -35,9 +35,7 @@ jobs:
           apt-get -y update
           apt-get -y install libgdal-dev libgeos-dev libproj-dev libudunits2-dev libnlopt-dev git
 
-          apt-get install -y --no-install-recommends \
-                libopenblas0-pthread \
-                r-cran-docopt \
+          apt-get install -y \
                 r-base=$R_BASE_VERSION-* \
                 r-base-dev=$R_BASE_VERSION-* \
                 r-base-core=$R_BASE_VERSION-* \
