@@ -4,6 +4,18 @@ License: GPL (>= 2)
 MD5sum: ce098eb92f84443b052bd6d31c5c42ed
 NeedsCompilation: yes
 
+Package: ContDataQC
+Version: 2.0.6.9018
+Depends: R (>= 3.3.3)
+Imports: dataRetrieval, doBy, ggplot2, knitr, rmarkdown, shiny,
+        survival, zoo
+Suggests: IHA, markdown, reshape2, rLakeAnalyzer, rsconnect,
+        shinyFiles, shinythemes, StreamThermal, XLConnect, zip,
+        testthat (>= 3.0.0)
+License: MIT + file LICENSE
+MD5sum: a35d94c53844430ed491441295e64283
+NeedsCompilation: no
+
 Package: DBI
 Version: 1.1.2
 Depends: methods, R (>= 3.0.0)
@@ -62,13 +74,13 @@ MD5sum: b473a09fcb54d8ce01949c5531619c71
 NeedsCompilation: yes
 
 Package: MASS
-Version: 7.3-56
+Version: 7.3-57
 Priority: recommended
 Depends: R (>= 3.3.0), grDevices, graphics, stats, utils
 Imports: methods
 Suggests: lattice, nlme, nnet, survival
 License: GPL-2 | GPL-3
-MD5sum: b23596f582cf9ef451ef6b9c5feed26b
+MD5sum: a752d492d671ca0c08d995b8978adc8e
 NeedsCompilation: yes
 
 Package: Matrix
@@ -392,15 +404,15 @@ MD5sum: 2c96406982554b53e3d5bdd565f1aa72
 NeedsCompilation: yes
 
 Package: cli
-Version: 3.2.0
-Depends: R (>= 2.10)
+Version: 3.3.0
+Depends: R (>= 3.4)
 Imports: glue (>= 1.6.0), utils
 Suggests: asciicast, callr, covr, digest, grDevices, htmltools,
         htmlwidgets, knitr, methods, mockery, processx, ps (>=
         1.3.4.9000), rlang, rmarkdown, rstudioapi, shiny, testthat,
         tibble, whoami, withr
 License: MIT + file LICENSE
-MD5sum: 45c179c894c2af9a5c5a823bd79270e9
+MD5sum: f2db5f83abe958f5ff547f1b72b80dda
 NeedsCompilation: yes
 
 Package: clipr
@@ -773,8 +785,16 @@ License: MIT + file LICENSE
 MD5sum: a188f0b753ba5a8eda800844e4d29f69
 NeedsCompilation: yes
 
+Package: ggnewscale
+Version: 0.4.7
+Imports: ggplot2 (>= 3.0.0)
+Suggests: testthat, vdiffr, covr
+License: GPL-3
+MD5sum: 33d8e339e83519e6628f346c67fd4ed1
+NeedsCompilation: no
+
 Package: ggplot2
-Version: 3.3.5
+Version: 3.3.6
 Depends: R (>= 3.3)
 Imports: digest, glue, grDevices, grid, gtable (>= 0.1.1), isoband,
         MASS, mgcv, rlang (>= 0.4.10), scales (>= 0.5.0), stats,
@@ -786,7 +806,7 @@ Suggests: covr, ragg, dplyr, ggplot2movies, hexbin, Hmisc, interp,
         vdiffr (>= 1.0.0), xml2
 Enhances: sp
 License: MIT + file LICENSE
-MD5sum: 97ae02ccd9141b4a0e92cfc9da8ec8b4
+MD5sum: 6af06cc78a9d39d96f3e3fbb27f3dabc
 NeedsCompilation: no
 
 Package: ggspatial
@@ -2184,18 +2204,18 @@ MD5sum: ff4a76b661f4a44581580d67c3ec5b3d
 NeedsCompilation: no
 
 Package: tibble
-Version: 3.1.6
+Version: 3.1.7
 Depends: R (>= 3.1.0)
 Imports: ellipsis (>= 0.3.2), fansi (>= 0.4.0), lifecycle (>= 1.0.0),
-        magrittr, methods, pillar (>= 1.6.2), pkgconfig, rlang (>=
-        0.4.3), utils, vctrs (>= 0.3.8)
+        magrittr, methods, pillar (>= 1.7.0), pkgconfig, rlang (>=
+        1.0.1), utils, vctrs (>= 0.3.8)
 Suggests: bench, bit64, blob, brio, callr, cli, covr, crayon (>=
         1.3.4), DiagrammeR, dplyr, evaluate, formattable, ggplot2, hms,
         htmltools, knitr, lubridate, mockr, nycflights13, pkgbuild,
         pkgload, purrr, rmarkdown, stringi, testthat (>= 3.0.2), tidyr,
         withr
 License: MIT + file LICENSE
-MD5sum: 00a41945ada59f61889d2f791e822698
+MD5sum: 0bbe8431db6c04e5b9391de441481289
 NeedsCompilation: yes
 
 Package: tidyr
