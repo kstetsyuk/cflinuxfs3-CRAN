@@ -38,10 +38,10 @@ jobs:
           apt-get install -y --no-install-recommends \
                 libopenblas0-pthread \
                 r-cran-docopt \
-                r-base=${{ R_BASE_VERSION }}-* \
-                r-base-dev=${{ R_BASE_VERSION }}-* \
-                r-base-core=${{ R_BASE_VERSION }}-* \
-                r-recommended=${{ R_BASE_VERSION }}-*
+                r-base=$R_BASE_VERSION-* \
+                r-base-dev=$R_BASE_VERSION-* \
+                r-base-core=$R_BASE_VERSION-* \
+                r-recommended=$R_BASE_VERSION-*
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
         env:
           R_BASE_VERSION: 4.2.0
