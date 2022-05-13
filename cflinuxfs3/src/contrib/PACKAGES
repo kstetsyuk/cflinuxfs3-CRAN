@@ -785,6 +785,16 @@ License: MIT + file LICENSE
 MD5sum: a188f0b753ba5a8eda800844e4d29f69
 NeedsCompilation: yes
 
+Package: ggh4x
+Version: 0.2.1
+Depends: ggplot2 (>= 3.3.0)
+Imports: grid, gtable, scales, vctrs, rlang
+Suggests: covr, digest, fitdistrplus, ggdendro, vdiffr, knitr, MASS,
+        rmarkdown, stats, testthat (>= 3.0.0), utils
+License: MIT + file LICENSE
+MD5sum: 33984d0b08ff16c5282b61bccc934d43
+NeedsCompilation: no
+
 Package: ggnewscale
 Version: 0.4.7
 Imports: ggplot2 (>= 3.0.0)
