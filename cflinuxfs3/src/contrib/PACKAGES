@@ -4,6 +4,16 @@ License: GPL (>= 2)
 MD5sum: ce098eb92f84443b052bd6d31c5c42ed
 NeedsCompilation: yes
 
+Package: Cairo
+Version: 1.5-15
+Depends: R (>= 2.4.0)
+Imports: grDevices, graphics
+Suggests: png
+Enhances: FastRWeb
+License: GPL-2 | GPL-3
+MD5sum: fc7bdf2f91a421e5b78d370076892d30
+NeedsCompilation: yes
+
 Package: ContDataQC
 Version: 2.0.6.9018
 Depends: R (>= 3.3.3)
