@@ -42,7 +42,7 @@ jobs:
                 r-recommended=$R_BASE_VERSION-*
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
         env:
-          R_BASE_VERSION: 4.2.0
+          R_BASE_VERSION: 4.1.3
 
       - name: Check out code
         uses: actions/checkout@v2
