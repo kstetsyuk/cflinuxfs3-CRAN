@@ -91,7 +91,7 @@ BUILDDEPS="curl \
     zlib1g-dev"
 
 # shellcheck disable=SC2086
-# apt-get install -y --no-install-recommends ${BUILDDEPS}
+apt-get install -y --no-install-recommends ${BUILDDEPS}
 
 ## Download R from 0-Cloud CRAN mirror or CRAN
 function download_r_src() {
