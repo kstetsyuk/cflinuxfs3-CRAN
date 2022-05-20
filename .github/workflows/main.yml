@@ -35,7 +35,7 @@ jobs:
           apt-get -y update
           apt-get -y install libgdal-dev libgeos-dev libproj-dev libnlopt-dev libudunits2-dev git
 
-          apt-get install -y --no-install-recommends r-base-dev=${R_VERSION}*
+          apt-get install -y --no-install-recommends r-base-dev=${{ R_VERSION }}*
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
         env:
           R_VERSION: 4.1.3
