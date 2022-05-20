@@ -34,19 +34,14 @@ jobs:
           add-apt-repository ppa:git-core/ppa
           apt-get -y update
           apt-get -y install libgdal-dev libgeos-dev libproj-dev libnlopt-dev libudunits2-dev git
+          apt-get install -y --no-install-recommends r-base-dev
+          apt-get -y install r-cran-nloptr
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
 
       - name: Check out code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
-      - name: Install R
-        run: |
-          chmod +x .github/install_R_source.sh
-          .github/install_R_source.sh
-        env:
-          R_VERSION: 4.1.3
 
       - name: Check install
         run: |
