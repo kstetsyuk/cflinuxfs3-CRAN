@@ -52,7 +52,7 @@ jobs:
           R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
           R -e "devtools::install_local('CRANpiled')"
           R -e "devtools::install_local('gitCRAN')"
-          R -e "install_packages('nlotpr', repos = 'https://raw.githubusercontent.com/USEPA/cflinuxfs3-CRAN/master/cflinuxfs3/')"
+          R -e "install.packages('nlotpr', repos = 'https://raw.githubusercontent.com/USEPA/cflinuxfs3-CRAN/master/cflinuxfs3/')"
 
       - name: Run package addition pipeline in docker
         id: add_package_pipeline
