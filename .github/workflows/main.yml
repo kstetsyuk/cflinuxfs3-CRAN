@@ -60,7 +60,6 @@ jobs:
           R -e "install.packages('devtools', repos = 'cloud.r-project.org')"
           R -e "devtools::install_local('CRANpiled')"
           R -e "devtools::install_local('gitCRAN')"
-          R -e "devtools::install_version('nloptr', version = '2.0.1', repos = 'http://cloud.r-project.org')"
 
       - name: Run package addition pipeline in docker
         id: add_package_pipeline
