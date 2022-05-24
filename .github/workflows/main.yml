@@ -52,6 +52,9 @@ jobs:
         run: |
           curl -O https://cdn.rstudio.com/r/ubuntu-1804/pkgs/r-${R_VERSION}_1_amd64.deb
           sudo gdebi -n r-${R_VERSION}_1_amd64.deb
+          /opt/R/${R_VERSION}/bin/R --version
+          sudo ln -s /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
+          sudo ln -s /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
         env:
           R_VERSION: 4.1.3
 
