@@ -35,7 +35,7 @@ jobs:
           apt-get -y update
           apt-get -y install libgdal-dev libgeos-dev libproj-dev libnlopt-dev libudunits2-dev git
           # apt install -y r-base
-          apt-get build-dep r-base
+          apt-get -y install gdebi-core
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
 
       - name: Check out code
@@ -50,17 +50,11 @@ jobs:
 
       - name: Install R
         run: |
-          curl -O https://cran.rstudio.com/src/base/R-4/R-$R_VERSION.tar.gz
-          tar -xzvf R-$R_VERSION.tar.gz
-          cd R-$R_VERSION
-          ./configure \
-            --prefix=/opt/R/$R_VERSION \
-            --enable-memory-profiling \
-            --enable-R-shlib \
-            --with-blas \
-            --with-lapack
-          make
-          sudo make install
+          curl -O https://cdn.rstudio.com/r/ubuntu-1804/pkgs/r-${R_VERSION}_1_amd64.deb
+          sudo gdebi r-${R_VERSION}_1_amd64.deb
+          /opt/R/${R_VERSION}/bin/R --version
+          sudo ln -s /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
+          sudo ln -s /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
         env:
           R_VERSION: 4.1.3
 
