@@ -34,8 +34,8 @@ jobs:
           add-apt-repository ppa:git-core/ppa
           apt-get -y update
           apt-get -y install libgdal-dev libgeos-dev libproj-dev libnlopt-dev libudunits2-dev git
-          # apt install -y r-base
-          apt-get -y install gdebi-core
+          apt install -y r-base
+          # apt-get -y install gdebi-core
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
 
       - name: Check out code
@@ -48,12 +48,12 @@ jobs:
           echo "$LD_LIBRARY_PATH"
           git --version
 
-      - name: Install R
-        run: |
-          curl -O https://cdn.rstudio.com/r/ubuntu-1804/pkgs/r-${R_VERSION}_1_amd64.deb
-          sudo gdebi -y r-${R_VERSION}_1_amd64.deb
-        env:
-          R_VERSION: 4.1.3
+      # - name: Install R
+      #   run: |
+      #     curl -O https://cdn.rstudio.com/r/ubuntu-1804/pkgs/r-${R_VERSION}_1_amd64.deb
+      #     sudo gdebi r-${R_VERSION}_1_amd64.deb
+      #   env:
+      #     R_VERSION: 4.1.3
 
       - name: Install local packages
         run: |
