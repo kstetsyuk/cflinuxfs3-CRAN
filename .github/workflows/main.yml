@@ -24,6 +24,7 @@ jobs:
     steps:
       - name: Turnstyle
         uses: softprops/turnstyle@v1
+
       - name: Install package dependencies
         run: |
           apt-get -y update
@@ -34,7 +35,6 @@ jobs:
           add-apt-repository ppa:git-core/ppa
           apt-get -y update
           apt-get -y install libgdal-dev libgeos-dev libproj-dev libnlopt-dev libudunits2-dev git
-          # apt install -y r-base
           apt-get -y install gdebi-core
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
 
