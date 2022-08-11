@@ -24,7 +24,12 @@ jobs:
     steps:
       - name: Turnstyle
         uses: softprops/turnstyle@v1
-
+            
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          
       - name: Install package dependencies
         run: |
           apt-get -y update
@@ -46,11 +51,6 @@ jobs:
             sp
             sf
             rgeos
-            
-      - name: Check out code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: Check install
         run: |
