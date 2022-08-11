@@ -33,7 +33,7 @@ jobs:
           add-apt-repository ppa:ubuntugis/ubuntugis-unstable
           add-apt-repository ppa:git-core/ppa
           apt-get -y update
-          apt-get -y install libgdal-dev libgeos-dev libproj-dev libudunits2-dev libnlopt-dev git
+          apt-get -y install libgdal-dev libgeos-dev libproj-dev libudunits2-dev libnlopt-dev git libfribidi-bin
           
           apt install -y r-base
           git config --global --add safe.directory /__w/cflinuxfs3-CRAN/cflinuxfs3-CRAN
