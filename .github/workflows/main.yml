@@ -1,6 +1,4 @@
 on:
-  issues:
-    type: [labeled]
   workflow_dispatch:
     inputs:
       package_requests:
