@@ -538,15 +538,15 @@ MD5sum: 2c96406982554b53e3d5bdd565f1aa72
 NeedsCompilation: yes
 
 Package: cli
-Version: 3.3.0
+Version: 3.4.0
 Depends: R (>= 3.4)
-Imports: glue (>= 1.6.0), utils
-Suggests: asciicast, callr, covr, digest, grDevices, htmltools,
+Imports: utils
+Suggests: callr, covr, digest, glue (>= 1.6.0), grDevices, htmltools,
         htmlwidgets, knitr, methods, mockery, processx, ps (>=
-        1.3.4.9000), rlang, rmarkdown, rstudioapi, shiny, testthat,
-        tibble, whoami, withr
+        1.3.4.9000), rlang (>= 1.0.2.9003), rmarkdown, rprojroot,
+        rstudioapi, testthat, tibble, whoami, withr
 License: MIT + file LICENSE
-MD5sum: f2db5f83abe958f5ff547f1b72b80dda
+MD5sum: a68224780f195e9e1020a7a7157b68ea
 NeedsCompilation: yes
 
 Package: clipr
@@ -793,7 +793,7 @@ MD5sum: 29a7e7ec6f6b97a9b71600ae7d9b254d
 NeedsCompilation: no
 
 Package: dplyr
-Version: 1.0.9
+Version: 1.0.10
 Depends: R (>= 3.4.0)
 Imports: generics, glue (>= 1.3.2), lifecycle (>= 1.0.1), magrittr (>=
         1.5), methods, R6, rlang (>= 1.0.2), tibble (>= 2.1.3),
@@ -804,7 +804,7 @@ Suggests: bench, broom, callr, covr, DBI, dbplyr (>= 1.4.3), ggplot2,
         rmarkdown, RMySQL, RPostgreSQL, RSQLite, testthat (>= 3.1.1),
         tidyr, withr
 License: MIT + file LICENSE
-MD5sum: aed1a3e3bf1b108013840249ca37de5d
+MD5sum: e8ed8d4d2994d730a1cba03589facd27
 NeedsCompilation: yes
 
 Package: dtplyr
@@ -997,12 +997,12 @@ MD5sum: 0bcca321113ead8dd0a97b35468e36a5
 NeedsCompilation: yes
 
 Package: generics
-Version: 0.1.2
+Version: 0.1.3
 Depends: R (>= 3.2)
 Imports: methods
 Suggests: covr, pkgload, testthat (>= 3.0.0), tibble, withr
 License: MIT + file LICENSE
-MD5sum: bc92ee3d0574e76cc9f2598bf8d43796
+MD5sum: 10709daa3e89ba6f3a1f820835e20cdd
 NeedsCompilation: no
 
 Package: geojsonsf
@@ -1579,13 +1579,13 @@ MD5sum: 5f6a9fcc48163953d723689fd4c96786
 NeedsCompilation: no
 
 Package: lifecycle
-Version: 1.0.1
-Depends: R (>= 3.3)
-Imports: glue, rlang (>= 0.4.10)
-Suggests: covr, crayon, lintr, tidyverse, knitr, rmarkdown, testthat
-        (>= 3.0.1), tools, tibble, vctrs
+Version: 1.0.2
+Depends: R (>= 3.4)
+Imports: glue, rlang (>= 1.0.5)
+Suggests: covr, crayon, knitr, lintr, rmarkdown, testthat (>= 3.0.1),
+        tibble, tidyverse, tools, vctrs
 License: MIT + file LICENSE
-MD5sum: 47eec19741bdcfba5c7a7196306e157a
+MD5sum: 02f7da1fb9fc78939b205719cb84a6eb
 NeedsCompilation: no
 
 Package: listenv
@@ -1917,7 +1917,7 @@ MD5sum: 5a36d84f0e73b35c62f7f3800765bacb
 NeedsCompilation: no
 
 Package: pillar
-Version: 1.8.0
+Version: 1.8.1
 Imports: cli (>= 2.3.0), fansi, glue, lifecycle, rlang (>= 1.0.2), utf8
         (>= 1.1.0), utils, vctrs (>= 0.3.8)
 Suggests: bit64, debugme, DiagrammeR, dplyr, formattable, ggplot2,
@@ -1925,7 +1925,7 @@ Suggests: bit64, debugme, DiagrammeR, dplyr, formattable, ggplot2,
         rmarkdown, scales, stringi, survival, testthat (>= 3.1.1),
         tibble, units (>= 0.7.2), vdiffr, withr
 License: MIT + file LICENSE
-MD5sum: c8fbfa63ca20907147d499d32edeb71e
+MD5sum: d5dca10066e020bdbb577abd32cae495
 NeedsCompilation: no
 
 Package: pkgKitten
@@ -2342,7 +2342,7 @@ MD5sum: 105bd5ed5f49e3c14000ee00e0ed019a
 NeedsCompilation: yes
 
 Package: rlang
-Version: 1.0.4
+Version: 1.0.5
 Depends: R (>= 3.4.0)
 Imports: utils
 Suggests: cli (>= 3.1.0), covr, crayon, fs, glue, knitr, magrittr,
@@ -2350,7 +2350,7 @@ Suggests: cli (>= 3.1.0), covr, crayon, fs, glue, knitr, magrittr,
         usethis, vctrs (>= 0.2.3), withr
 Enhances: winch
 License: MIT + file LICENSE
-MD5sum: c6ed61f21b82a175dd4da801f96c228c
+MD5sum: 8da764be0f03b78542e8a59d8cd93017
 NeedsCompilation: yes
 
 Package: rmarkdown
@@ -2970,7 +2970,7 @@ MD5sum: 6f00ac5ac189644a997ac964f1e6d7b3
 NeedsCompilation: yes
 
 Package: tidyr
-Version: 1.2.0
+Version: 1.2.1
 Depends: R (>= 3.1)
 Imports: dplyr (>= 1.0.0), ellipsis (>= 0.1.0), glue, lifecycle,
         magrittr, purrr, rlang, tibble (>= 2.1.1), tidyselect (>=
@@ -2979,7 +2979,7 @@ LinkingTo: cpp11 (>= 0.4.0)
 Suggests: covr, data.table, jsonlite, knitr, readr, repurrrsive (>=
         1.0.0), rmarkdown, testthat (>= 3.0.0)
 License: MIT + file LICENSE
-MD5sum: 4f4f7b376913fb60a15c3b3a110e8bbe
+MD5sum: 29ad62e8027697af78240032475c259e
 NeedsCompilation: yes
 
 Package: tidyselect
