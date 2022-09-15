@@ -147,10 +147,10 @@ package_request_pipeline <- function(
   available_packages <- available.packages(repos = CRAN_repo)
 
   ### Deal with nloptr (needs to install v 2.0.1):
-  nloptr_row = which(available_packages == "nloptr")[1]
-  if (!is.na(nloptr_row) && available_packages[nloptr_row, 2] >= "2.0.2") {
-    available_packages[nloptr_row, 2] = "2.0.1"
-  }
+#  nloptr_row = which(available_packages == "nloptr")[1]
+#  if (!is.na(nloptr_row) && available_packages[nloptr_row, 2] >= "2.0.2") {
+#    available_packages[nloptr_row, 2] = "2.0.1"
+#  }
 
   package_request <- unique(strsplit(package_request_raw, ",\\s*")[[1]])
 
