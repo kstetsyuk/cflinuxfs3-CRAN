@@ -1928,6 +1928,14 @@ License: MIT + file LICENSE
 MD5sum: d5dca10066e020bdbb577abd32cae495
 NeedsCompilation: no
 
+Package: pingr
+Version: 2.0.2
+Imports: processx, utils
+Suggests: covr, testthat
+License: MIT + file LICENSE
+MD5sum: ca79ac1246f523a67d2eed08da32af07
+NeedsCompilation: yes
+
 Package: pkgKitten
 Version: 0.2.0
 Suggests: whoami (>= 1.1.0), tinytest
@@ -2060,13 +2068,13 @@ MD5sum: e84d140b478372918c37be8f8a222f98
 NeedsCompilation: no
 
 Package: processx
-Version: 3.7.0
+Version: 3.8.0
 Depends: R (>= 3.4.0)
 Imports: ps (>= 1.2.0), R6, utils
 Suggests: callr (>= 3.7.0), cli (>= 3.3.0), codetools, covr, curl,
         debugme, parallel, rlang (>= 1.0.2), testthat (>= 3.0.0), withr
 License: MIT + file LICENSE
-MD5sum: ffb1c3f58ab8aeb46472223b6a4eac93
+MD5sum: 43a83fb95b39bf0d8bb6529a9d4db420
 NeedsCompilation: yes
 
 Package: profvis
@@ -2118,13 +2126,13 @@ MD5sum: 912085f8ed1502c560aea315c4d1a715
 NeedsCompilation: yes
 
 Package: ps
-Version: 1.7.1
+Version: 1.7.2
 Depends: R (>= 3.4)
 Imports: utils
 Suggests: callr, covr, curl, pillar, pingr, processx (>= 3.1.0), R6,
         rlang, testthat (>= 3.0.0),
 License: MIT + file LICENSE
-MD5sum: d83e5004101eccbb37ac6b5701f1fd22
+MD5sum: 7f5a40d3db981db44f7dc013add240b6
 NeedsCompilation: yes
 
 Package: purrr
