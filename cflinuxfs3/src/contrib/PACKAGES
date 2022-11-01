@@ -591,6 +591,16 @@ License: GPL
 MD5sum: cc10efa36c85a733872415c920b12513
 NeedsCompilation: no
 
+Package: collapsibleTree
+Version: 0.1.7
+Depends: R (>= 3.0.0)
+Imports: htmlwidgets, data.tree, stats, methods
+Suggests: colorspace, RColorBrewer, dplyr, testthat, tibble
+Enhances: knitr, shiny
+License: GPL (>= 3)
+MD5sum: d3430a3f41ff10b796957c0f7f7bea74
+NeedsCompilation: no
+
 Package: colorspace
 Version: 2.0-3
 Depends: R (>= 3.0.0), methods
@@ -695,6 +705,18 @@ License: MPL-2.0 | file LICENSE
 MD5sum: dbf73369f993c9dfa6ce2a8df9e47145
 NeedsCompilation: yes
 
+Package: data.tree
+Version: 1.0.0
+Depends: R (>= 3.5)
+Imports: R6, stringi, methods
+Suggests: Formula, graphics, testthat, knitr, rmarkdown, ape, yaml,
+        networkD3, jsonlite, treemap, party, partykit, doParallel,
+        foreach, htmlwidgets, DiagrammeR (>= 1.0.0), mockery, rpart
+Enhances: igraph
+License: GPL (>= 2)
+MD5sum: fc816431fecd8eb4293bc764c398443d
+NeedsCompilation: no
+
 Package: dbplyr
 Version: 2.1.1
 Depends: R (>= 3.1)
@@ -767,12 +789,12 @@ MD5sum: a147c56eec7748a641a56131b5231e2b
 NeedsCompilation: yes
 
 Package: digest
-Version: 0.6.29
+Version: 0.6.30
 Depends: R (>= 3.3.0)
 Imports: utils
 Suggests: tinytest, simplermarkdown
 License: GPL (>= 2)
-MD5sum: a311d2b6669dff308c4ffa05bbe0980e
+MD5sum: 59846a7942862c1b32e54cf583eaaab2
 NeedsCompilation: yes
 
 Package: dotenv
@@ -1463,11 +1485,11 @@ MD5sum: 40caf7378b5560e24652111bb03a0211
 NeedsCompilation: no
 
 Package: jsonlite
-Version: 1.8.0
+Version: 1.8.3
 Depends: methods
-Suggests: httr, curl, vctrs, testthat, knitr, rmarkdown, R.rsp, sf
+Suggests: httr, vctrs, testthat, knitr, rmarkdown, R.rsp, sf
 License: MIT + file LICENSE
-MD5sum: 1fb44a5b715c4b51b73bb154a2bb06bc
+MD5sum: 73061b906e6b0a2c8cbd807387b3bbe5
 NeedsCompilation: yes
 
 Package: kableExtra
@@ -3019,6 +3041,20 @@ License: MIT + file LICENSE
 MD5sum: 6f00ac5ac189644a997ac964f1e6d7b3
 NeedsCompilation: yes
 
+Package: tibbletime
+Version: 0.1.7
+Depends: R (>= 3.4.0)
+Imports: assertthat (>= 0.2.1), dplyr (>= 1.0.10), glue (>= 1.6.2), hms
+        (>= 1.1.2), lubridate (>= 1.8.0), pillar (>= 1.8.1), purrr (>=
+        0.3.5), Rcpp (>= 1.0.9), rlang (>= 1.0.6), tibble (>= 3.1.8),
+        vctrs (>= 0.5.0), zoo (>= 1.8-11), lifecycle (>= 1.0.3)
+LinkingTo: Rcpp (>= 1.0.9)
+Suggests: broom, covr, gapminder, knitr, rmarkdown, testthat, tidyr (>=
+        1.0.0)
+License: MIT + file LICENSE
+MD5sum: 8dc318416d8f212c308849f67b6c2f73
+NeedsCompilation: yes
+
 Package: tidyr
 Version: 1.2.1
 Depends: R (>= 3.1)
@@ -3325,10 +3361,10 @@ MD5sum: e4cb3f2c83eb5f22c81bcc531ef39f71
 NeedsCompilation: yes
 
 Package: yaml
-Version: 2.3.5
+Version: 2.3.6
 Suggests: RUnit
 License: BSD_3_clause + file LICENSE
-MD5sum: 504f531b646b76480f116074ecfdd622
+MD5sum: 1de14d5476f1c90930142f582b1fb934
 NeedsCompilation: yes
 
 Package: zip
@@ -3339,11 +3375,11 @@ MD5sum: 199f76eaee6755b4ecdc293c34f12b22
 NeedsCompilation: yes
 
 Package: zoo
-Version: 1.8-10
+Version: 1.8-11
 Depends: R (>= 3.1.0), stats
 Imports: utils, graphics, grDevices, lattice (>= 0.20-27)
-Suggests: AER, coda, chron, fts, ggplot2 (>= 3.0.0), mondate, scales,
+Suggests: AER, coda, chron, ggplot2 (>= 3.0.0), mondate, scales,
         stinepack, strucchange, timeDate, timeSeries, tis, tseries, xts
 License: GPL-2 | GPL-3
-MD5sum: c10809b8a2a6e4c057db5878f5ae9fb1
+MD5sum: c0e33a4296bbd02c7420ff2ccd2931f7
 NeedsCompilation: yes
