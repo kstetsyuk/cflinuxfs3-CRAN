@@ -4,6 +4,14 @@ License: GPL (>= 2)
 MD5sum: ce098eb92f84443b052bd6d31c5c42ed
 NeedsCompilation: yes
 
+Package: BiocManager
+Version: 1.30.19
+Imports: utils
+Suggests: BiocVersion, remotes, rmarkdown, testthat, withr, curl, knitr
+License: Artistic-2.0
+MD5sum: 02dcd66b1488c0668e21b4208c347e88
+NeedsCompilation: no
+
 Package: Cairo
 Version: 1.5-15
 Depends: R (>= 2.4.0)
