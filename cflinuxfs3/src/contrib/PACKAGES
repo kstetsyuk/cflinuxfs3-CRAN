@@ -628,10 +628,10 @@ MD5sum: daa7ecfc6f5106f6839cf5286512ecbc
 NeedsCompilation: no
 
 Package: commonmark
-Version: 1.8.0
+Version: 1.8.1
 Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
-MD5sum: e489578a0da86767a833984483879588
+MD5sum: 0a161164962a5ce1f11675b877d37123
 NeedsCompilation: yes
 
 Package: corrplot
@@ -894,10 +894,10 @@ MD5sum: 69aaec23c1ef4e8bf00c2afc79268a9b
 NeedsCompilation: yes
 
 Package: farver
-Version: 2.1.0
-Suggests: testthat (>= 2.1.0), covr
+Version: 2.1.1
+Suggests: covr, testthat (>= 3.0.0)
 License: MIT + file LICENSE
-MD5sum: 71af7ca565be408c511f1bd8729ded37
+MD5sum: 6faa2128cad27fc83a5cd4d8e954fd03
 NeedsCompilation: yes
 
 Package: fastmap
@@ -942,12 +942,14 @@ MD5sum: ef254b58c80bcb9d84a15f8c1160e251
 NeedsCompilation: no
 
 Package: forcats
-Version: 0.5.1
-Depends: R (>= 3.2)
-Imports: ellipsis, magrittr, rlang, tibble
-Suggests: covr, dplyr, ggplot2, knitr, readr, rmarkdown, testthat
+Version: 0.5.2
+Depends: R (>= 3.4)
+Imports: cli, ellipsis, glue, lifecycle, magrittr, rlang (>= 1.0.0),
+        tibble, withr
+Suggests: covr, dplyr, ggplot2, knitr, readr, rmarkdown, testthat (>=
+        3.0.0)
 License: MIT + file LICENSE
-MD5sum: dae8a24a54e3b8482da53e5ddae19cc9
+MD5sum: e0f4afc0ded6468942c6ac956e2eb58f
 NeedsCompilation: no
 
 Package: foreign
@@ -1261,12 +1263,12 @@ MD5sum: 5e8f91b9f11ab0fb9170256714ed14c1
 NeedsCompilation: yes
 
 Package: gtable
-Version: 0.3.0
+Version: 0.3.1
 Depends: R (>= 3.0)
 Imports: grid
 Suggests: covr, testthat, knitr, rmarkdown, ggplot2, profvis
-License: GPL-2
-MD5sum: 3fdec0bfe37f4efa3613ba1c76ae5871
+License: MIT + file LICENSE
+MD5sum: 9b062cc4801d8d8b3d5d9680e8ea07fc
 NeedsCompilation: no
 
 Package: gtools
@@ -1458,12 +1460,12 @@ MD5sum: 299961d7becabe227988f2b0ce76fe1c
 NeedsCompilation: yes
 
 Package: isoband
-Version: 0.2.5
+Version: 0.2.6
 Imports: grid, utils
 Suggests: covr, ggplot2, knitr, magick, microbenchmark, rmarkdown, sf,
         testthat, xml2
 License: MIT + file LICENSE
-MD5sum: f93916f0cb21a7ba848f190a174eb607
+MD5sum: 2c986cff50d9aa3737748061b6f20d4b
 NeedsCompilation: yes
 
 Package: janitor
@@ -1600,7 +1602,7 @@ MD5sum: 63d192d16194ca293dacbfc465ad9404
 NeedsCompilation: no
 
 Package: leaflet
-Version: 2.1.0
+Version: 2.1.1
 Depends: R (>= 3.1.0)
 Imports: base64enc, crosstalk, htmlwidgets (>= 1.5.4), htmltools,
         magrittr, markdown, methods, png, RColorBrewer, raster, scales
@@ -1609,7 +1611,7 @@ Imports: base64enc, crosstalk, htmlwidgets (>= 1.5.4), htmltools,
 Suggests: knitr, maps, sf (>= 0.9-6), shiny, rgdal, rgeos, R6, RJSONIO,
         purrr, testthat (>= 3.0.0), s2
 License: GPL-3
-MD5sum: e11fdd9bef053bbfe2252342fedbd457
+MD5sum: efae5f0749084bd11306a8535b4f286b
 NeedsCompilation: no
 
 Package: leafpop
@@ -1739,13 +1741,13 @@ MD5sum: b0aa14ad38c4888355c7beaea16bbe8d
 NeedsCompilation: no
 
 Package: markdown
-Version: 1.1
+Version: 1.3
 Depends: R (>= 2.11.1)
-Imports: utils, xfun, mime (>= 0.3)
-Suggests: knitr, RCurl
+Imports: utils, commonmark, xfun, mime (>= 0.3)
+Suggests: knitr, rmarkdown, yaml, RCurl
 License: GPL-2
-MD5sum: 49d5a729f51ed773f6a5f1041ca6a433
-NeedsCompilation: yes
+MD5sum: 63fb15eca6974205b79424314fb7a257
+NeedsCompilation: no
 
 Package: matrixStats
 Version: 0.62.0
@@ -1910,6 +1912,16 @@ Suggests: KernSmooth, maps, mapdata, quantreg
 License: GPL (>= 2)
 MD5sum: 308fdb5a1d2f44fe095a956f8fbe191c
 NeedsCompilation: yes
+
+Package: openairmaps
+Version: 0.5.1
+Depends: R (>= 3.2.0)
+Imports: openair, dplyr, leaflet, purrr, magrittr, rlang, lubridate,
+        tibble, stringr, forcats, tidyr, cli
+Suggests: worldmet
+License: GPL (>= 3)
+MD5sum: e152340ec1e3f42fc319830869596541
+NeedsCompilation: no
 
 Package: openssl
 Version: 2.0.2
@@ -2266,15 +2278,14 @@ MD5sum: 8975d43cd5bb8514c0272b2e5f9296d0
 NeedsCompilation: yes
 
 Package: raster
-Version: 3.5-15
+Version: 3.6-3
 Depends: sp (>= 1.4-5), R (>= 3.5.0)
-Imports: Rcpp, methods, terra (>= 1.5-12)
+Imports: Rcpp, methods, terra (>= 1.6-16)
 LinkingTo: Rcpp
-Suggests: rgdal (>= 1.5-23), rgeos (>= 0.5-3), ncdf4, igraph, tcltk,
-        parallel, rasterVis, MASS, sf, tinytest, gstat, fields,
-        exactextractr
+Suggests: ncdf4, igraph, tcltk, parallel, rasterVis, MASS, sf,
+        tinytest, gstat, fields, exactextractr
 License: GPL (>= 3)
-MD5sum: 747c6421397872014ad7c7c9f1e5a622
+MD5sum: 2a0a0ed5035eecef02628eb180e96b13
 NeedsCompilation: yes
 
 Package: rbenchmark
@@ -2562,14 +2573,14 @@ MD5sum: e01eb9e27894cbcc120fe8e372709254
 NeedsCompilation: yes
 
 Package: scales
-Version: 1.2.0
+Version: 1.2.1
 Depends: R (>= 3.2)
 Imports: farver (>= 2.0.3), labeling, lifecycle, munsell (>= 0.5), R6,
         RColorBrewer, rlang (>= 1.0.0), viridisLite
 Suggests: bit64, covr, dichromat, ggplot2, hms (>= 0.5.0), stringi,
         testthat (>= 3.0.0), waldo (>= 0.4.0)
 License: MIT + file LICENSE
-MD5sum: cd9d69dbbe91fd2da7c87bc20aaaeb1a
+MD5sum: 4552d7a70f83d1ac576b73181cddd03f
 NeedsCompilation: no
 
 Package: scattermore
@@ -2772,13 +2783,13 @@ MD5sum: 70af0634b08fb2f8ec1d6e807eede9cb
 NeedsCompilation: yes
 
 Package: sp
-Version: 1.4-7
+Version: 1.5-0
 Depends: R (>= 3.0.0), methods
 Imports: utils, stats, graphics, grDevices, lattice, grid
 Suggests: RColorBrewer, rgdal (>= 1.2-3), rgeos (>= 0.3-13), gstat,
-        maptools, deldir, knitr, rmarkdown
+        maptools, deldir, knitr, rmarkdown, sf
 License: GPL (>= 2)
-MD5sum: 33ba1dd33efd8e6747911679421e2025
+MD5sum: 4d49824211410104ed23d52111803f56
 NeedsCompilation: yes
 
 Package: spacetime
@@ -2913,12 +2924,12 @@ MD5sum: 3bb195b590614485c3dc4d4a15f00062
 NeedsCompilation: yes
 
 Package: stringr
-Version: 1.4.0
+Version: 1.4.1
 Depends: R (>= 3.1)
 Imports: glue (>= 1.2.0), magrittr, stringi (>= 1.1.7)
 Suggests: covr, htmltools, htmlwidgets, knitr, rmarkdown, testthat
 License: GPL-2 | file LICENSE
-MD5sum: 9c9c77d86d49881ec124cffc855d5d04
+MD5sum: 012dbe0ea00fcec996a6310414d9f34a
 NeedsCompilation: no
 
 Package: styler
@@ -2994,13 +3005,14 @@ MD5sum: 78eaedad8d9bb5c3606ad924d6aecbf6
 NeedsCompilation: no
 
 Package: terra
-Version: 1.5-21
+Version: 1.6-17
 Depends: R (>= 3.5.0)
 Imports: methods, Rcpp
 LinkingTo: Rcpp
-Suggests: parallel, tinytest, ncdf4, sf (>= 0.9-8), deldir, XML, igraph
+Suggests: parallel, tinytest, ncdf4, sf (>= 0.9-8), deldir, XML,
+        leaflet
 License: GPL (>= 3)
-MD5sum: 6cde91251357a2087b89175466ebdb09
+MD5sum: 47daf06d673f228af27af5dc093d2c5a
 NeedsCompilation: yes
 
 Package: testit
@@ -3238,11 +3250,11 @@ MD5sum: ce46a4546f91850cb29f8bc3038fc3e0
 NeedsCompilation: yes
 
 Package: viridisLite
-Version: 0.4.0
+Version: 0.4.1
 Depends: R (>= 2.10)
 Suggests: hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr
 License: MIT + file LICENSE
-MD5sum: 0a98d3c150c196c685606ea1cb2b5e81
+MD5sum: 6f9ed972cd765375388e4fde4a314f68
 NeedsCompilation: no
 
 Package: viridis
@@ -3321,13 +3333,13 @@ MD5sum: fc1c2d90f690c4be719be5fd4781d9a6
 NeedsCompilation: yes
 
 Package: xfun
-Version: 0.32
+Version: 0.34
 Imports: stats, tools
 Suggests: testit, parallel, codetools, rstudioapi, tinytex (>= 0.30),
         mime, markdown, knitr, htmltools, remotes, pak, rhub, renv,
         curl, jsonlite, magick, rmarkdown
 License: MIT + file LICENSE
-MD5sum: c42fadc8e3fa9bfa1e963b53c52cd99a
+MD5sum: 1029d9b9175a6b182cd777ca4ddd7d92
 NeedsCompilation: yes
 
 Package: xml2
