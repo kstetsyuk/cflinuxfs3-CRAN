@@ -634,6 +634,16 @@ License: BSD_2_clause + file LICENSE
 MD5sum: 0a161164962a5ce1f11675b877d37123
 NeedsCompilation: yes
 
+Package: conflicted
+Version: 1.1.0
+Depends: R (>= 3.2)
+Imports: memoise, rlang (>= 0.3.4)
+Suggests: callr, crayon, dplyr, Matrix, methods, pkgload, testthat (>=
+        3.0.0)
+License: MIT + file LICENSE
+MD5sum: 974092b162e703bf6f4004371b261f44
+NeedsCompilation: no
+
 Package: corrplot
 Version: 0.92
 Suggests: seriation, knitr, RColorBrewer, rmarkdown, magrittr,
