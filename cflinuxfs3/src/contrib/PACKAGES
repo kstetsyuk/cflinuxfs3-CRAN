@@ -322,6 +322,12 @@ License: GPL (>= 2)
 MD5sum: c7b8edc4d431ccf2f1cc9d03a362cce6
 NeedsCompilation: yes
 
+Package: StreamThermal
+Version: 1.1
+Depends: R (>= 3.3.1), zoo
+MD5sum: 56f04c10e1759fa93e983cce77c002ab
+NeedsCompilation: no
+
 Package: abind
 Version: 1.4-5
 Depends: R (>= 1.5.0)
