@@ -34,6 +34,20 @@ License: MIT + file LICENSE
 MD5sum: a35d94c53844430ed491441295e64283
 NeedsCompilation: no
 
+Package: ContDataSumViz
+Version: 0.1.0.9016
+Suggests: DT, ggplot2, ggthemes, plotly, readxl, shiny, shinyjs,
+        shinyalert, shinythemes, shinyshiny, shinydashboard,
+        shinydashboardPlus, shinyWidgets, shinycssloaders, shinyBS,
+        shinyFiles, testthat, dplyr, tidyr, readxl, writexl,
+        data.table, tidyverse, tibbletime, conflicted, dataRetrieval,
+        doBy, knitr, htmltools, rmarkdown, highr, survival, zip,
+        reshape2, XLConnect, ContDataQC, ContDataSumViz, StreamThermal,
+        IHA
+License: MIT + file LICENSE
+MD5sum: a7412e67da0a495447416dad56456b60
+NeedsCompilation: no
+
 Package: DBI
 Version: 1.1.2
 Depends: methods, R (>= 3.0.0)
