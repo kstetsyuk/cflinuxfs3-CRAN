@@ -80,6 +80,15 @@ License: GPL (>= 2)
 MD5sum: f85cf948cc0503c77e9a49c52d34c4bc
 NeedsCompilation: yes
 
+Package: IHA
+Version: 0.2-41
+Depends: zoo
+Imports: plyr, caTools, lattice, RColorBrewer, lubridate
+Suggests: testthat
+License: GPL-2
+MD5sum: 6ae162cfdb01f940ba31a7cd8c45ad3f
+NeedsCompilation: no
+
 Package: JuliaCall
 Version: 0.17.4
 Depends: R (>= 3.4.0)
@@ -1695,14 +1704,13 @@ MD5sum: 3f9f9ed330297500e91393beb5859fa9
 NeedsCompilation: yes
 
 Package: lubridate
-Version: 1.8.0
-Depends: methods, R (>= 3.2)
+Version: 1.9.0
+Depends: methods, timechange (>= 0.1.1), R (>= 3.2)
 Imports: generics
-LinkingTo: cpp11 (>= 0.2.7)
-Suggests: covr, knitr, testthat (>= 2.1.0), vctrs (>= 0.3.0), rmarkdown
-Enhances: chron, timeDate, tis, zoo
+Suggests: covr, knitr, rmarkdown, testthat (>= 2.1.0), vctrs (>= 0.5.0)
+Enhances: chron, data.table, timeDate, tis, zoo
 License: GPL (>= 2)
-MD5sum: 874e63c510d1e43520ea3bf79ddd75dd
+MD5sum: 5f4a6f412ed203a861c5af09edc90d6d
 NeedsCompilation: yes
 
 Package: magrittr
@@ -2113,14 +2121,14 @@ MD5sum: 91f3d7146a81f6d5ddd59324d654c34b
 NeedsCompilation: no
 
 Package: plyr
-Version: 1.8.7
+Version: 1.8.8
 Depends: R (>= 3.1.0)
 Imports: Rcpp (>= 0.11.0)
 LinkingTo: Rcpp
 Suggests: abind, covr, doParallel, foreach, iterators, itertools,
         tcltk, testthat
 License: MIT + file LICENSE
-MD5sum: da039d4424d22fdfd7ba326757709e16
+MD5sum: 49180f541d7a6d5892767d0d0e62df19
 NeedsCompilation: yes
 
 Package: png
@@ -3141,6 +3149,15 @@ Suggests: evaluate, formatR, ggplot2, knitr, lattice, maps, scales,
         stringr, testthat (>= 0.8.1), withr
 License: GPL (>= 2)
 MD5sum: 5fd95ef112b91c6c1ff923205929103b
+NeedsCompilation: yes
+
+Package: timechange
+Version: 0.1.1
+Depends: R (>= 3.3)
+LinkingTo: cpp11 (>= 0.2.7)
+Suggests: testthat, knitr
+License: GPL-3
+MD5sum: 71df256f14a2d3b4e698a5e0b69c7aaf
 NeedsCompilation: yes
 
 Package: tinytest
