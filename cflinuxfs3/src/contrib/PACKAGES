@@ -53,6 +53,14 @@ License: GPL-3 | file LICENSE
 MD5sum: a8ca7a1f44a2f43ce1799efbc931bb51
 NeedsCompilation: no
 
+Package: Deriv
+Version: 4.1.3
+Imports: methods
+Suggests: testthat
+License: GPL (>= 3)
+MD5sum: 5826d101b45b559e8cf3f93e87a2ece5
+NeedsCompilation: no
+
 Package: FNN
 Version: 1.1.3
 Depends: R (>= 3.0.0)
@@ -1810,6 +1818,14 @@ Imports: methods, stats, graphics, Matrix, splines, utils
 Suggests: parallel, survival, MASS
 License: GPL (>= 2)
 MD5sum: f3e38027f992f4bef553dc4db5c6da70
+NeedsCompilation: yes
+
+Package: microbenchmark
+Version: 1.4.9
+Imports: graphics, stats
+Suggests: ggplot2, multcomp, RUnit
+License: BSD_2_clause + file LICENSE
+MD5sum: c33f08432ed620e9d237e6de1462dd88
 NeedsCompilation: yes
 
 Package: mime
