@@ -34,20 +34,6 @@ License: MIT + file LICENSE
 MD5sum: a35d94c53844430ed491441295e64283
 NeedsCompilation: no
 
-Package: ContDataSumViz
-Version: 0.1.0.9016
-Suggests: DT, ggplot2, ggthemes, plotly, readxl, shiny, shinyjs,
-        shinyalert, shinythemes, shinyshiny, shinydashboard,
-        shinydashboardPlus, shinyWidgets, shinycssloaders, shinyBS,
-        shinyFiles, testthat, dplyr, tidyr, readxl, writexl,
-        data.table, tidyverse, tibbletime, conflicted, dataRetrieval,
-        doBy, knitr, htmltools, rmarkdown, highr, survival, zip,
-        reshape2, XLConnect, ContDataQC, ContDataSumViz, StreamThermal,
-        IHA
-License: MIT + file LICENSE
-MD5sum: a7412e67da0a495447416dad56456b60
-NeedsCompilation: no
-
 Package: DBI
 Version: 1.1.2
 Depends: methods, R (>= 3.0.0)
@@ -478,14 +464,14 @@ MD5sum: 5952dd213f587f005cc893f64db06202
 NeedsCompilation: no
 
 Package: bslib
-Version: 0.4.0
+Version: 0.4.1
 Depends: R (>= 2.10)
 Imports: grDevices, htmltools (>= 0.5.2), jsonlite, sass (>= 0.4.0),
-        jquerylib (>= 0.1.3), rlang, cachem, memoise
+        jquerylib (>= 0.1.3), rlang, cachem, memoise (>= 2.0.1)
 Suggests: shiny (>= 1.6.0), rmarkdown (>= 2.7), thematic, knitr,
         testthat, withr, rappdirs, curl, magrittr
 License: MIT + file LICENSE
-MD5sum: 3a57ea25d6ee091af8fa23c364c66dd4
+MD5sum: baedfb0739726f62e2eb794116288300
 NeedsCompilation: no
 
 Package: caTools
@@ -906,12 +892,12 @@ MD5sum: cb38972af24d33fad0e5ec0273a29c81
 NeedsCompilation: yes
 
 Package: evaluate
-Version: 0.16
+Version: 0.18
 Depends: R (>= 3.0.2)
 Imports: methods
 Suggests: covr, ggplot2, lattice, testthat
 License: MIT + file LICENSE
-MD5sum: e121558490c862c4aaa266fa1da803ec
+MD5sum: 7aa0090152dc68eaae60045ebf3a57c3
 NeedsCompilation: no
 
 Package: expm
@@ -971,13 +957,13 @@ MD5sum: f6ef0bf5df8211514bf7b6ecb732d9fd
 NeedsCompilation: no
 
 Package: fontawesome
-Version: 0.3.0
+Version: 0.4.0
 Depends: R (>= 3.3.0)
 Imports: rlang (>= 0.4.10), htmltools (>= 0.5.1.1)
 Suggests: covr, dplyr (>= 1.0.8), knitr (>= 1.31), testthat (>= 3.0.0),
         rsvg
 License: MIT + file LICENSE
-MD5sum: ef254b58c80bcb9d84a15f8c1160e251
+MD5sum: 68fdeeff7b5a94aca1ddb03077a93a09
 NeedsCompilation: no
 
 Package: forcats
@@ -1398,13 +1384,13 @@ MD5sum: d8ca6f273cf69b1d0c3469574502f98b
 NeedsCompilation: no
 
 Package: httpuv
-Version: 1.6.5
+Version: 1.6.6
 Depends: R (>= 2.15.1)
 Imports: Rcpp (>= 1.0.7), utils, R6, promises, later (>= 0.8.0)
 LinkingTo: Rcpp, later
 Suggests: testthat, callr, curl, websocket
 License: GPL (>= 2) | file LICENSE
-MD5sum: e8ccfed8db0011818b376ff4d305813a
+MD5sum: 113220e4ecbd9cf7acdf4c22a8663d49
 NeedsCompilation: yes
 
 Package: httr
@@ -1554,18 +1540,18 @@ MD5sum: 9793c8a0b5cf9e7d35840f0680fd6271
 NeedsCompilation: no
 
 Package: knitr
-Version: 1.39
+Version: 1.41
 Depends: R (>= 3.3.0)
 Imports: evaluate (>= 0.15), highr, methods, stringr (>= 0.6), yaml (>=
-        2.1.19), xfun (>= 0.29), tools
-Suggests: markdown, formatR, testit, digest, rgl (>= 0.95.1201),
-        codetools, rmarkdown, htmlwidgets (>= 0.7), webshot, tikzDevice
-        (>= 0.10), tinytex, reticulate (>= 1.4), JuliaCall (>= 0.11.1),
-        magick, png, jpeg, gifski, xml2 (>= 1.2.0), httr, DBI (>=
-        0.4-1), showtext, tibble, sass, bslib, ragg, styler (>= 1.2.0),
-        targets (>= 0.6.0)
+        2.1.19), xfun (>= 0.34), tools
+Suggests: markdown (>= 1.3), formatR, testit, digest, rgl (>=
+        0.95.1201), codetools, rmarkdown, htmlwidgets (>= 0.7),
+        webshot, tikzDevice (>= 0.10), tinytex, reticulate (>= 1.4),
+        JuliaCall (>= 0.11.1), magick, png, jpeg, gifski, xml2 (>=
+        1.2.0), httr, DBI (>= 0.4-1), showtext, tibble, sass, bslib,
+        ragg, gridSVG, styler (>= 1.2.0), targets (>= 0.6.0)
 License: GPL
-MD5sum: 6eaed127c7b5f0ad7a799a29d9f47dc6
+MD5sum: d3c3f440057f68fb7eef71e2c31feae9
 NeedsCompilation: no
 
 Package: labeling
@@ -2728,10 +2714,10 @@ MD5sum: 2062de8a00812ce32a83623e627341e5
 NeedsCompilation: no
 
 Package: shiny
-Version: 1.7.2
+Version: 1.7.3
 Depends: R (>= 3.0.2), methods
 Imports: utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite
-        (>= 0.9.16), xtable, fontawesome (>= 0.2.1), htmltools (>=
+        (>= 0.9.16), xtable, fontawesome (>= 0.4.0), htmltools (>=
         0.5.2), R6 (>= 2.0), sourcetools, later (>= 1.0.0), promises
         (>= 1.1.0), tools, crayon, rlang (>= 0.4.10), fastmap (>=
         1.1.0), withr, commonmark (>= 1.7), glue (>= 1.3.2), bslib (>=
@@ -2740,7 +2726,16 @@ Suggests: datasets, Cairo (>= 1.5-5), testthat (>= 3.0.0), knitr (>=
         1.6), markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0),
         magrittr, yaml, future, dygraphs, ragg, showtext, sass
 License: GPL-3 | file LICENSE
-MD5sum: 32d029097bef3c970e1091dc57cb4e11
+MD5sum: 0d72978b89acbd03978a9406e4673b6b
+NeedsCompilation: no
+
+Package: shinyalert
+Version: 3.0.0
+Depends: R (>= 3.0.2)
+Imports: htmltools, knitr, shiny (>= 1.0.4), stats, uuid
+Suggests: colourpicker, shinydisconnect
+License: MIT + file LICENSE
+MD5sum: 2c1719f85a052f454bdcadcdf2ebaaff
 NeedsCompilation: no
 
 Package: shinybusy
@@ -3268,10 +3263,10 @@ MD5sum: d036e31c72f7c46d9e6eaa18f3b4b0fa
 NeedsCompilation: yes
 
 Package: uuid
-Version: 1.0-3
+Version: 1.1-0
 Depends: R (>= 2.9.0)
 License: MIT + file LICENSE
-MD5sum: d0afae99ba29d2864f504f0240b9430a
+MD5sum: ab234c5e09ead8b45c15b25e57171ca2
 NeedsCompilation: yes
 
 Package: uwot
@@ -3380,13 +3375,13 @@ MD5sum: fc1c2d90f690c4be719be5fd4781d9a6
 NeedsCompilation: yes
 
 Package: xfun
-Version: 0.34
+Version: 0.35
 Imports: stats, tools
 Suggests: testit, parallel, codetools, rstudioapi, tinytex (>= 0.30),
         mime, markdown, knitr, htmltools, remotes, pak, rhub, renv,
         curl, jsonlite, magick, rmarkdown
 License: MIT + file LICENSE
-MD5sum: 1029d9b9175a6b182cd777ca4ddd7d92
+MD5sum: 1cfe79c28e2f5ae366077e7968c94fa0
 NeedsCompilation: yes
 
 Package: xml2
