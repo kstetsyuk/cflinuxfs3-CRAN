@@ -135,15 +135,15 @@ MD5sum: 4b517f08750470a878e618e70a3113c2
 NeedsCompilation: no
 
 Package: Matrix
-Version: 1.5-1
+Version: 1.5-3
 Priority: recommended
-Depends: R (>= 3.5.0)
-Imports: methods, graphics, grid, stats, utils, lattice
+Depends: R (>= 3.5.0), methods
+Imports: graphics, grid, lattice, stats, utils
 Suggests: expm, MASS
 Enhances: MatrixModels, graph, SparseM, sfsmisc, igraph, maptools, sp,
         spdep
 License: GPL (>= 2) | file LICENCE
-MD5sum: a0333f1bc20fe7792ba2fc412f89cef1
+MD5sum: 907a6839e8f299c36c83294bd2270039
 NeedsCompilation: yes
 
 Package: R.cache
@@ -848,6 +848,16 @@ Suggests: tinytest, simplermarkdown
 License: GPL (>= 2)
 MD5sum: 59846a7942862c1b32e54cf583eaaab2
 NeedsCompilation: yes
+
+Package: dlnm
+Version: 2.4.7
+Depends: R (>= 3.2)
+Imports: stats, graphics, grDevices, utils, splines, nlme, mgcv,
+        tsModel
+Suggests: survival, lme4, gee, geepack, mixmeta
+License: GPL (>= 2)
+MD5sum: 16d84316734e5856d492588531b5a815
+NeedsCompilation: no
 
 Package: dotenv
 Version: 1.0.3
@@ -3247,6 +3257,15 @@ Version: 1.0-2
 License: GPL-2
 MD5sum: 41f6a30aae3d0d274abf9c665d0a4214
 NeedsCompilation: yes
+
+Package: tsModel
+Version: 0.6-1
+Depends: R (>= 4.0.0)
+Imports: splines, stats
+Suggests: testthat
+License: GPL (>= 2)
+MD5sum: b6324890b9831293a8a236452a755d3c
+NeedsCompilation: no
 
 Package: tzdb
 Version: 0.3.0
