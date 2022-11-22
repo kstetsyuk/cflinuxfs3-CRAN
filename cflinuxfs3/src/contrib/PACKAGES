@@ -1694,6 +1694,15 @@ License: LGPL (>= 2.1)
 MD5sum: 5c7444dc812de3f03346426ed1b0daf1
 NeedsCompilation: no
 
+Package: listviewer
+Version: 3.0.0
+Imports: htmltools, htmlwidgets, shiny
+Suggests: jsonlite, miniUI, rstudioapi
+Enhances: reactR
+License: MIT + file LICENSE
+MD5sum: 263e3ba099bb318fbb23152c421f47a5
+NeedsCompilation: no
+
 Package: lme4
 Version: 1.1-29
 Depends: R (>= 3.2.0), Matrix (>= 1.2-1), methods, stats
@@ -2605,11 +2614,11 @@ MD5sum: f7397c95ea53aee064aa023fa72c2a40
 NeedsCompilation: yes
 
 Package: sass
-Version: 0.4.2
+Version: 0.4.3
 Imports: fs, rlang (>= 0.4.10), htmltools (>= 0.5.1), R6, rappdirs
 Suggests: testthat, knitr, rmarkdown, withr, shiny, curl
 License: MIT + file LICENSE
-MD5sum: a4f6da8cf0431c45f1dc93f3bc6efdc9
+MD5sum: 87a18bdb4aec3a0284578e15f85f7c48
 NeedsCompilation: yes
 
 Package: satellite
