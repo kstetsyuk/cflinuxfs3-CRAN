@@ -3462,6 +3462,16 @@ License: MIT + file LICENSE
 MD5sum: e4f24ce62b568512ea47f3d54335d56a
 NeedsCompilation: yes
 
+Package: wordcloud
+Version: 2.6
+Depends: methods, RColorBrewer
+Imports: Rcpp (>= 0.9.4)
+LinkingTo: Rcpp
+Suggests: tm (>= 0.6), slam
+License: LGPL-2.1
+MD5sum: 8c5a8d71d3e110ac0c65aa8049b1c50a
+NeedsCompilation: yes
+
 Package: writexl
 Version: 1.3.1
 Suggests: spelling, readxl, nycflights13, testthat, bit64
