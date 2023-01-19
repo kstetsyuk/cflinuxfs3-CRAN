@@ -2141,6 +2141,13 @@ License: GPL-3
 MD5sum: d2d66c3807f9aeec3d4ead9323b7e550
 NeedsCompilation: no
 
+Package: plogr
+Version: 0.2.0
+Suggests: Rcpp
+License: MIT + file LICENSE
+MD5sum: b39bacbccf9d77cdd22121680e6b9b86
+NeedsCompilation: no
+
 Package: plotly
 Version: 4.10.0
 Depends: R (>= 3.2.0), ggplot2 (>= 3.0.0)
