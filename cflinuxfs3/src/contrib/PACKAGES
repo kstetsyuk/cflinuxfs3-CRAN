@@ -917,6 +917,15 @@ License: GPL (>= 3)
 MD5sum: ee227a7280f19d95ebcf68e4dea5aa76
 NeedsCompilation: yes
 
+Package: reactR
+Version: 0.4.4
+Imports: htmltools
+Suggests: htmlwidgets (>= 1.5.3), rmarkdown, shiny, V8, knitr, usethis,
+        jsonlite
+License: MIT + file LICENSE
+MD5sum: b916c0e40f211f7223600d580ddb34e5
+NeedsCompilation: no
+
 Package: readr
 Version: 2.1.3
 Depends: R (>= 3.4)
