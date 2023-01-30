@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Turnstyle
         uses: softprops/turnstyle@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install package dependencies
         run: |
           apt-get -y update
